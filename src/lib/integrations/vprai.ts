@@ -1,7 +1,7 @@
 import type { Lead, ScoreTier } from '@/lib/types'
 
 // ---------------------------------------------------------------------------
-// V-Prai Client — connects Visio Auto to VisioCorp's lead-gen platform
+// V-Prai Client — connects Visio Lead Gen to VisioCorp's lead-gen platform
 // V-Prai lives at prai.visioai.co (repo: visio-lead-gen)
 // ---------------------------------------------------------------------------
 
@@ -133,7 +133,7 @@ export function mapVPraiLeadToVisioAuto(vpLead: VPraiLead): Omit<Lead, 'id' | 'c
 }
 
 // ---------------------------------------------------------------------------
-// mapVisioAutoToVPrai — transform Visio Auto lead to V-Prai format
+// mapVisioAutoToVPrai — transform Visio Lead Gen lead to V-Prai format
 // ---------------------------------------------------------------------------
 
 export function mapVisioAutoToVPrai(lead: Lead): VPraiLead {
@@ -183,7 +183,7 @@ export async function fetchVPraiLeads(
 }
 
 // ---------------------------------------------------------------------------
-// pushLeadToVPrai — send a Visio Auto lead to V-Prai (bidirectional sync)
+// pushLeadToVPrai — send a Visio Lead Gen lead to V-Prai (bidirectional sync)
 // ---------------------------------------------------------------------------
 
 export async function pushLeadToVPrai(lead: Lead): Promise<{ success: boolean; error: string | null }> {

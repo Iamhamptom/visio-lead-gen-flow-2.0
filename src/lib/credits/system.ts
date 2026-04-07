@@ -1,5 +1,5 @@
 /**
- * Credits System — Visio Auto
+ * Credits System — Visio Lead Gen
  *
  * Everything costs credits. Agent teases free value, then locks deeper insights.
  * Users buy credit packs via Yoco. Credits never expire.

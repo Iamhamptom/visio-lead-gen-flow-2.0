@@ -40,7 +40,7 @@ export default function HomeNavbar() {
         transition={{ type: "spring", stiffness: 120, damping: 20 }}
         className={`fixed top-0 z-50 w-full transition-all duration-300 ${
           scrolled
-            ? "border-b border-white/[0.06] bg-[#030f0a]/90 backdrop-blur-xl"
+            ? "border-b border-white/[0.06] bg-[#03091a]/90 backdrop-blur-xl"
             : "bg-transparent"
         }`}
       >
@@ -49,7 +49,7 @@ export default function HomeNavbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <VisioLogoMark size={28} />
             <span className="text-sm font-light tracking-wide text-white/90">
-              Visio Auto
+              Visio Lead Gen
             </span>
           </Link>
 
@@ -76,7 +76,7 @@ export default function HomeNavbar() {
             </Link>
             <Link
               href="/get-started"
-              className="border border-emerald-500/40 bg-emerald-500/10 px-5 py-2 font-mono text-[11px] uppercase tracking-[0.15em] text-emerald-400 hover:bg-emerald-500/20 transition-colors"
+              className="border border-blue-500/40 bg-blue-500/10 px-5 py-2 font-mono text-[11px] uppercase tracking-[0.15em] text-blue-400 hover:bg-blue-500/20 transition-colors"
             >
               Start Free Trial
             </Link>
@@ -101,7 +101,7 @@ export default function HomeNavbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-[#030f0a]/98 backdrop-blur-xl pt-20 px-6 md:hidden"
+            className="fixed inset-0 z-40 bg-[#03091a]/98 backdrop-blur-xl pt-20 px-6 md:hidden"
           >
             <div className="flex flex-col gap-6">
               {NAV_LINKS.map((link, i) => (
@@ -131,7 +131,7 @@ export default function HomeNavbar() {
                 <Link
                   href="/get-started"
                   onClick={() => setMobileOpen(false)}
-                  className="block font-mono text-xs uppercase tracking-[0.2em] text-emerald-400 bg-emerald-500/10 border border-emerald-500/40 py-3 text-center"
+                  className="block font-mono text-xs uppercase tracking-[0.2em] text-blue-400 bg-blue-500/10 border border-blue-500/40 py-3 text-center"
                 >
                   Start Free Trial
                 </Link>

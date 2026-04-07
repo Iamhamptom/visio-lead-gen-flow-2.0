@@ -176,7 +176,7 @@ export default function VisioInspectPaperPage() {
         market where the alternative is no inspection and no trust whatsoever.
       </p>
 
-      <h2>6. Integration with the Visio Auto Suite</h2>
+      <h2>6. Integration with the Visio Lead Gen Suite</h2>
 
       <p>
         Visio Inspect&apos;s primary value to VisioCorp is not the standalone R49 reports. It is

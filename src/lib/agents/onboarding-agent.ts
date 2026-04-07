@@ -1,5 +1,5 @@
 // =============================================================================
-// Visio Auto — Smart Onboarding Agent
+// Visio Lead Gen — Smart Onboarding Agent
 // Concierge that greets new dealers, researches them, and gets them set up.
 // Uses Claude Sonnet 4.6 for personalized market intelligence.
 // =============================================================================
@@ -56,7 +56,7 @@ export async function generateWelcomeMessage(dealer: DealerProfile): Promise<str
 
   const { text } = await generateText({
     model: anthropic('claude-sonnet-4-6'),
-    system: `You are the Visio Auto onboarding concierge. You write warm, professional, data-driven welcome messages for new car dealerships joining the platform.
+    system: `You are the Visio Lead Gen onboarding concierge. You write warm, professional, data-driven welcome messages for new car dealerships joining the platform.
 
 Your tone: confident, knowledgeable, South African. Use Rand amounts. Reference real areas (Sandton, Bryanston, Menlyn, etc).
 
@@ -111,7 +111,7 @@ export async function generateMarketPOV(dealer: DealerProfile): Promise<string> 
 
   const { text } = await generateText({
     model: anthropic('claude-sonnet-4-6'),
-    system: `You are Visio Auto's market intelligence analyst. You produce concise, actionable market POV reports for car dealerships in South Africa.
+    system: `You are Visio Lead Gen's market intelligence analyst. You produce concise, actionable market POV reports for car dealerships in South Africa.
 
 Structure:
 1. Brand Performance — their brand(s) nationally

@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
   const order = orderResult.order;
   const baseUrl =
     process.env.NEXT_PUBLIC_APP_URL ?? "https://visio-auto.vercel.app";
-  const description = `Visio Auto — Order ${order.order_number}`;
+  const description = `Visio Lead Gen — Order ${order.order_number}`;
 
   let checkout;
   try {

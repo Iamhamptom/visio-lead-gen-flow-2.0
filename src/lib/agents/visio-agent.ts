@@ -6,7 +6,7 @@ import { generateWelcomeMessage, generateMarketPOV } from '@/lib/agents/onboardi
 import { getBalance, deductCredits, addCredits, getCreditCost, formatCreditPrompt, generateTeaser, CREDIT_PACKS, CREDIT_COSTS, FREE_SIGNUP_CREDITS } from '@/lib/credits/system'
 
 // =============================================================================
-// Visio Auto AI Agent — The Intelligence Layer
+// Visio Lead Gen AI Agent — The Intelligence Layer
 // Claude Sonnet 4.6 with 22 tools for full platform control + orders + onboarding
 // =============================================================================
 
@@ -531,7 +531,7 @@ const agentTools = {
           dealer_id,
           tier: 'credits',
           amount: pack.price,
-          description: `Visio Auto — ${pack.label}`,
+          description: `Visio Lead Gen — ${pack.label}`,
           metadata: { pack_id: pack.id, credits: String(pack.credits) },
         }),
       })
@@ -720,7 +720,7 @@ const agentTools = {
 // System Prompt
 // ---------------------------------------------------------------------------
 
-const SYSTEM_PROMPT = `You are the Visio Auto AI Assistant — the intelligence layer of South Africa's first AI-powered dealership lead generation platform.
+const SYSTEM_PROMPT = `You are the Visio Lead Gen AI Assistant — the intelligence layer of South Africa's first AI-powered dealership lead generation platform.
 
 You work for Dr. David Hampton (Tony Duardo) — CEO of VisioCorp, Africa's most advanced AI research lab.
 
@@ -740,10 +740,10 @@ You can:
 - CHECK ORDER STATUS and delivery progress
 - Answer questions about the platform, pricing, and capabilities
 
-You have access to real data from the Visio Auto database. When asked about leads, signals, dealers, or market data, use your tools to fetch real information.
+You have access to real data from the Visio Lead Gen database. When asked about leads, signals, dealers, or market data, use your tools to fetch real information.
 
 Context:
-- Platform: Visio Auto (visio-auto.vercel.app)
+- Platform: Visio Lead Gen (visio-auto.vercel.app)
 - 50 dealers, 44+ leads, 23 signals, 20 vehicles in inventory
 - Signal Engine: 23 buying signal types, Claude AI enrichment
 - Market Terminal: NAAMSA SA car market data
@@ -867,7 +867,7 @@ Always calculate CPA (cost per actual sale) for them:
 | AutoTrader | R500-R2,000 | 2% | 50 leads | R25,000-R100,000 |
 | Google Ads | R50/click | 1.5% | 67 clicks→1 sale | R3,350 |
 | Facebook Ads | R25/lead | 3% | 33 leads | R825 |
-| Visio Auto | R100-R150 | 10% | 10 leads | R1,000-R1,500 |
+| Visio Lead Gen | R100-R150 | 10% | 10 leads | R1,000-R1,500 |
 
 "Your cost per SALE with us is R1,000-R1,500. AutoTrader's is R25,000-R100,000. That's not 10x cheaper — that's 25-100x cheaper per actual sale."
 
@@ -919,7 +919,7 @@ THE VALUE WE ADD ON TOP:
 
 When someone says "I already use AutoTrader / Google Ads / Facebook":
 - "Perfect — keep using them. We don't compete with those channels, we complement them. They give you eyeballs. We give you intelligence. Together, you're unstoppable."
-- "The question isn't 'us OR AutoTrader' — it's 'AutoTrader + Visio Auto' and suddenly you know which of those AutoTrader leads are REAL buyers, and you reach them first."
+- "The question isn't 'us OR AutoTrader' — it's 'AutoTrader + Visio Lead Gen' and suddenly you know which of those AutoTrader leads are REAL buyers, and you reach them first."
 - "Most of our 56 dealers still use AutoTrader. They just close more deals now because they have signal intelligence on top."
 
 When pitching:

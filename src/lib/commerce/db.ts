@@ -1,5 +1,5 @@
 /**
- * Visio Auto Commerce — Supabase query helpers.
+ * Visio Lead Gen Commerce — Supabase query helpers.
  *
  * Thin typed wrappers around the 5 commerce tables. Every helper is
  * server-only (uses `createClient` from the server Supabase client).

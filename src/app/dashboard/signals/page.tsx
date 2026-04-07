@@ -230,7 +230,7 @@ const MOCK_SIGNALS: Signal[] = [
 function strengthBadge(strength: string) {
   switch (strength) {
     case 'strong':
-      return <Badge className="bg-emerald-500/15 text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/20">Strong</Badge>
+      return <Badge className="bg-blue-500/15 text-blue-400 border-blue-500/30 hover:bg-blue-500/20">Strong</Badge>
     case 'medium':
       return <Badge className="bg-amber-500/15 text-amber-400 border-amber-500/30 hover:bg-amber-500/20">Medium</Badge>
     default:
@@ -334,7 +334,7 @@ export default function SignalsPage() {
             <CardTitle className="text-sm font-medium text-muted-foreground">Strong Signals</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-emerald-400">{stats.strong}</div>
+            <div className="text-3xl font-bold text-blue-400">{stats.strong}</div>
             <p className="text-xs text-muted-foreground mt-1">{Math.round((stats.strong / stats.total) * 100)}% of total</p>
           </CardContent>
         </Card>
@@ -408,7 +408,7 @@ export default function SignalsPage() {
             const def = SIGNAL_TYPE_MAP[signal.signal_type]
             const budget = formatBudget(signal.estimated_budget_min, signal.estimated_budget_max)
             return (
-              <Card key={signal.id} className="bg-card border-border hover:border-emerald-500/30 transition-colors">
+              <Card key={signal.id} className="bg-card border-border hover:border-blue-500/30 transition-colors">
                 <CardContent className="py-5">
                   <div className="flex items-start gap-4">
                     {/* Icon */}
@@ -450,7 +450,7 @@ export default function SignalsPage() {
                           <div className="w-24">
                             <Progress
                               value={signal.buying_probability}
-                              className="h-2 [&>div]:bg-emerald-500"
+                              className="h-2 [&>div]:bg-blue-500"
                             />
                           </div>
                           <span className="text-xs font-medium w-8 text-right">{signal.buying_probability}%</span>
@@ -462,7 +462,7 @@ export default function SignalsPage() {
                         <div className="mt-4 flex justify-end">
                           <Button
                             size="sm"
-                            className="bg-emerald-600 hover:bg-emerald-700 text-white"
+                            className="bg-blue-600 hover:bg-blue-700 text-white"
                             onClick={() => {
                               fetch('/api/signals/convert', {
                                 method: 'POST',
@@ -522,7 +522,7 @@ export default function SignalsPage() {
                           key={t.type}
                           onClick={() => setTypeFilter(typeFilter === t.type ? 'all' : t.type)}
                           className={`flex items-center justify-between w-full rounded-md px-2 py-1.5 text-sm transition-colors hover:bg-zinc-800 ${
-                            typeFilter === t.type ? 'bg-zinc-800 text-emerald-400' : 'text-foreground'
+                            typeFilter === t.type ? 'bg-zinc-800 text-blue-400' : 'text-foreground'
                           }`}
                         >
                           <span className="flex items-center gap-2">

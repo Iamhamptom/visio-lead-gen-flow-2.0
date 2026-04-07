@@ -4,8 +4,8 @@ import { scoreLead } from '@/lib/ai/scoring'
 import type { Lead } from '@/lib/types'
 
 // ---------------------------------------------------------------------------
-// GET /api/integrations/vprai/sync — Pull leads from V-Prai into Visio Auto
-// POST /api/integrations/vprai/sync — Push Visio Auto leads to V-Prai
+// GET /api/integrations/vprai/sync — Pull leads from V-Prai into Visio Lead Gen
+// POST /api/integrations/vprai/sync — Push Visio Lead Gen leads to V-Prai
 // ---------------------------------------------------------------------------
 
 const SYNC_API_KEY = process.env.VPRAI_API_KEY || process.env.VISIO_GATEWAY_KEY || ''
@@ -127,7 +127,7 @@ export async function GET(request: NextRequest) {
 }
 
 // ---------------------------------------------------------------------------
-// POST — Push Visio Auto leads to V-Prai
+// POST — Push Visio Lead Gen leads to V-Prai
 // ---------------------------------------------------------------------------
 
 export async function POST(request: NextRequest) {

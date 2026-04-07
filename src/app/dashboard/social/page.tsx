@@ -215,7 +215,7 @@ const MOCK_SIGNALS: SocialSignal[] = [
 function sentimentBadge(sentiment: string) {
   switch (sentiment) {
     case 'positive':
-      return <Badge className="bg-emerald-500/15 text-emerald-400 border-emerald-500/30">Positive</Badge>
+      return <Badge className="bg-blue-500/15 text-blue-400 border-blue-500/30">Positive</Badge>
     case 'negative':
       return <Badge className="bg-red-500/15 text-red-400 border-red-500/30">Negative</Badge>
     default:
@@ -342,7 +342,7 @@ export default function SocialRadarPage() {
             const cfg = PLATFORM_CONFIG[signal.platform]
             const PIcon = cfg.icon
             return (
-              <Card key={signal.id} className="bg-card border-border hover:border-emerald-500/30 transition-colors">
+              <Card key={signal.id} className="bg-card border-border hover:border-blue-500/30 transition-colors">
                 <CardContent className="py-4">
                   <div className="flex items-start gap-3">
                     {/* Platform icon */}
@@ -385,7 +385,7 @@ export default function SocialRadarPage() {
                         <Button
                           size="sm"
                           variant="outline"
-                          className="ml-auto border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10"
+                          className="ml-auto border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
                           onClick={async () => {
                             try {
                               await fetch('/api/signals', {
@@ -433,7 +433,7 @@ export default function SocialRadarPage() {
           <Card className="bg-card border-border">
             <CardHeader>
               <CardTitle className="text-sm font-medium flex items-center gap-2">
-                <TrendingUp className="h-4 w-4 text-emerald-400" />
+                <TrendingUp className="h-4 w-4 text-blue-400" />
                 Trending Brands
               </CardTitle>
             </CardHeader>
@@ -498,7 +498,7 @@ export default function SocialRadarPage() {
                     </div>
                     <div className="h-1.5 rounded-full bg-zinc-800 overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-emerald-500 transition-all"
+                        className="h-full rounded-full bg-blue-500 transition-all"
                         style={{ width: `${pct}%` }}
                       />
                     </div>

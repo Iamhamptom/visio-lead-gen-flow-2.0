@@ -237,10 +237,10 @@ function statusLabel(status: string) {
   const labels: Record<string, { text: string; color: string }> = {
     new: { text: "New Lead", color: "bg-zinc-500/10 text-zinc-400" },
     contacted: { text: "Contacted", color: "bg-blue-500/10 text-blue-400" },
-    qualified: { text: "Qualified", color: "bg-emerald-500/10 text-emerald-400" },
+    qualified: { text: "Qualified", color: "bg-blue-500/10 text-blue-400" },
     test_drive_booked: { text: "Test Drive Booked", color: "bg-purple-500/10 text-purple-400" },
     negotiating: { text: "Negotiating", color: "bg-amber-500/10 text-amber-400" },
-    sold: { text: "Sold", color: "bg-emerald-600/10 text-emerald-300" },
+    sold: { text: "Sold", color: "bg-blue-600/10 text-blue-300" },
   };
   const l = labels[status] || labels.new;
   return (
@@ -370,7 +370,7 @@ export default function LeadDetailPage({
           </Button>
           <Button
             size="sm"
-            className="gap-2 bg-emerald-600 text-white hover:bg-emerald-500"
+            className="gap-2 bg-blue-600 text-white hover:bg-blue-500"
             disabled={actionLoading === "sold"}
             onClick={async () => {
               setActionLoading("sold");
@@ -474,10 +474,10 @@ export default function LeadDetailPage({
         <Card className="border-zinc-800/50 bg-zinc-900/50">
           <CardHeader className="flex-row items-center justify-between">
             <CardTitle className="flex items-center gap-2 text-white">
-              <MessageCircle className="h-4 w-4 text-emerald-400" />
+              <MessageCircle className="h-4 w-4 text-blue-400" />
               WhatsApp Conversation
             </CardTitle>
-            <Badge className="bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/10">
+            <Badge className="bg-blue-500/10 text-blue-400 hover:bg-blue-500/10">
               Live
             </Badge>
           </CardHeader>
@@ -491,7 +491,7 @@ export default function LeadDetailPage({
                   <div
                     className={`max-w-[85%] rounded-xl px-4 py-2.5 ${
                       msg.sender === "lead"
-                        ? "bg-emerald-600/20 text-emerald-100"
+                        ? "bg-blue-600/20 text-blue-100"
                         : "bg-zinc-800 text-zinc-300"
                     }`}
                   >
@@ -499,7 +499,7 @@ export default function LeadDetailPage({
                     <p
                       className={`mt-1 text-right text-[10px] ${
                         msg.sender === "lead"
-                          ? "text-emerald-400/60"
+                          ? "text-blue-400/60"
                           : "text-zinc-600"
                       }`}
                     >
@@ -527,11 +527,11 @@ export default function LeadDetailPage({
                     setWaMessage("");
                   }
                 }}
-                className="flex-1 rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 text-sm text-zinc-200 placeholder-zinc-600 outline-none focus:border-emerald-500/50"
+                className="flex-1 rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 text-sm text-zinc-200 placeholder-zinc-600 outline-none focus:border-blue-500/50"
               />
               <Button
                 size="sm"
-                className="bg-emerald-600 text-white hover:bg-emerald-500"
+                className="bg-blue-600 text-white hover:bg-blue-500"
                 onClick={async () => {
                   if (!waMessage.trim()) return;
                   try {
@@ -573,7 +573,7 @@ export default function LeadDetailPage({
                     </p>
                     <p className="text-xs text-zinc-500">{v.color}</p>
                   </div>
-                  <span className="inline-flex items-center gap-1 rounded-md bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-400 ring-1 ring-inset ring-emerald-500/20">
+                  <span className="inline-flex items-center gap-1 rounded-md bg-blue-500/10 px-2 py-0.5 text-xs font-semibold text-blue-400 ring-1 ring-inset ring-blue-500/20">
                     {v.match_score}% match
                   </span>
                 </div>
@@ -646,7 +646,7 @@ function InfoRow({
       <span
         className={`text-sm ${
           highlight
-            ? "font-medium text-emerald-400"
+            ? "font-medium text-blue-400"
             : mono
               ? "font-mono text-zinc-300"
               : "text-zinc-300"

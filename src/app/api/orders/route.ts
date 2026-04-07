@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     // Create Yoco checkout
     const checkout = await createCheckout({
       amountInCents: pricing.total,
-      description: `Visio Auto — ${pricing.label}`,
+      description: `Visio Lead Gen — ${pricing.label}`,
       successUrl: `${baseUrl}/dashboard?payment=success&package=${pkg}`,
       cancelUrl: `${baseUrl}/dashboard?payment=cancelled`,
       failureUrl: `${baseUrl}/dashboard?payment=failed`,

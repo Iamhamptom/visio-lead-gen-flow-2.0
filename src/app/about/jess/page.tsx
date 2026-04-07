@@ -7,9 +7,9 @@ import StrategyAgent from "@/components/landing/StrategyAgent";
 import { ArrowLeft, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Meet Jess — AI Sales Agent for Visio Auto",
+  title: "Meet Jess — AI Sales Agent for Visio Lead Gen",
   description:
-    "Jess is the AI sales agent who runs the Visio Auto platform. Seven languages, 28 tools, available 24/7 in the chat widget. Watch her close a deal in real time.",
+    "Jess is the AI sales agent who runs the Visio Lead Gen platform. Seven languages, 28 tools, available 24/7 in the chat widget. Watch her close a deal in real time.",
 };
 
 export default function JessPage() {
@@ -19,13 +19,13 @@ export default function JessPage() {
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <VisioLogoMark size={24} />
-            <span className="text-sm font-light tracking-wide text-white/80">Visio Auto</span>
+            <span className="text-sm font-light tracking-wide text-white/80">Visio Lead Gen</span>
             <span className="text-white/20 mx-1">/</span>
             <Link href="/about" className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 hover:text-white/70">
               About
             </Link>
             <span className="text-white/20 mx-1">/</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60">
               Jess
             </span>
           </Link>
@@ -42,31 +42,31 @@ export default function JessPage() {
       {/* Hero */}
       <section className="relative py-24 border-b border-white/[0.06]">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.06)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.06)_0%,transparent_60%)]" />
 
         <div className="relative mx-auto max-w-5xl px-6">
           <div className="grid lg:grid-cols-[auto_1fr] gap-10 items-start">
             <JessAvatar size={120} />
             <div>
-              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70 border border-emerald-500/30 bg-emerald-500/[0.05] px-3 py-1.5">
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70 border border-blue-500/30 bg-blue-500/[0.05] px-3 py-1.5">
                 AI Sales Agent
               </span>
               <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-extralight leading-[1.1] tracking-tight text-white">
                 Meet Jess.
               </h1>
               <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-2xl">
-                Jess is the AI sales agent who runs the Visio Auto platform. She speaks seven
+                Jess is the AI sales agent who runs the Visio Lead Gen platform. She speaks seven
                 languages. She knows every dealer in South Africa. She can search inventory,
                 score leads, book test drives, explain finance, pre-qualify buyers, and close
                 sales in chat. She is available 24/7 in the chat widget on every page.
               </p>
               <div className="mt-8 flex items-center gap-3">
-                <div className="inline-flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/[0.05] px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/80">
-                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/[0.05] px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/80">
+                  <div className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
                   Online Now
                 </div>
                 <p className="font-mono text-[10px] text-white/30">
-                  Click the emerald pill bottom-right on any page
+                  Click the blue pill bottom-right on any page
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function JessPage() {
           </h2>
           <p className="mt-4 text-[14px] text-white/40 max-w-2xl">
             Jess is not a chatbot. She is an action-taking agent with a real SDK, real tool
-            routing, and real access to the Visio Auto platform. She does not say &ldquo;let me
+            routing, and real access to the Visio Lead Gen platform. She does not say &ldquo;let me
             connect you to someone&rdquo; — she just does the thing.
           </p>
 
@@ -138,13 +138,13 @@ export default function JessPage() {
             Talk to Jess now.
           </h2>
           <p className="mt-4 text-[14px] text-white/40 max-w-xl mx-auto">
-            Click the emerald pill in the bottom-right of any page. She will greet you, ask what
+            Click the blue pill in the bottom-right of any page. She will greet you, ask what
             you need, and either close the deal or route you to the right tool in the suite.
           </p>
           <div className="mt-8">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/[0.05] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/80 hover:bg-emerald-500/[0.1] transition-colors"
+              className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/[0.05] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/80 hover:bg-blue-500/[0.1] transition-colors"
             >
               <MessageCircle className="h-3.5 w-3.5" />
               Open Chat on Home
@@ -157,10 +157,10 @@ export default function JessPage() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/60 hover:text-emerald-400 transition-colors"
+            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/60 hover:text-blue-400 transition-colors"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to Visio Auto
+            Back to Visio Lead Gen
           </Link>
         </div>
       </footer>

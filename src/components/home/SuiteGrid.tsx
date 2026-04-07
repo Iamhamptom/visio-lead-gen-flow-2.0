@@ -73,13 +73,13 @@ export default function HomeSuiteGrid() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             The Suite
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white max-w-3xl leading-[1.1]">
             Six connected products.
             <br />
-            <span className="text-emerald-400">One platform.</span>
+            <span className="text-blue-400">One platform.</span>
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-xl">
             Every product solves one piece of the SA car-buying journey. Together they cover
@@ -102,12 +102,12 @@ export default function HomeSuiteGrid() {
               >
                 {/* Status */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-500/40">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-500/40">
                     {product.shortName}
                   </span>
                   <div className="flex items-center gap-1.5">
-                    <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-emerald-400/70">
+                    <div className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+                    <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-blue-400/70">
                       Live
                     </span>
                   </div>
@@ -115,7 +115,7 @@ export default function HomeSuiteGrid() {
 
                 {/* Name */}
                 <h3 className="text-[17px] font-medium text-white/90">{product.name}</h3>
-                <p className="mt-2 text-[13px] text-emerald-400/80">{copy.oneLiner}</p>
+                <p className="mt-2 text-[13px] text-blue-400/80">{copy.oneLiner}</p>
 
                 {/* Description */}
                 <p className="mt-4 text-[12px] leading-relaxed text-white/40 flex-1">
@@ -128,7 +128,7 @@ export default function HomeSuiteGrid() {
                     href={product.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-emerald-400/80 hover:text-emerald-400 transition-colors"
+                    className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-blue-400/80 hover:text-blue-400 transition-colors"
                   >
                     Open Tool
                     <ArrowUpRight className="h-3 w-3" />
@@ -155,7 +155,7 @@ export default function HomeSuiteGrid() {
         >
           <Link
             href="/research"
-            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-white/40 hover:text-emerald-400 transition-colors"
+            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-white/40 hover:text-blue-400 transition-colors"
           >
             Read the full architecture in our research papers →
           </Link>

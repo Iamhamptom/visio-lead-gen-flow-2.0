@@ -1,5 +1,5 @@
 /**
- * Visio Auto Commerce Catalog
+ * Visio Lead Gen Commerce Catalog
  *
  * Single source of truth for every purchasable SKU across the suite.
  * Three families:
@@ -420,7 +420,7 @@ const ONE_OFFS: CatalogItem[] = [
     label: "Lead Pack — 25 Qualified Leads",
     shortDescription: "25 AI-qualified buyer leads from the signal pool",
     longDescription:
-      "25 buyer leads from the Visio Auto signal engine, qualified to the dealer's brand and region. Delivered via WhatsApp + dashboard. Each lead includes signal source, intent score, vehicle preferences, and contact information (POPIA-consented).",
+      "25 buyer leads from the Visio Lead Gen signal engine, qualified to the dealer's brand and region. Delivered via WhatsApp + dashboard. Each lead includes signal source, intent score, vehicle preferences, and contact information (POPIA-consented).",
     amountCents: 300_000,
     billingCadenceDays: null,
     grants: ["leads:base"],
@@ -443,7 +443,7 @@ const ONE_OFFS: CatalogItem[] = [
     label: "Lead Pack — 100 Qualified Leads",
     shortDescription: "100 AI-qualified buyer leads — best volume value",
     longDescription:
-      "100 buyer leads from the Visio Auto signal engine. Bulk discount applied (R100 per lead vs R120 for the 25-pack). Same quality, same delivery, same POPIA compliance.",
+      "100 buyer leads from the Visio Lead Gen signal engine. Bulk discount applied (R100 per lead vs R120 for the 25-pack). Same quality, same delivery, same POPIA compliance.",
     amountCents: 1_000_000,
     billingCadenceDays: null,
     grants: ["leads:base"],

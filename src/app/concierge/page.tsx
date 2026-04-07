@@ -5,7 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import LuxuryConcierge from "@/components/landing/LuxuryConcierge";
 
 export const metadata: Metadata = {
-  title: "Visio Concierge — UHNW African Luxury Car Delivery | Visio Auto",
+  title: "Visio Concierge — UHNW African Luxury Car Delivery | Visio Lead Gen",
   description:
     "White-glove concierge for high-net-worth buyers across Lagos, Lubumbashi, Luanda, Nairobi, Accra and Abidjan. Multilingual, bonded escrow, end-to-end logistics from Sandton to your residence.",
 };
@@ -18,9 +18,9 @@ export default function ConciergePage() {
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <VisioLogoMark size={24} />
-            <span className="text-sm font-light tracking-wide text-white/80">Visio Auto</span>
+            <span className="text-sm font-light tracking-wide text-white/80">Visio Lead Gen</span>
             <span className="text-white/20 mx-1">/</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60">
               Concierge
             </span>
           </Link>
@@ -43,10 +43,10 @@ export default function ConciergePage() {
           </p>
           <Link
             href="/"
-            className="mt-4 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/60 hover:text-emerald-400 transition-colors"
+            className="mt-4 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/60 hover:text-blue-400 transition-colors"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to Visio Auto
+            Back to Visio Lead Gen
           </Link>
         </div>
       </footer>

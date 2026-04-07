@@ -19,13 +19,13 @@ function Panel({
 }) {
   return (
     <div
-      className={`overflow-hidden rounded border border-emerald-900/30 bg-[#0d1117] ${className}`}
+      className={`overflow-hidden rounded border border-blue-900/30 bg-[#0d1117] ${className}`}
     >
-      <div className="flex items-center justify-between border-b border-emerald-900/20 px-3 py-1.5">
-        <span className="font-mono text-[11px] font-semibold tracking-wider text-emerald-500 uppercase">
+      <div className="flex items-center justify-between border-b border-blue-900/20 px-3 py-1.5">
+        <span className="font-mono text-[11px] font-semibold tracking-wider text-blue-500 uppercase">
           {title}
         </span>
-        <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
+        <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
       </div>
       <div className="p-3">{children}</div>
     </div>
@@ -54,7 +54,7 @@ const BRANDS = ["Toyota", "Suzuki", "VW", "Hyundai", "Ford", "GWM", "Chery", "BY
 
 function NewsCard({ item }: { item: NewsItem }) {
   const categoryColors: Record<string, string> = {
-    sales: "bg-emerald-900/40 text-emerald-400",
+    sales: "bg-blue-900/40 text-blue-400",
     regulation: "bg-blue-900/40 text-blue-400",
     technology: "bg-violet-900/40 text-violet-400",
     pricing: "bg-amber-900/40 text-amber-400",
@@ -62,13 +62,13 @@ function NewsCard({ item }: { item: NewsItem }) {
 
   const shareToWhatsApp = () => {
     const text = encodeURIComponent(
-      `${item.title}\n\n${item.summary}\n\nSource: ${item.source}\n\nShared via Visio Auto Intelligence`
+      `${item.title}\n\n${item.summary}\n\nSource: ${item.source}\n\nShared via Visio Lead Gen Intelligence`
     )
     window.open(`https://wa.me/?text=${text}`, "_blank")
   }
 
   return (
-    <div className="group rounded border border-zinc-800/50 bg-[#0d1117] p-4 transition-colors hover:border-emerald-900/40">
+    <div className="group rounded border border-zinc-800/50 bg-[#0d1117] p-4 transition-colors hover:border-blue-900/40">
       {/* Header row */}
       <div className="mb-2 flex items-start justify-between gap-3">
         <div className="flex flex-wrap items-center gap-2">
@@ -87,10 +87,10 @@ function NewsCard({ item }: { item: NewsItem }) {
           ))}
         </div>
         <div className="flex items-center gap-1">
-          <span className="font-mono text-[10px] tabular-nums text-emerald-600">
+          <span className="font-mono text-[10px] tabular-nums text-blue-600">
             {item.relevance_score}%
           </span>
-          <TrendingUp className="h-3 w-3 text-emerald-700" />
+          <TrendingUp className="h-3 w-3 text-blue-700" />
         </div>
       </div>
 
@@ -112,7 +112,7 @@ function NewsCard({ item }: { item: NewsItem }) {
         </div>
         <button
           onClick={shareToWhatsApp}
-          className="flex items-center gap-1.5 rounded bg-emerald-900/30 px-2.5 py-1 font-mono text-[10px] font-semibold text-emerald-400 opacity-0 transition-opacity hover:bg-emerald-900/50 group-hover:opacity-100"
+          className="flex items-center gap-1.5 rounded bg-blue-900/30 px-2.5 py-1 font-mono text-[10px] font-semibold text-blue-400 opacity-0 transition-opacity hover:bg-blue-900/50 group-hover:opacity-100"
         >
           <Share2 className="h-3 w-3" />
           Share to WhatsApp
@@ -153,7 +153,7 @@ export default function NewsPage() {
       {/* Header */}
       <Panel title="SA Automotive News Feed">
         <div className="flex items-center gap-2">
-          <Newspaper className="h-4 w-4 text-emerald-500" />
+          <Newspaper className="h-4 w-4 text-blue-500" />
           <span className="text-sm text-zinc-300">
             AI-curated news, scored for dealer relevance
           </span>
@@ -174,7 +174,7 @@ export default function NewsPage() {
               onClick={() => setCategoryFilter(cat.key)}
               className={`rounded px-2.5 py-1 font-mono text-[11px] font-medium transition-colors ${
                 categoryFilter === cat.key
-                  ? "bg-emerald-900/50 text-emerald-400"
+                  ? "bg-blue-900/50 text-blue-400"
                   : "bg-zinc-900 text-zinc-500 hover:text-zinc-300"
               }`}
             >
@@ -192,7 +192,7 @@ export default function NewsPage() {
             onClick={() => setBrandFilter(null)}
             className={`rounded px-2 py-1 font-mono text-[11px] font-medium transition-colors ${
               !brandFilter
-                ? "bg-emerald-900/50 text-emerald-400"
+                ? "bg-blue-900/50 text-blue-400"
                 : "bg-zinc-900 text-zinc-500 hover:text-zinc-300"
             }`}
           >
@@ -204,7 +204,7 @@ export default function NewsPage() {
               onClick={() => setBrandFilter(brandFilter === brand ? null : brand)}
               className={`rounded px-2 py-1 font-mono text-[11px] font-medium transition-colors ${
                 brandFilter === brand
-                  ? "bg-emerald-900/50 text-emerald-400"
+                  ? "bg-blue-900/50 text-blue-400"
                   : "bg-zinc-900 text-zinc-500 hover:text-zinc-300"
               }`}
             >
@@ -229,7 +229,7 @@ export default function NewsPage() {
                 setCategoryFilter("all")
                 setBrandFilter(null)
               }}
-              className="font-mono text-xs text-emerald-600 hover:text-emerald-400"
+              className="font-mono text-xs text-blue-600 hover:text-blue-400"
             >
               Clear filters
             </button>
@@ -238,9 +238,9 @@ export default function NewsPage() {
       </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between border-t border-emerald-900/20 px-2 py-2">
+      <div className="flex items-center justify-between border-t border-blue-900/20 px-2 py-2">
         <span className="font-mono text-[10px] text-zinc-600">
-          Source: NAAMSA / Cars.co.za / TransUnion / DoE / Visio Auto Intelligence
+          Source: NAAMSA / Cars.co.za / TransUnion / DoE / Visio Lead Gen Intelligence
         </span>
         <span className="font-mono text-[10px] text-zinc-600">
           Last updated: {new Date().toLocaleDateString("en-ZA")}

@@ -3,7 +3,7 @@ import PaperLayout from "@/components/papers/PaperLayout";
 export const metadata = {
   title: "How We Find Buyers — Safely | VRL-AUTO-002 | Visio Research Labs",
   description:
-    "Visio Auto's complete methodology for ethical signal mining, POPIA compliance, and people-first data practices. Published by Visio Research Labs.",
+    "Visio Lead Gen's complete methodology for ethical signal mining, POPIA compliance, and people-first data practices. Published by Visio Research Labs.",
 };
 
 export default function SecurityPaperPage() {
@@ -20,7 +20,7 @@ export default function SecurityPaperPage() {
       <div className="callout">
         <span className="callout-label">Abstract</span>
         <p className="text-[15px] leading-relaxed text-white/65 italic m-0">
-          Visio Auto operates an AI-powered lead generation platform for South African car dealerships.
+          Visio Lead Gen operates an AI-powered lead generation platform for South African car dealerships.
           Our agents identify high-intent vehicle buyers by connecting publicly available signals
           across financial, corporate, lifecycle, behavioural, and social data sources. This paper
           documents our complete methodology, our POPIA compliance framework, our technical safeguards,
@@ -53,7 +53,7 @@ export default function SecurityPaperPage() {
       <h2>2. What we are, and what we are not</h2>
 
       <p>
-        Visio Auto is an AI agent platform. We deploy autonomous agents that monitor public data
+        Visio Lead Gen is an AI agent platform. We deploy autonomous agents that monitor public data
         sources for signals indicating that a person or business is likely to purchase a vehicle in
         the near future. When we identify a high-intent prospect, we deliver that prospect to a
         dealership partner along with full context, suggested approach, and the legal basis for the
@@ -88,7 +88,7 @@ export default function SecurityPaperPage() {
 
       <p>
         POPIA applies to the processing of personal information by a Responsible Party in South Africa.
-        Visio Auto is a Responsible Party. Our processing must therefore meet POPIA&apos;s eight
+        Visio Lead Gen is a Responsible Party. Our processing must therefore meet POPIA&apos;s eight
         conditions for lawful processing, plus the additional requirements for direct marketing,
         special personal information, and automated decision-making.
       </p>
@@ -105,7 +105,7 @@ export default function SecurityPaperPage() {
           <tr>
             <th>#</th>
             <th>Condition</th>
-            <th>How Visio Auto complies</th>
+            <th>How Visio Lead Gen complies</th>
           </tr>
         </thead>
         <tbody>
@@ -155,7 +155,7 @@ export default function SecurityPaperPage() {
       <h4>3.2 Lawful basis under Section 11</h4>
 
       <p>
-        POPIA Section 11 sets out the lawful bases for processing. Visio Auto&apos;s primary lawful
+        POPIA Section 11 sets out the lawful bases for processing. Visio Lead Gen&apos;s primary lawful
         basis is <strong>Section 11(1)(f) &mdash; the legitimate interests of the responsible party
         or of a third party to whom the information is supplied</strong>. This is the same lawful
         basis used by Bloomberg, Crunchbase, ZoomInfo, and other research-driven business
@@ -178,7 +178,7 @@ export default function SecurityPaperPage() {
       <p>
         POPIA Section 69 governs unsolicited electronic communications for direct marketing purposes.
         It requires either prior consent (opt-in) or, for existing customers, a clear opt-out
-        mechanism. Visio Auto&apos;s practice is to operate under Section 69(3)(c) where the data
+        mechanism. Visio Lead Gen&apos;s practice is to operate under Section 69(3)(c) where the data
         subject is contacted by a dealership partner with whom they have a pre-existing or contextual
         relationship (e.g., a customer whose vehicle finance is expiring with the same dealership
         group), and to require explicit opt-in consent for all other outreach.
@@ -198,7 +198,7 @@ export default function SecurityPaperPage() {
       <h2>4. The signal sources we use</h2>
 
       <p>
-        Every signal Visio Auto processes comes from one of the following categories of public,
+        Every signal Visio Lead Gen processes comes from one of the following categories of public,
         legally accessible data. We disclose this in detail because transparency is the only way
         trust survives scrutiny.
       </p>
@@ -245,7 +245,7 @@ export default function SecurityPaperPage() {
       <h4>4.6 What we do not access</h4>
 
       <p>
-        For absolute clarity, the following sources are <strong>never</strong> used by Visio Auto
+        For absolute clarity, the following sources are <strong>never</strong> used by Visio Lead Gen
         under any circumstances:
       </p>
 
@@ -383,7 +383,7 @@ export default function SecurityPaperPage() {
       <h2>8. Information Officer</h2>
 
       <p>
-        Visio Auto&apos;s designated Information Officer is registered with the Information Regulator
+        Visio Lead Gen&apos;s designated Information Officer is registered with the Information Regulator
         and can be contacted at:
       </p>
 
@@ -424,7 +424,7 @@ export default function SecurityPaperPage() {
       </p>
 
       <p>
-        Visio Auto operates well within the lawful envelope of POPIA. We publish this paper so that
+        Visio Lead Gen operates well within the lawful envelope of POPIA. We publish this paper so that
         every dealer partner, every legal counsel, and every regulator can verify that for
         themselves.
       </p>

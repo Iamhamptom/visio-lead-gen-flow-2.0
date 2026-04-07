@@ -65,10 +65,10 @@ function statusBadge(status: string) {
   const styles: Record<string, string> = {
     new: "bg-zinc-500/10 text-zinc-400 ring-zinc-500/20",
     contacted: "bg-blue-500/10 text-blue-400 ring-blue-500/20",
-    qualified: "bg-emerald-500/10 text-emerald-400 ring-emerald-500/20",
+    qualified: "bg-blue-500/10 text-blue-400 ring-blue-500/20",
     test_drive_booked: "bg-purple-500/10 text-purple-400 ring-purple-500/20",
     negotiating: "bg-amber-500/10 text-amber-400 ring-amber-500/20",
-    sold: "bg-emerald-500/10 text-emerald-300 ring-emerald-500/20",
+    sold: "bg-blue-500/10 text-blue-300 ring-blue-500/20",
   };
   const labels: Record<string, string> = {
     new: "New",
@@ -147,7 +147,7 @@ export function LeadTable({ leads, loading }: LeadTableProps) {
         animate={{ rotate: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        <ArrowUp className="ml-1 h-3 w-3 text-emerald-400" />
+        <ArrowUp className="ml-1 h-3 w-3 text-blue-400" />
       </motion.span>
     ) : (
       <motion.span
@@ -156,7 +156,7 @@ export function LeadTable({ leads, loading }: LeadTableProps) {
         animate={{ rotate: 0, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
-        <ArrowDown className="ml-1 h-3 w-3 text-emerald-400" />
+        <ArrowDown className="ml-1 h-3 w-3 text-blue-400" />
       </motion.span>
     );
   }
@@ -223,7 +223,7 @@ export function LeadTable({ leads, loading }: LeadTableProps) {
                 <TableCell className="font-medium text-zinc-200">
                   <Link
                     href={`/dashboard/leads/${lead.id}`}
-                    className="transition-colors hover:text-emerald-400"
+                    className="transition-colors hover:text-blue-400"
                   >
                     {lead.name}
                   </Link>
@@ -246,21 +246,21 @@ export function LeadTable({ leads, loading }: LeadTableProps) {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 text-zinc-500 hover:text-emerald-400"
+                      className="h-7 w-7 text-zinc-500 hover:text-blue-400"
                     >
                       <Phone className="h-3.5 w-3.5" />
                     </Button>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 text-zinc-500 hover:text-emerald-400"
+                      className="h-7 w-7 text-zinc-500 hover:text-blue-400"
                     >
                       <MessageCircle className="h-3.5 w-3.5" />
                     </Button>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 text-zinc-500 hover:text-emerald-400"
+                      className="h-7 w-7 text-zinc-500 hover:text-blue-400"
                     >
                       <Eye className="h-3.5 w-3.5" />
                     </Button>

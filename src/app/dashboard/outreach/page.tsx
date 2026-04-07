@@ -110,7 +110,7 @@ const CAMPAIGN_HISTORY: QueueItem[] = [
 // ---------------------------------------------------------------------------
 
 const OUTREACH_KPIS = [
-  { label: "Campaigns Sent", value: "47", icon: Send, color: "text-emerald-400", bg: "bg-emerald-400/10" },
+  { label: "Campaigns Sent", value: "47", icon: Send, color: "text-blue-400", bg: "bg-blue-400/10" },
   { label: "Open Rate", value: "62%", icon: MailOpen, color: "text-blue-400", bg: "bg-blue-400/10" },
   { label: "Reply Rate", value: "18%", icon: Reply, color: "text-purple-400", bg: "bg-purple-400/10" },
   { label: "Dealers Reached", value: "23", icon: Users, color: "text-amber-400", bg: "bg-amber-400/10" },
@@ -230,7 +230,7 @@ export default function OutreachDashboard() {
     const styles: Record<string, string> = {
       pending: "bg-zinc-500/10 text-zinc-400",
       sent: "bg-blue-500/10 text-blue-400",
-      opened: "bg-emerald-500/10 text-emerald-400",
+      opened: "bg-blue-500/10 text-blue-400",
       replied: "bg-purple-500/10 text-purple-400",
     };
     return (
@@ -263,7 +263,7 @@ export default function OutreachDashboard() {
             Claude-powered personalized dealer outreach — emails, LinkedIn DMs, WhatsApp campaigns
           </p>
         </div>
-        <Badge className="bg-emerald-500/10 text-emerald-400 ring-emerald-500/20 hover:bg-emerald-500/10">
+        <Badge className="bg-blue-500/10 text-blue-400 ring-blue-500/20 hover:bg-blue-500/10">
           <Sparkles className="mr-1 h-3 w-3" />
           AI Powered
         </Badge>
@@ -291,13 +291,13 @@ export default function OutreachDashboard() {
       {/* Main content */}
       <Tabs defaultValue="create" className="space-y-4">
         <TabsList className="bg-zinc-900 border border-zinc-800/50">
-          <TabsTrigger value="create" className="data-[state=active]:bg-emerald-500/10 data-[state=active]:text-emerald-400">
+          <TabsTrigger value="create" className="data-[state=active]:bg-blue-500/10 data-[state=active]:text-blue-400">
             Campaign Creator
           </TabsTrigger>
-          <TabsTrigger value="queue" className="data-[state=active]:bg-emerald-500/10 data-[state=active]:text-emerald-400">
+          <TabsTrigger value="queue" className="data-[state=active]:bg-blue-500/10 data-[state=active]:text-blue-400">
             Queue ({queue.filter((q) => q.status === "pending").length})
           </TabsTrigger>
-          <TabsTrigger value="history" className="data-[state=active]:bg-emerald-500/10 data-[state=active]:text-emerald-400">
+          <TabsTrigger value="history" className="data-[state=active]:bg-blue-500/10 data-[state=active]:text-blue-400">
             History
           </TabsTrigger>
         </TabsList>
@@ -312,7 +312,7 @@ export default function OutreachDashboard() {
                   <span>Select Dealers</span>
                   <button
                     onClick={toggleAll}
-                    className="text-xs font-normal text-emerald-400 hover:text-emerald-300"
+                    className="text-xs font-normal text-blue-400 hover:text-blue-300"
                   >
                     {selectedDealers.length === DEALERS.length ? "Deselect All" : "Select All"}
                   </button>
@@ -329,21 +329,21 @@ export default function OutreachDashboard() {
                         onClick={() => toggleDealer(dealer.id)}
                         className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm transition-colors ${
                           selected
-                            ? "bg-emerald-500/10 ring-1 ring-emerald-500/20"
+                            ? "bg-blue-500/10 ring-1 ring-blue-500/20"
                             : "hover:bg-zinc-800/50"
                         }`}
                       >
                         <div
                           className={`flex h-4 w-4 shrink-0 items-center justify-center rounded border ${
                             selected
-                              ? "border-emerald-500 bg-emerald-500"
+                              ? "border-blue-500 bg-blue-500"
                               : "border-zinc-700"
                           }`}
                         >
                           {selected && <Check className="h-3 w-3 text-white" />}
                         </div>
                         <div className="min-w-0 flex-1">
-                          <p className={`truncate font-medium ${selected ? "text-emerald-400" : "text-zinc-300"}`}>
+                          <p className={`truncate font-medium ${selected ? "text-blue-400" : "text-zinc-300"}`}>
                             {dealer.name}
                           </p>
                           <p className="truncate text-xs text-zinc-500">
@@ -384,7 +384,7 @@ export default function OutreachDashboard() {
                 <Button
                   onClick={handleGenerate}
                   disabled={selectedDealers.length === 0 || generating}
-                  className="w-full bg-emerald-600 text-white hover:bg-emerald-500 disabled:opacity-50"
+                  className="w-full bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-50"
                 >
                   {generating ? (
                     <>
@@ -420,7 +420,7 @@ export default function OutreachDashboard() {
                       className="text-zinc-400 hover:text-white"
                     >
                       {copied ? (
-                        <Check className="mr-1 h-3 w-3 text-emerald-400" />
+                        <Check className="mr-1 h-3 w-3 text-blue-400" />
                       ) : (
                         <Copy className="mr-1 h-3 w-3" />
                       )}
@@ -443,7 +443,7 @@ export default function OutreachDashboard() {
 
                 {generating && (
                   <div className="flex flex-col items-center justify-center py-16 text-center">
-                    <Loader2 className="h-8 w-8 animate-spin text-emerald-400" />
+                    <Loader2 className="h-8 w-8 animate-spin text-blue-400" />
                     <p className="mt-3 text-sm text-zinc-400">
                       Claude is writing personalised outreach...
                     </p>
@@ -487,7 +487,7 @@ export default function OutreachDashboard() {
                             className="rounded-lg border border-zinc-800 bg-zinc-950 p-3"
                           >
                             <div className="mb-1.5 flex items-center gap-2">
-                              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/20 text-xs font-bold text-emerald-400">
+                              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-blue-500/20 text-xs font-bold text-blue-400">
                                 {msg.step}
                               </span>
                               <span className="text-xs font-medium text-zinc-400">
@@ -521,7 +521,7 @@ export default function OutreachDashboard() {
                             <ul className="mt-1 space-y-1">
                               {generatedContent.signals.map((s, i) => (
                                 <li key={i} className="flex items-start gap-2 text-sm text-zinc-300">
-                                  <Zap className="mt-0.5 h-3 w-3 shrink-0 text-emerald-400" />
+                                  <Zap className="mt-0.5 h-3 w-3 shrink-0 text-blue-400" />
                                   {s}
                                 </li>
                               ))}

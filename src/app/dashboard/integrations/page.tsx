@@ -278,7 +278,7 @@ export default function IntegrationsPage() {
         <div>
           <h1 className="text-xl font-semibold text-white">Integrations</h1>
           <p className="text-sm text-zinc-400 mt-1">
-            Connect Visio Auto to VisioCorp platforms and third-party services
+            Connect Visio Lead Gen to VisioCorp platforms and third-party services
           </p>
         </div>
         <Button
@@ -358,7 +358,7 @@ function IntegrationCard({
   const statusColor = integration.loading
     ? "text-zinc-500"
     : integration.connected
-      ? "text-emerald-400"
+      ? "text-blue-400"
       : integration.configured
         ? "text-amber-400"
         : "text-zinc-500"
@@ -404,7 +404,7 @@ function IntegrationCard({
             {integration.loading ? (
               <Loader2 className="h-3.5 w-3.5 animate-spin text-zinc-500" />
             ) : integration.connected ? (
-              <CheckCircle className="h-3.5 w-3.5 text-emerald-400" />
+              <CheckCircle className="h-3.5 w-3.5 text-blue-400" />
             ) : (
               <XCircle className={`h-3.5 w-3.5 ${statusColor}`} />
             )}
@@ -416,7 +416,7 @@ function IntegrationCard({
             variant={statusBadgeVariant}
             className={
               integration.connected
-                ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                ? "bg-blue-500/10 text-blue-400 border-blue-500/20"
                 : integration.configured
                   ? "bg-amber-500/10 text-amber-400 border-amber-500/20"
                   : "bg-zinc-800 text-zinc-500 border-zinc-700"

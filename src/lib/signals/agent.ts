@@ -1,7 +1,7 @@
 /**
  * Signal Intelligence Agent
  *
- * The AI brain of Visio Auto's signal engine. Uses Gemini 2.5 Flash
+ * The AI brain of Visio Lead Gen's signal engine. Uses Gemini 2.5 Flash
  * to enrich raw signals, route them to dealers, classify urgency,
  * and generate intelligence briefs.
  */

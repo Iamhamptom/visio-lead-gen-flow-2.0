@@ -163,7 +163,7 @@ export default function ClientPortal({
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center bg-zinc-950">
-        <Loader2 className="h-8 w-8 animate-spin text-emerald-400" />
+        <Loader2 className="h-8 w-8 animate-spin text-blue-400" />
       </div>
     );
   }
@@ -180,7 +180,7 @@ export default function ClientPortal({
 
   const tierColors: Record<string, string> = {
     starter: "bg-zinc-500/10 text-zinc-400 ring-zinc-500/20",
-    growth: "bg-emerald-500/10 text-emerald-400 ring-emerald-500/20",
+    growth: "bg-blue-500/10 text-blue-400 ring-blue-500/20",
     pro: "bg-purple-500/10 text-purple-400 ring-purple-500/20",
     enterprise: "bg-amber-500/10 text-amber-400 ring-amber-500/20",
   };
@@ -199,7 +199,7 @@ export default function ClientPortal({
       <header className="border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-4 w-4 text-white" />
             </div>
             <div>
@@ -236,7 +236,7 @@ export default function ClientPortal({
                 }}
                 className={`flex items-center gap-1.5 px-3 py-2 text-sm font-medium border-b-2 transition-colors ${
                   activeTab === tab.key
-                    ? "border-emerald-400 text-emerald-400"
+                    ? "border-blue-400 text-blue-400"
                     : "border-transparent text-zinc-500 hover:text-zinc-300"
                 }`}
               >
@@ -258,10 +258,10 @@ export default function ClientPortal({
               {[
                 { label: "Leads This Month", value: roi.leads_delivered, icon: Users, color: "text-blue-400", bg: "bg-blue-400/10" },
                 { label: "Hot Leads", value: roi.hot_leads, icon: Flame, color: "text-red-400", bg: "bg-red-400/10" },
-                { label: "Test Drives", value: roi.test_drives, icon: Car, color: "text-emerald-400", bg: "bg-emerald-400/10" },
+                { label: "Test Drives", value: roi.test_drives, icon: Car, color: "text-blue-400", bg: "bg-blue-400/10" },
                 { label: "Sales Closed", value: roi.sales_closed, icon: DollarSign, color: "text-amber-400", bg: "bg-amber-400/10" },
-                { label: "Revenue", value: `R${(roi.total_revenue / 1000).toFixed(0)}K`, icon: TrendingUp, color: "text-emerald-400", bg: "bg-emerald-400/10" },
-                { label: "ROI", value: `${roi.roi_multiple}x`, icon: TrendingUp, color: "text-emerald-400", bg: "bg-emerald-400/10" },
+                { label: "Revenue", value: `R${(roi.total_revenue / 1000).toFixed(0)}K`, icon: TrendingUp, color: "text-blue-400", bg: "bg-blue-400/10" },
+                { label: "ROI", value: `${roi.roi_multiple}x`, icon: TrendingUp, color: "text-blue-400", bg: "bg-blue-400/10" },
               ].map((kpi) => (
                 <div key={kpi.label} className="rounded-xl border border-zinc-800/50 bg-zinc-900/50 p-4">
                   <div className="flex items-center gap-2">
@@ -279,7 +279,7 @@ export default function ClientPortal({
             <div className="rounded-xl border border-zinc-800/50 bg-zinc-900/50 p-5">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-sm font-semibold text-white">Recent Leads</h2>
-                <button onClick={() => setActiveTab("leads")} className="text-xs text-emerald-400 hover:underline flex items-center gap-1">
+                <button onClick={() => setActiveTab("leads")} className="text-xs text-blue-400 hover:underline flex items-center gap-1">
                   View All <ArrowUpRight className="h-3 w-3" />
                 </button>
               </div>
@@ -305,19 +305,19 @@ export default function ClientPortal({
 
             {/* Upgrade CTA */}
             {dealer.tier !== "enterprise" && dealer.tier !== "pro" && (
-              <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-5">
+              <div className="rounded-xl border border-blue-500/20 bg-blue-500/5 p-5">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10">
-                    <TrendingUp className="h-5 w-5 text-emerald-400" />
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10">
+                    <TrendingUp className="h-5 w-5 text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-emerald-300">Upgrade to Growth for R15K/month</h3>
+                    <h3 className="text-sm font-semibold text-blue-300">Upgrade to Growth for R15K/month</h3>
                     <p className="mt-1 text-xs text-zinc-400">
                       Unlock voice AI calling, marketplace integration, priority lead routing, and dedicated account manager.
                     </p>
                     <a
                       href="mailto:sales@visioauto.co.za?subject=Upgrade%20to%20Growth%20Plan"
-                      className="mt-3 inline-flex items-center gap-1 rounded-lg bg-emerald-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-emerald-600 transition-colors"
+                      className="mt-3 inline-flex items-center gap-1 rounded-lg bg-blue-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-600 transition-colors"
                     >
                       Contact Sales <ExternalLink className="h-3 w-3" />
                     </a>
@@ -340,7 +340,7 @@ export default function ClientPortal({
             </div>
             <Link
               href={`/client/${dealer_id}/leads`}
-              className="inline-flex items-center gap-1 text-xs text-emerald-400 hover:underline"
+              className="inline-flex items-center gap-1 text-xs text-blue-400 hover:underline"
             >
               Open full lead management <ArrowUpRight className="h-3 w-3" />
             </Link>
@@ -390,13 +390,13 @@ export default function ClientPortal({
             <h2 className="text-sm font-semibold text-white">Recent Signals</h2>
             {signals.map((sig) => (
               <div key={sig.id} className="flex items-start gap-3 rounded-xl border border-zinc-800/50 bg-zinc-900/50 p-4">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-emerald-400/10">
-                  <Zap className="h-4 w-4 text-emerald-400" />
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-400/10">
+                  <Zap className="h-4 w-4 text-blue-400" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm text-zinc-300">{sig.title}</p>
                   <div className="mt-1 flex items-center gap-3 text-xs">
-                    <span className="font-mono text-emerald-400">{Math.round(sig.buying_probability * 100)}%</span>
+                    <span className="font-mono text-blue-400">{Math.round(sig.buying_probability * 100)}%</span>
                     <span className="text-zinc-600">buy probability</span>
                     <span className="text-zinc-600 capitalize">{sig.signal_type.replace(/_/g, " ")}</span>
                   </div>
@@ -422,7 +422,7 @@ export default function ClientPortal({
               />
             ) : (
               <div className="flex items-center justify-center py-12">
-                <Loader2 className="h-6 w-6 animate-spin text-emerald-400" />
+                <Loader2 className="h-6 w-6 animate-spin text-blue-400" />
               </div>
             )}
           </div>
@@ -443,8 +443,8 @@ export default function ClientPortal({
                     <p className="text-sm font-medium text-zinc-200">{pref.label}</p>
                     <p className="text-xs text-zinc-500">{pref.desc}</p>
                   </div>
-                  <div className="h-5 w-9 rounded-full bg-emerald-500/20 relative cursor-pointer">
-                    <div className="absolute right-0.5 top-0.5 h-4 w-4 rounded-full bg-emerald-400 transition-transform" />
+                  <div className="h-5 w-9 rounded-full bg-blue-500/20 relative cursor-pointer">
+                    <div className="absolute right-0.5 top-0.5 h-4 w-4 rounded-full bg-blue-400 transition-transform" />
                   </div>
                 </div>
               ))}
@@ -455,11 +455,11 @@ export default function ClientPortal({
               <input
                 type="url"
                 placeholder="https://your-crm.com/webhook/visio"
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800/50 px-3 py-2 text-sm text-zinc-200 placeholder:text-zinc-600 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500/30"
+                className="w-full rounded-lg border border-zinc-700 bg-zinc-800/50 px-3 py-2 text-sm text-zinc-200 placeholder:text-zinc-600 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30"
               />
             </div>
             <p className="text-xs text-zinc-600">
-              Contact <a href="mailto:support@visioauto.co.za" className="text-emerald-400 hover:underline">support@visioauto.co.za</a> to update your settings.
+              Contact <a href="mailto:support@visioauto.co.za" className="text-blue-400 hover:underline">support@visioauto.co.za</a> to update your settings.
             </p>
           </div>
         )}

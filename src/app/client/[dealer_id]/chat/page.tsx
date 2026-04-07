@@ -50,7 +50,7 @@ function renderInline(text: string): React.ReactNode {
     else if (m.startsWith("*") && m.endsWith("*"))
       parts.push(<em key={match.index}>{m.slice(1, -1)}</em>);
     else if (m.startsWith("`") && m.endsWith("`"))
-      parts.push(<code key={match.index} className="rounded bg-zinc-800 px-1 py-0.5 text-xs text-emerald-400">{m.slice(1, -1)}</code>);
+      parts.push(<code key={match.index} className="rounded bg-zinc-800 px-1 py-0.5 text-xs text-blue-400">{m.slice(1, -1)}</code>);
     lastIndex = match.index + m.length;
   }
   if (lastIndex < text.length) parts.push(text.slice(lastIndex));
@@ -70,7 +70,7 @@ function TextBlock({ text }: { text: string }) {
         if (trimmed.startsWith("# "))
           return <h1 key={li} className="mt-4 mb-2 text-xl font-bold text-white">{renderInline(trimmed.slice(2))}</h1>;
         if (trimmed.startsWith("- "))
-          return <div key={li} className="ml-1 flex gap-2"><span className="text-emerald-500">&#x2022;</span><span>{renderInline(trimmed.slice(2))}</span></div>;
+          return <div key={li} className="ml-1 flex gap-2"><span className="text-blue-500">&#x2022;</span><span>{renderInline(trimmed.slice(2))}</span></div>;
         if (!trimmed) return <br key={li} />;
         return <p key={li}>{renderInline(line)}</p>;
       })}
@@ -92,9 +92,9 @@ function MessageContent({ parts }: { parts: Array<{ type: string; text?: string;
           return (
             <div key={i} className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-xs">
               {isRunning ? (
-                <Loader2 className="h-3 w-3 animate-spin text-emerald-400" />
+                <Loader2 className="h-3 w-3 animate-spin text-blue-400" />
               ) : (
-                <span className="text-emerald-400">&#x2714;</span>
+                <span className="text-blue-400">&#x2714;</span>
               )}
               <span className="text-zinc-400">{isRunning ? "Running" : "Used"}: </span>
               <span className="text-zinc-300">{toolName}</span>
@@ -166,8 +166,8 @@ export default function DealerChatPage({
         >
           <ArrowLeft className="h-4 w-4" />
         </Link>
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20">
-          <Bot className="h-4 w-4 text-emerald-400" />
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20">
+          <Bot className="h-4 w-4 text-blue-400" />
         </div>
         <div>
           <h1 className="text-sm font-semibold text-white">
@@ -188,9 +188,9 @@ export default function DealerChatPage({
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/10 ring-1 ring-emerald-500/20"
+              className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 ring-1 ring-blue-500/20"
             >
-              <Bot className="h-7 w-7 text-emerald-400" />
+              <Bot className="h-7 w-7 text-blue-400" />
             </motion.div>
             <h2 className="mb-2 text-base font-semibold text-white">
               {dealer?.name ? `Welcome, ${dealer.name}` : "AI Assistant"}
@@ -207,7 +207,7 @@ export default function DealerChatPage({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 + i * 0.05 }}
                   onClick={() => handleSubmit(action.label)}
-                  className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left text-sm text-zinc-400 transition-colors hover:border-emerald-500/30 hover:text-zinc-200"
+                  className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left text-sm text-zinc-400 transition-colors hover:border-blue-500/30 hover:text-zinc-200"
                 >
                   <span>{action.icon}</span>
                   <span>{action.label}</span>
@@ -229,8 +229,8 @@ export default function DealerChatPage({
                   )}
                 >
                   {message.role === "assistant" && (
-                    <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20">
-                      <Bot className="h-4 w-4 text-emerald-400" />
+                    <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20">
+                      <Bot className="h-4 w-4 text-blue-400" />
                     </div>
                   )}
                   <div
@@ -254,11 +254,11 @@ export default function DealerChatPage({
 
             {isLoading && (
               <div className="flex gap-3">
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20">
-                  <Bot className="h-4 w-4 text-emerald-400" />
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20">
+                  <Bot className="h-4 w-4 text-blue-400" />
                 </div>
                 <div className="flex items-center gap-1.5 rounded-xl bg-zinc-900 px-4 py-3 ring-1 ring-zinc-800/50">
-                  <Loader2 className="h-3.5 w-3.5 animate-spin text-emerald-400" />
+                  <Loader2 className="h-3.5 w-3.5 animate-spin text-blue-400" />
                   <span className="text-xs text-zinc-500">Thinking...</span>
                 </div>
               </div>
@@ -287,13 +287,13 @@ export default function DealerChatPage({
             }}
             placeholder="Ask about your leads, market, or performance..."
             disabled={isLoading}
-            className="flex-1 rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-emerald-500/50 focus:outline-none focus:ring-1 focus:ring-emerald-500/20 disabled:opacity-50"
+            className="flex-1 rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-blue-500/50 focus:outline-none focus:ring-1 focus:ring-blue-500/20 disabled:opacity-50"
           />
           <Button
             type="submit"
             size="icon"
             disabled={isLoading || !input.trim()}
-            className="h-11 w-11 shrink-0 rounded-xl bg-emerald-600 text-white hover:bg-emerald-500 disabled:opacity-30"
+            className="h-11 w-11 shrink-0 rounded-xl bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-30"
           >
             {isLoading ? (
               <Loader2 className="h-4 w-4 animate-spin" />

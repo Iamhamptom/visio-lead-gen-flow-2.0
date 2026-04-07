@@ -2,7 +2,7 @@ import type { Lead } from '@/lib/types'
 
 // ---------------------------------------------------------------------------
 // Visio Workspace Integration
-// Reports Visio Auto analytics to the chairman's operating system
+// Reports Visio Lead Gen analytics to the chairman's operating system
 // Workspace: https://visioworkspace-corpo1.vercel.app
 // ---------------------------------------------------------------------------
 
@@ -80,7 +80,7 @@ async function workspaceRequest<T>(
 }
 
 // ---------------------------------------------------------------------------
-// reportToWorkspace — push Visio Auto analytics to Workspace
+// reportToWorkspace — push Visio Lead Gen analytics to Workspace
 // ---------------------------------------------------------------------------
 
 export async function reportToWorkspace(
@@ -92,7 +92,7 @@ export async function reportToWorkspace(
     {
       method: 'POST',
       body: JSON.stringify({
-        command: `Product report for Visio Auto: ${JSON.stringify(analytics.metrics)}`,
+        command: `Product report for Visio Lead Gen: ${JSON.stringify(analytics.metrics)}`,
         organization_id: null,
         metadata: {
           type: 'product_report',

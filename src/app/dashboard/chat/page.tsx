@@ -49,7 +49,7 @@ function TextBlock({ text }: { text: string }) {
           return <h1 key={li} className="mt-4 mb-2 text-xl font-bold text-white">{renderInline(trimmed.slice(2))}</h1>;
         // Bullet points
         if (trimmed.startsWith("- "))
-          return <div key={li} className="ml-1 flex gap-2"><span className="text-emerald-500">&#x2022;</span><span>{renderInline(trimmed.slice(2))}</span></div>;
+          return <div key={li} className="ml-1 flex gap-2"><span className="text-blue-500">&#x2022;</span><span>{renderInline(trimmed.slice(2))}</span></div>;
         // Empty line
         if (!trimmed) return <br key={li} />;
         // Normal text
@@ -76,7 +76,7 @@ function renderInline(text: string): React.ReactNode {
     } else if (m.startsWith("*") && m.endsWith("*")) {
       parts.push(<em key={match.index}>{m.slice(1, -1)}</em>);
     } else if (m.startsWith("`") && m.endsWith("`")) {
-      parts.push(<code key={match.index} className="rounded bg-zinc-800 px-1 py-0.5 text-xs text-emerald-400">{m.slice(1, -1)}</code>);
+      parts.push(<code key={match.index} className="rounded bg-zinc-800 px-1 py-0.5 text-xs text-blue-400">{m.slice(1, -1)}</code>);
     }
     lastIndex = match.index + m.length;
   }
@@ -108,9 +108,9 @@ function MessageContent({ parts }: { parts: Array<{ type: string; text?: string;
               className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-2 text-xs"
             >
               {isRunning ? (
-                <Loader2 className="h-3 w-3 animate-spin text-emerald-400" />
+                <Loader2 className="h-3 w-3 animate-spin text-blue-400" />
               ) : (
-                <Wrench className="h-3 w-3 text-emerald-400" />
+                <Wrench className="h-3 w-3 text-blue-400" />
               )}
               <span className="font-medium text-zinc-400">
                 {isRunning ? "Running" : "Used"}:{" "}
@@ -193,24 +193,24 @@ export default function ChatPage() {
     <div className="flex h-[calc(100vh-3.5rem)] flex-col">
       {/* Header */}
       <div className="flex items-center gap-3 border-b border-zinc-800/50 px-4 py-3 lg:px-6">
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20">
-          <Bot className="h-5 w-5 text-emerald-400" />
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20">
+          <Bot className="h-5 w-5 text-blue-400" />
         </div>
         <div>
           <h1 className="text-sm font-semibold text-white">
-            Visio Auto AI Agent
+            Visio Lead Gen AI Agent
           </h1>
           <p className="text-[11px] text-zinc-500">
             22 tools &middot; Claude Sonnet 4.6 &middot;{" "}
             {isLoading ? (
-              <span className="text-emerald-400">Thinking...</span>
+              <span className="text-blue-400">Thinking...</span>
             ) : (
               <span className="text-zinc-500">Ready</span>
             )}
           </p>
         </div>
         <div className="ml-auto">
-          <Sparkles className="h-4 w-4 text-emerald-500/40" />
+          <Sparkles className="h-4 w-4 text-blue-500/40" />
         </div>
       </div>
 
@@ -236,8 +236,8 @@ export default function ChatPage() {
                   )}
                 >
                   {message.role === "assistant" && (
-                    <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20">
-                      <Bot className="h-4 w-4 text-emerald-400" />
+                    <div className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20">
+                      <Bot className="h-4 w-4 text-blue-400" />
                     </div>
                   )}
 
@@ -268,24 +268,24 @@ export default function ChatPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="flex gap-3"
               >
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 ring-1 ring-emerald-500/20">
-                  <Bot className="h-4 w-4 text-emerald-400" />
+                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 ring-1 ring-blue-500/20">
+                  <Bot className="h-4 w-4 text-blue-400" />
                 </div>
                 <div className="flex items-center gap-1.5 rounded-xl bg-zinc-900 px-4 py-3 ring-1 ring-zinc-800/50">
                   <motion.div
                     animate={{ opacity: [0.3, 1, 0.3] }}
                     transition={{ duration: 1.2, repeat: Infinity, delay: 0 }}
-                    className="h-1.5 w-1.5 rounded-full bg-emerald-400"
+                    className="h-1.5 w-1.5 rounded-full bg-blue-400"
                   />
                   <motion.div
                     animate={{ opacity: [0.3, 1, 0.3] }}
                     transition={{ duration: 1.2, repeat: Infinity, delay: 0.2 }}
-                    className="h-1.5 w-1.5 rounded-full bg-emerald-400"
+                    className="h-1.5 w-1.5 rounded-full bg-blue-400"
                   />
                   <motion.div
                     animate={{ opacity: [0.3, 1, 0.3] }}
                     transition={{ duration: 1.2, repeat: Infinity, delay: 0.4 }}
-                    className="h-1.5 w-1.5 rounded-full bg-emerald-400"
+                    className="h-1.5 w-1.5 rounded-full bg-blue-400"
                   />
                 </div>
               </motion.div>
@@ -331,14 +331,14 @@ export default function ChatPage() {
               placeholder="Ask about leads, signals, market data, dealers..."
               disabled={isLoading}
               rows={1}
-              className="w-full resize-none rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 pr-12 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-emerald-500/50 focus:outline-none focus:ring-1 focus:ring-emerald-500/20 disabled:opacity-50"
+              className="w-full resize-none rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 pr-12 text-sm text-zinc-100 placeholder:text-zinc-600 focus:border-blue-500/50 focus:outline-none focus:ring-1 focus:ring-blue-500/20 disabled:opacity-50"
             />
           </div>
           <Button
             type="submit"
             size="icon"
             disabled={isLoading || !input.trim()}
-            className="h-11 w-11 shrink-0 rounded-xl bg-emerald-600 text-white hover:bg-emerald-500 disabled:opacity-30"
+            className="h-11 w-11 shrink-0 rounded-xl bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-30"
           >
             {isLoading ? (
               <Loader2 className="h-4 w-4 animate-spin" />
@@ -348,7 +348,7 @@ export default function ChatPage() {
           </Button>
         </form>
         <p className="mx-auto mt-2 max-w-3xl text-center text-[10px] text-zinc-600">
-          Visio Auto AI uses Claude Sonnet 4.6. Responses are based on live
+          Visio Lead Gen AI uses Claude Sonnet 4.6. Responses are based on live
           platform data.
         </p>
       </div>
@@ -367,9 +367,9 @@ function EmptyState({ onAction }: { onAction: (text: string) => void }) {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ type: "spring", stiffness: 200, damping: 15 }}
-        className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500/10 ring-1 ring-emerald-500/20"
+        className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-500/10 ring-1 ring-blue-500/20"
       >
-        <Bot className="h-8 w-8 text-emerald-400" />
+        <Bot className="h-8 w-8 text-blue-400" />
       </motion.div>
 
       <motion.h2
@@ -378,7 +378,7 @@ function EmptyState({ onAction }: { onAction: (text: string) => void }) {
         transition={{ delay: 0.1 }}
         className="mb-2 text-lg font-semibold text-white"
       >
-        Visio Auto AI Agent
+        Visio Lead Gen AI Agent
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 10 }}
@@ -398,7 +398,7 @@ function EmptyState({ onAction }: { onAction: (text: string) => void }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + i * 0.05 }}
             onClick={() => onAction(action.label)}
-            className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left text-sm text-zinc-400 transition-colors hover:border-emerald-500/30 hover:bg-emerald-500/5 hover:text-zinc-200"
+            className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/50 px-4 py-3 text-left text-sm text-zinc-400 transition-colors hover:border-blue-500/30 hover:bg-blue-500/5 hover:text-zinc-200"
           >
             <span className="text-base">{action.icon}</span>
             <span>{action.label}</span>

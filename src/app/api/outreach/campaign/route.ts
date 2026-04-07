@@ -42,7 +42,7 @@ function generateColdIntro(dealer: DealerInfo) {
 
   const body = `Hi ${dealer.dealer_principal},
 
-I'm reaching out from Visio Auto — we're South Africa's first AI-powered lead generation platform built specifically for car dealerships.
+I'm reaching out from Visio Lead Gen — we're South Africa's first AI-powered lead generation platform built specifically for car dealerships.
 
 Here's what we do differently:
 • AI qualifies every lead before you see them (budget, timeline, trade-in, finance status)
@@ -56,7 +56,7 @@ Would you be open to a 15-minute demo this week?
 
 Best,
 David Hampton
-CEO, Visio Auto (VisioCorp)
+CEO, Visio Lead Gen (VisioCorp)
 +27 XX XXX XXXX
 
 P.S. While our AI works for your dealership, your team can enjoy Tony Duardo's latest hits — we're the same team behind SA's hottest music brand. 🎵`
@@ -70,7 +70,7 @@ function generateFollowUp(dealer: DealerInfo) {
 
   const body = `Hi ${dealer.dealer_principal},
 
-Just following up on my earlier email about Visio Auto.
+Just following up on my earlier email about Visio Lead Gen.
 
 Since then, our Signal Engine has flagged ${5 + Math.floor(Math.random() * 15)} potential ${brandStr} buyers in the ${dealer.area} area this week alone. These are people showing real buying signals — new jobs, lease expirations, business registrations — not just tyre kickers.
 
@@ -85,7 +85,7 @@ Right now these leads are going to your competitors. We can change that.
 
 Best,
 David Hampton
-CEO, Visio Auto (VisioCorp)
+CEO, Visio Lead Gen (VisioCorp)
 +27 XX XXX XXXX`
 
   return { subject, body }
@@ -122,13 +122,13 @@ Even at a conservative 5% conversion rate, you're looking at:
 • 5 sales × R35,000 profit = R175,000 revenue
 • That's still an 11.7x return on your R15,000 investment
 
-The question isn't whether you can afford Visio Auto — it's whether you can afford not to have it while your competitors do.
+The question isn't whether you can afford Visio Lead Gen — it's whether you can afford not to have it while your competitors do.
 
 Can I walk you through a live demo with real ${dealer.area} data this week?
 
 Best,
 David Hampton
-CEO, Visio Auto (VisioCorp)
+CEO, Visio Lead Gen (VisioCorp)
 +27 XX XXX XXXX`
 
   return { subject, body }

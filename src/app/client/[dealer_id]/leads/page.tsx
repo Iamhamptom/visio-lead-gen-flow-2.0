@@ -130,18 +130,18 @@ export default function ClientLeadManagement({
   const statusColors: Record<string, string> = {
     new: "bg-zinc-500/10 text-zinc-400",
     contacted: "bg-blue-500/10 text-blue-400",
-    qualified: "bg-emerald-500/10 text-emerald-400",
+    qualified: "bg-blue-500/10 text-blue-400",
     test_drive_booked: "bg-purple-500/10 text-purple-400",
     test_drive_done: "bg-purple-500/10 text-purple-300",
     negotiating: "bg-amber-500/10 text-amber-400",
-    sold: "bg-emerald-500/10 text-emerald-300",
+    sold: "bg-blue-500/10 text-blue-300",
     lost: "bg-red-500/10 text-red-400",
   };
 
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center bg-zinc-950">
-        <Loader2 className="h-8 w-8 animate-spin text-emerald-400" />
+        <Loader2 className="h-8 w-8 animate-spin text-blue-400" />
       </div>
     );
   }
@@ -158,7 +158,7 @@ export default function ClientLeadManagement({
             <ArrowLeft className="h-3.5 w-3.5" />
             Back to Portal
           </Link>
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500">
             <Car className="h-3.5 w-3.5 text-white" />
           </div>
           <h1 className="text-sm font-semibold">Lead Management</h1>
@@ -176,7 +176,7 @@ export default function ClientLeadManagement({
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search by name, brand, email..."
-              className="w-full rounded-lg border border-zinc-700 bg-zinc-800/50 pl-10 pr-3 py-2 text-sm text-zinc-200 placeholder:text-zinc-600 focus:border-emerald-500 focus:outline-none"
+              className="w-full rounded-lg border border-zinc-700 bg-zinc-800/50 pl-10 pr-3 py-2 text-sm text-zinc-200 placeholder:text-zinc-600 focus:border-blue-500 focus:outline-none"
             />
           </div>
           <div className="flex items-center gap-1.5">
@@ -184,7 +184,7 @@ export default function ClientLeadManagement({
             <select
               value={scoreFilter}
               onChange={(e) => setScoreFilter(e.target.value)}
-              className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-2 py-2 text-xs text-zinc-300 focus:border-emerald-500 focus:outline-none"
+              className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-2 py-2 text-xs text-zinc-300 focus:border-blue-500 focus:outline-none"
             >
               <option value="all">All Scores</option>
               <option value="hot">Hot</option>
@@ -194,7 +194,7 @@ export default function ClientLeadManagement({
             <select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
-              className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-2 py-2 text-xs text-zinc-300 focus:border-emerald-500 focus:outline-none"
+              className="rounded-lg border border-zinc-700 bg-zinc-800/50 px-2 py-2 text-xs text-zinc-300 focus:border-blue-500 focus:outline-none"
             >
               <option value="all">All Statuses</option>
               {statuses.map((s) => (
@@ -245,7 +245,7 @@ export default function ClientLeadManagement({
                       value={lead.status}
                       onChange={(e) => updateStatus(lead.id, e.target.value)}
                       disabled={updating === lead.id}
-                      className={`rounded-md px-2 py-1 text-xs font-medium border-0 cursor-pointer focus:outline-none focus:ring-1 focus:ring-emerald-500/30 ${statusColors[lead.status] || "bg-zinc-500/10 text-zinc-400"}`}
+                      className={`rounded-md px-2 py-1 text-xs font-medium border-0 cursor-pointer focus:outline-none focus:ring-1 focus:ring-blue-500/30 ${statusColors[lead.status] || "bg-zinc-500/10 text-zinc-400"}`}
                     >
                       {statuses.map((s) => (
                         <option key={s} value={s}>{statusLabels[s]}</option>
@@ -266,7 +266,7 @@ export default function ClientLeadManagement({
                       {lead.phone && (
                         <a
                           href={`tel:${lead.phone}`}
-                          className="flex h-7 w-7 items-center justify-center rounded-md hover:bg-zinc-700/50 text-zinc-500 hover:text-emerald-400 transition-colors"
+                          className="flex h-7 w-7 items-center justify-center rounded-md hover:bg-zinc-700/50 text-zinc-500 hover:text-blue-400 transition-colors"
                           title="Call"
                         >
                           <Phone className="h-3.5 w-3.5" />
@@ -274,7 +274,7 @@ export default function ClientLeadManagement({
                       )}
                       <button
                         onClick={() => sendFeedback(lead.id, "good")}
-                        className="flex h-7 w-7 items-center justify-center rounded-md hover:bg-emerald-500/10 text-zinc-500 hover:text-emerald-400 transition-colors"
+                        className="flex h-7 w-7 items-center justify-center rounded-md hover:bg-blue-500/10 text-zinc-500 hover:text-blue-400 transition-colors"
                         title="Good lead"
                       >
                         <ThumbsUp className="h-3.5 w-3.5" />

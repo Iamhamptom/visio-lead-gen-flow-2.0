@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
       data_type: dataType,
       data: result,
       timestamp: new Date().toISOString(),
-      source: "NAAMSA / Visio Auto Intelligence",
+      source: "NAAMSA / Visio Lead Gen Intelligence",
     })
   }
 
@@ -66,7 +66,7 @@ export async function GET(request: NextRequest) {
     chinese_brands: CHINESE_BRAND_DATA,
     regional: REGIONAL_DATA,
     timestamp: new Date().toISOString(),
-    source: "NAAMSA / Visio Auto Intelligence",
+    source: "NAAMSA / Visio Lead Gen Intelligence",
     period: "March 2026",
   })
 }

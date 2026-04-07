@@ -45,7 +45,7 @@ const NUMBERS = [
 
 export default function HomeNumbers() {
   return (
-    <section className="relative py-32 bg-[#030f0a]">
+    <section className="relative py-32 bg-[#03091a]">
       <div className="absolute inset-0 bg-dots opacity-30" />
 
       <div className="relative mx-auto max-w-6xl px-6">
@@ -57,18 +57,18 @@ export default function HomeNumbers() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             By the numbers
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white leading-[1.1]">
             Verified. Published.
             <br />
-            <span className="text-emerald-400">Honest.</span>
+            <span className="text-blue-400">Honest.</span>
           </h2>
           <p className="mt-6 text-[15px] text-white/50 max-w-xl mx-auto leading-relaxed">
             We do not publish fake testimonials or stock-photo customer faces. When real
             dealerships give us permission to share their results, they will live at{" "}
-            <a href="/customers" className="text-emerald-400/80 hover:text-emerald-400 underline underline-offset-4">
+            <a href="/customers" className="text-blue-400/80 hover:text-blue-400 underline underline-offset-4">
               /customers
             </a>
             . Until then, here are the numbers we can prove.
@@ -97,9 +97,9 @@ export default function HomeNumbers() {
                   transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const },
                 },
               }}
-              className="bg-[#030f0a] p-8 hover:bg-white/[0.02] transition-colors text-center"
+              className="bg-[#03091a] p-8 hover:bg-white/[0.02] transition-colors text-center"
             >
-              <div className="font-mono text-3xl md:text-4xl font-extralight text-emerald-400">
+              <div className="font-mono text-3xl md:text-4xl font-extralight text-blue-400">
                 {item.value}
               </div>
               <div className="mt-3 font-mono text-[10px] uppercase tracking-[0.25em] text-white/60">

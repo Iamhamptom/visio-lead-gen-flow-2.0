@@ -39,7 +39,7 @@ export default function HomeIntelligenceCTA() {
         >
           {/* Left — copy */}
           <div>
-            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
               For OEMs and Banks
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white leading-[1.1]">
@@ -47,7 +47,7 @@ export default function HomeIntelligenceCTA() {
               <br />
               or bank credit-ops?
               <br />
-              <span className="text-emerald-400">We have your data.</span>
+              <span className="text-blue-400">We have your data.</span>
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-white/50">
               Lightstone and TransUnion sell historical records. NAAMSA publishes monthly
@@ -58,7 +58,7 @@ export default function HomeIntelligenceCTA() {
 
             <ul className="mt-8 space-y-3">
               <li className="flex items-start gap-2.5 text-[14px] text-white/60">
-                <span className="font-mono text-emerald-400/70 shrink-0">→</span>
+                <span className="font-mono text-blue-400/70 shrink-0">→</span>
                 <span>
                   <strong className="text-white/80">For OEMs:</strong> reallocate dealer co-op
                   marketing toward higher-intent regions. Approximately 20× ROI on the
@@ -66,7 +66,7 @@ export default function HomeIntelligenceCTA() {
                 </span>
               </li>
               <li className="flex items-start gap-2.5 text-[14px] text-white/60">
-                <span className="font-mono text-emerald-400/70 shrink-0">→</span>
+                <span className="font-mono text-blue-400/70 shrink-0">→</span>
                 <span>
                   <strong className="text-white/80">For banks:</strong> bid on the postcodes
                   seeing application-stage intent right now. Approximately 30-40% lower
@@ -74,7 +74,7 @@ export default function HomeIntelligenceCTA() {
                 </span>
               </li>
               <li className="flex items-start gap-2.5 text-[14px] text-white/60">
-                <span className="font-mono text-emerald-400/70 shrink-0">→</span>
+                <span className="font-mono text-blue-400/70 shrink-0">→</span>
                 <span>
                   <strong className="text-white/80">For everyone:</strong> published methodology,
                   k-anonymity protected, POPIA compliant.
@@ -85,7 +85,7 @@ export default function HomeIntelligenceCTA() {
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
                 href="/intelligence"
-                className="inline-flex items-center gap-2 border border-emerald-500/40 bg-emerald-500/[0.08] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400 hover:bg-emerald-500/[0.15] transition-colors"
+                className="inline-flex items-center gap-2 border border-blue-500/40 bg-blue-500/[0.08] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400 hover:bg-blue-500/[0.15] transition-colors"
               >
                 See Visio Intelligence
                 <ArrowRight className="h-3.5 w-3.5" />
@@ -101,7 +101,7 @@ export default function HomeIntelligenceCTA() {
 
           {/* Right — key stats card */}
           <div className="border border-white/[0.08] bg-white/[0.02] p-8">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/60">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
               Q1 2026 — verified
             </span>
             <h3 className="mt-2 text-[16px] font-medium text-white/85">
@@ -140,8 +140,8 @@ export default function HomeIntelligenceCTA() {
 
 function Stat({ headline, subline }: { headline: string; subline: string }) {
   return (
-    <div className="border-l-[2px] border-l-emerald-500/30 pl-4">
-      <div className="font-mono text-xl font-extralight text-emerald-400">{headline}</div>
+    <div className="border-l-[2px] border-l-blue-500/30 pl-4">
+      <div className="font-mono text-xl font-extralight text-blue-400">{headline}</div>
       <p className="text-[12px] text-white/45 mt-0.5 leading-snug">{subline}</p>
     </div>
   );

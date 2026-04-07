@@ -47,7 +47,7 @@ const tiers = [
     price: "R0",
     period: "",
     leads: "5 leads",
-    description: "See Visio Auto in action. No credit card needed.",
+    description: "See Visio Lead Gen in action. No credit card needed.",
     highlight: false,
   },
   {
@@ -250,11 +250,11 @@ function GetStartedContent() {
       <nav className="fixed top-0 z-50 w-full border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-4 w-4 text-white" />
             </div>
             <span className="text-lg font-semibold text-white">
-              Visio Auto
+              Visio Lead Gen
             </span>
           </Link>
           <Link href="/why-visio-auto">
@@ -263,7 +263,7 @@ function GetStartedContent() {
               size="sm"
               className="border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white"
             >
-              Why Visio Auto
+              Why Visio Lead Gen
             </Button>
           </Link>
         </div>
@@ -282,7 +282,7 @@ function GetStartedContent() {
               <div
                 className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold ${
                   step >= s.n
-                    ? "bg-emerald-600 text-white"
+                    ? "bg-blue-600 text-white"
                     : "bg-zinc-800 text-zinc-500"
                 }`}
               >
@@ -302,7 +302,7 @@ function GetStartedContent() {
               {i < 3 && (
                 <div
                   className={`h-px w-8 sm:w-12 ${
-                    step > s.n ? "bg-emerald-500" : "bg-zinc-800"
+                    step > s.n ? "bg-blue-500" : "bg-zinc-800"
                   }`}
                 />
               )}
@@ -329,13 +329,13 @@ function GetStartedContent() {
                   onClick={() => setSelectedTier(tier.slug)}
                   className={`cursor-pointer border-zinc-800/50 bg-zinc-900/50 transition-all ${
                     selectedTier === tier.slug
-                      ? "ring-2 ring-emerald-500 shadow-[0_0_30px_-10px_rgba(16,185,129,0.3)]"
+                      ? "ring-2 ring-blue-500 shadow-[0_0_30px_-10px_rgba(59,130,246,0.3)]"
                       : "hover:border-zinc-700"
                   }`}
                 >
                   {tier.highlight && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <Badge className="bg-emerald-600 text-white hover:bg-emerald-600">
+                      <Badge className="bg-blue-600 text-white hover:bg-blue-600">
                         Most Popular
                       </Badge>
                     </div>
@@ -357,9 +357,9 @@ function GetStartedContent() {
                         </span>
                       )}
                     </div>
-                    <p className="text-xs text-emerald-400">{tier.leads}</p>
+                    <p className="text-xs text-blue-400">{tier.leads}</p>
                     {selectedTier === tier.slug && (
-                      <div className="mt-3 flex items-center gap-1 text-xs text-emerald-400">
+                      <div className="mt-3 flex items-center gap-1 text-xs text-blue-400">
                         <CheckCircle2 className="h-3.5 w-3.5" />
                         Selected
                       </div>
@@ -373,7 +373,7 @@ function GetStartedContent() {
               Need Enterprise (unlimited leads, white-label)?{" "}
               <Link
                 href="/get-quote"
-                className="text-emerald-400 hover:underline"
+                className="text-blue-400 hover:underline"
               >
                 Talk to our sales team
               </Link>
@@ -383,7 +383,7 @@ function GetStartedContent() {
               <Button
                 onClick={() => setStep(2)}
                 size="lg"
-                className="h-12 gap-2 bg-emerald-600 px-10 text-white hover:bg-emerald-500"
+                className="h-12 gap-2 bg-blue-600 px-10 text-white hover:bg-blue-500"
               >
                 Continue
                 <ArrowRight className="h-4 w-4" />
@@ -524,7 +524,7 @@ function GetStartedContent() {
                       Back
                     </Button>
                     <Button
-                      className="flex-1 bg-emerald-600 text-white hover:bg-emerald-500"
+                      className="flex-1 bg-blue-600 text-white hover:bg-blue-500"
                       onClick={handleSubmitDetails}
                       disabled={loading}
                     >
@@ -579,15 +579,15 @@ function GetStartedContent() {
 
                 <div className="mb-6 space-y-2 text-xs text-zinc-400">
                   <p className="flex items-center gap-2">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500" />
+                    <CheckCircle2 className="h-3.5 w-3.5 text-blue-500" />
                     Cancel anytime — no lock-in contracts
                   </p>
                   <p className="flex items-center gap-2">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500" />
+                    <CheckCircle2 className="h-3.5 w-3.5 text-blue-500" />
                     4x ROI guarantee or your money back
                   </p>
                   <p className="flex items-center gap-2">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500" />
+                    <CheckCircle2 className="h-3.5 w-3.5 text-blue-500" />
                     Secure payment via Yoco (SA payment gateway)
                   </p>
                 </div>
@@ -606,7 +606,7 @@ function GetStartedContent() {
                     Back
                   </Button>
                   <Button
-                    className="flex-1 bg-emerald-600 text-white hover:bg-emerald-500"
+                    className="flex-1 bg-blue-600 text-white hover:bg-blue-500"
                     onClick={handlePayment}
                     disabled={loading}
                   >
@@ -626,11 +626,11 @@ function GetStartedContent() {
         {/* ---- STEP 4: Welcome / Success ---- */}
         {step === 4 && (
           <div className="text-center">
-            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-emerald-500/10">
-              <Sparkles className="h-10 w-10 text-emerald-400" />
+            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-blue-500/10">
+              <Sparkles className="h-10 w-10 text-blue-400" />
             </div>
             <h1 className="text-3xl font-bold text-white">
-              Welcome to Visio Auto!
+              Welcome to Visio Lead Gen!
             </h1>
             <p className="mx-auto mt-4 max-w-md text-zinc-400">
               Your dealership is set up and{" "}
@@ -641,27 +641,27 @@ function GetStartedContent() {
               minutes.
             </p>
 
-            <Card className="mx-auto mt-8 max-w-md border-emerald-500/20 bg-emerald-500/5">
+            <Card className="mx-auto mt-8 max-w-md border-blue-500/20 bg-blue-500/5">
               <CardContent className="pt-6">
                 <h3 className="mb-4 font-semibold text-white">
                   What happens next:
                 </h3>
                 <ul className="space-y-3 text-left text-sm text-zinc-300">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
                     Our AI starts scanning signals in your area immediately
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
                     You&apos;ll receive your first leads within 24 hours
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
                     WhatsApp setup instructions sent to{" "}
                     {form.phone || "your phone"}
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
                     Dashboard access is ready now
                   </li>
                 </ul>
@@ -673,7 +673,7 @@ function GetStartedContent() {
                 <Link href={`/client/${dealerId}`}>
                   <Button
                     size="lg"
-                    className="h-12 gap-2 bg-emerald-600 px-8 text-white hover:bg-emerald-500"
+                    className="h-12 gap-2 bg-blue-600 px-8 text-white hover:bg-blue-500"
                   >
                     <Crown className="h-4 w-4" />
                     Open Your Dashboard

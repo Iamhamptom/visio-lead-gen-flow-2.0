@@ -53,7 +53,7 @@ const TIERS = [
     description: "For OEMs, banks, and national dealer networks.",
     features: [
       "Unlimited qualified leads",
-      "Full Visio Auto Suite",
+      "Full Visio Lead Gen Suite",
       "Visio Intent OEM tier",
       "White-label options",
       "Dedicated account manager",
@@ -68,9 +68,9 @@ const TIERS = [
 
 export default function HomePricingTeaser() {
   return (
-    <section id="pricing" className="relative py-32 bg-[#030f0a]">
+    <section id="pricing" className="relative py-32 bg-[#03091a]">
       <div className="absolute inset-0 bg-dots opacity-30" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.04)_0%,transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.04)_0%,transparent_70%)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -81,13 +81,13 @@ export default function HomePricingTeaser() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             Pricing
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white leading-[1.1]">
             Simple pricing.
             <br />
-            <span className="text-emerald-400">Pay for results.</span>
+            <span className="text-blue-400">Pay for results.</span>
           </h2>
           <p className="mt-6 text-[15px] text-white/50 max-w-lg mx-auto">
             Start free. Upgrade as you grow. Cancel anytime. No credit card required for the
@@ -108,15 +108,15 @@ export default function HomePricingTeaser() {
                 delay: i * 0.1,
                 ease: [0.16, 1, 0.3, 1] as const,
               }}
-              className={`flex flex-col border bg-[#030f0a] p-8 ${
+              className={`flex flex-col border bg-[#03091a] p-8 ${
                 tier.popular
-                  ? "border-emerald-500/40 bg-emerald-500/[0.02] lg:scale-[1.02]"
+                  ? "border-blue-500/40 bg-blue-500/[0.02] lg:scale-[1.02]"
                   : "border-white/[0.06]"
               }`}
             >
               {tier.popular && (
                 <div className="mb-4">
-                  <span className="inline-block font-mono text-[9px] uppercase tracking-[0.25em] text-emerald-400 bg-emerald-500/[0.08] border border-emerald-500/30 px-2 py-1">
+                  <span className="inline-block font-mono text-[9px] uppercase tracking-[0.25em] text-blue-400 bg-blue-500/[0.08] border border-blue-500/30 px-2 py-1">
                     Most Popular
                   </span>
                 </div>
@@ -144,7 +144,7 @@ export default function HomePricingTeaser() {
               <ul className="mt-6 space-y-3 flex-1">
                 {tier.features.map((feat) => (
                   <li key={feat} className="flex items-start gap-2.5 text-[13px] text-white/60">
-                    <Check className="h-3.5 w-3.5 text-emerald-500/60 shrink-0 mt-0.5" />
+                    <Check className="h-3.5 w-3.5 text-blue-500/60 shrink-0 mt-0.5" />
                     <span>{feat}</span>
                   </li>
                 ))}
@@ -155,7 +155,7 @@ export default function HomePricingTeaser() {
                 href={tier.href}
                 className={`mt-8 inline-flex items-center justify-center gap-2 py-3 px-5 font-mono text-[11px] uppercase tracking-[0.2em] transition-colors ${
                   tier.popular
-                    ? "bg-emerald-500 hover:bg-emerald-400 text-[#030f0a] font-medium"
+                    ? "bg-blue-500 hover:bg-blue-400 text-[#03091a] font-medium"
                     : "border border-white/[0.1] bg-white/[0.02] hover:bg-white/[0.06] text-white/80 hover:text-white"
                 }`}
               >
@@ -176,7 +176,7 @@ export default function HomePricingTeaser() {
         >
           <Link
             href="/pricing"
-            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/70 hover:text-emerald-400 transition-colors border-b border-emerald-500/20 pb-1"
+            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/70 hover:text-blue-400 transition-colors border-b border-blue-500/20 pb-1"
           >
             See all plans and add-ons
             <ArrowRight className="h-3 w-3" />

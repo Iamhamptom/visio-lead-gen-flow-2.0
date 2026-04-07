@@ -9,7 +9,7 @@ import WindowFrame from "./WindowFrame";
 const signalUniverse = [
   {
     category: "Lifecycle",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "Turning 18", note: "First license eligibility" },
       { name: "Driver's License Issued", note: "First car window opens" },
@@ -27,7 +27,7 @@ const signalUniverse = [
   },
   {
     category: "Financial",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "Lease Expiring", note: "90-day window" },
       { name: "Tax Refund Season", note: "Feb-Apr buying spike" },
@@ -45,7 +45,7 @@ const signalUniverse = [
   },
   {
     category: "Corporate",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "CIPC New Business", note: "Live API" },
       { name: "Director Appointment", note: "JSE listings" },
@@ -63,7 +63,7 @@ const signalUniverse = [
   },
   {
     category: "Property",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "Property Purchase", note: "Deeds Office" },
       { name: "Suburb Relocation", note: "Car-dependent area" },
@@ -81,7 +81,7 @@ const signalUniverse = [
   },
   {
     category: "Behavioural",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "AutoTrader Browsing", note: "Search depth" },
       { name: "Cars.co.za Saved Searches", note: "Active intent" },
@@ -99,7 +99,7 @@ const signalUniverse = [
   },
   {
     category: "Social",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "Public Comment Mining", note: "YouTube, Reddit, FB" },
       { name: "Instagram Story Tags", note: "Showroom check-ins" },
@@ -117,7 +117,7 @@ const signalUniverse = [
   },
   {
     category: "Macro",
-    color: "emerald",
+    color: "blue",
     signals: [
       { name: "Repo Rate Cut", note: "Finance becomes cheaper" },
       { name: "Fuel Price Drop", note: "Larger vehicles favoured" },
@@ -159,7 +159,7 @@ export default function SignalUniverse() {
   const totalSignals = signalUniverse.reduce((sum, c) => sum + c.signals.length, 0);
 
   return (
-    <section id="signal-universe" className="relative py-32 bg-[#030f0a] overflow-hidden">
+    <section id="signal-universe" className="relative py-32 bg-[#03091a] overflow-hidden">
       {/* Network infographic — top center */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] z-0 opacity-15">
         <Image
@@ -168,10 +168,10 @@ export default function SignalUniverse() {
           fill
           className="object-cover mix-blend-screen pointer-events-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#030f0a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#03091a]" />
       </div>
       <div className="absolute inset-0 bg-dots opacity-30 z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(16,185,129,0.05)_0%,transparent_60%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(59,130,246,0.05)_0%,transparent_60%)] z-0" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -183,20 +183,20 @@ export default function SignalUniverse() {
         >
           <div className="flex items-center gap-3 mb-2">
             <span className="section-label">The Signal Universe</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/80 border border-emerald-500/30 bg-emerald-500/[0.06] px-2 py-0.5">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/80 border border-blue-500/30 bg-blue-500/[0.06] px-2 py-0.5">
               {totalSignals}+ TRACKED &middot; INFINITE POTENTIAL
             </span>
           </div>
           <h2 className="mt-4 heading-xl max-w-4xl">
             We don&apos;t list signals.
             <br />
-            We <span className="text-emerald-400">engineer them</span>.
+            We <span className="text-blue-400">engineer them</span>.
           </h2>
           <div className="mt-6 flex items-start gap-3 max-w-2xl">
-            <div className="mt-1.5 h-px w-8 bg-emerald-500/40 shrink-0" />
+            <div className="mt-1.5 h-px w-8 bg-blue-500/40 shrink-0" />
             <p className="text-[15px] leading-relaxed text-white/50">
-              Most platforms ship a fixed list of signals and call it a day. Visio Auto
-              ships <span className="text-emerald-400/80">new signals every week</span>.
+              Most platforms ship a fixed list of signals and call it a day. Visio Lead Gen
+              ships <span className="text-blue-400/80">new signals every week</span>.
               When the world changes, our agents change with it. When a dealer asks for
               something new, we build it. When Jess spots a new pattern, she adds it to
               the universe.
@@ -222,9 +222,9 @@ export default function SignalUniverse() {
                 hidden: { opacity: 0, y: 16 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as const } },
               }}
-              className="bg-[#030f0a] p-7"
+              className="bg-[#03091a] p-7"
             >
-              <s.icon className="h-5 w-5 text-emerald-500/50 mb-4" />
+              <s.icon className="h-5 w-5 text-blue-500/50 mb-4" />
               <h4 className="text-[14px] font-medium text-white/80 mb-2">{s.title}</h4>
               <p className="text-[12px] leading-relaxed text-white/35">{s.body}</p>
             </motion.div>
@@ -252,7 +252,7 @@ export default function SignalUniverse() {
                   >
                     {/* Category header */}
                     <div className="border-b border-white/[0.06] pb-2 mb-4 flex items-center justify-between">
-                      <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/70">
+                      <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/70">
                         {cat.category}
                       </span>
                       <span className="font-mono text-[10px] text-white/20">
@@ -265,7 +265,7 @@ export default function SignalUniverse() {
                       {cat.signals.map((sig) => (
                         <li key={sig.name} className="group">
                           <div className="flex items-baseline gap-2">
-                            <div className="h-1 w-1 rounded-full bg-emerald-500/40 mt-1.5 shrink-0" />
+                            <div className="h-1 w-1 rounded-full bg-blue-500/40 mt-1.5 shrink-0" />
                             <div className="flex-1">
                               <div className="text-[12px] text-white/55 group-hover:text-white/80 transition-colors">
                                 {sig.name}
@@ -290,8 +290,8 @@ export default function SignalUniverse() {
                   engineering available for all dealership partners &mdash; free.
                 </p>
                 <div className="flex items-center gap-2">
-                  <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60">
+                  <div className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60">
                     Live &middot; updated this week
                   </span>
                 </div>
@@ -310,7 +310,7 @@ export default function SignalUniverse() {
         >
           <div className="border border-white/[0.06] bg-white/[0.02] p-8 md:p-10 grid lg:grid-cols-[1fr_auto] gap-8 items-center">
             <div>
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/50">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/50">
                 Bring Your Own Signal
               </span>
               <h3 className="mt-3 text-2xl font-extralight tracking-tight text-white max-w-2xl">
@@ -325,7 +325,7 @@ export default function SignalUniverse() {
             </div>
             <a
               href="/get-started"
-              className="border border-emerald-500/30 bg-emerald-500/[0.05] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/80 hover:bg-emerald-500/[0.1] transition-colors whitespace-nowrap"
+              className="border border-blue-500/30 bg-blue-500/[0.05] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/80 hover:bg-blue-500/[0.1] transition-colors whitespace-nowrap"
             >
               Request a Signal →
             </a>

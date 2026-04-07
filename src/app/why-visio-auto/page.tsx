@@ -97,8 +97,8 @@ const tenThings = [
     sub: "23 buying triggers detected",
     desc: "We monitor job portals, CIPC, property registrations, social media, and insurance databases to detect imminent car buyers before they start shopping.",
     icon: Zap,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
   },
   {
     num: "02",
@@ -345,11 +345,11 @@ export default function WhyVisioAutoPage() {
       <nav className="fixed top-0 z-50 w-full border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-4 w-4 text-white" />
             </div>
             <span className="text-lg font-semibold text-white">
-              Visio Auto
+              Visio Lead Gen
             </span>
           </Link>
           <div className="hidden items-center gap-8 md:flex">
@@ -380,7 +380,7 @@ export default function WhyVisioAutoPage() {
             <Link href="/get-started">
               <Button
                 size="sm"
-                className="bg-emerald-600 text-white hover:bg-emerald-500"
+                className="bg-blue-600 text-white hover:bg-blue-500"
               >
                 Start Free Trial
               </Button>
@@ -401,7 +401,7 @@ export default function WhyVisioAutoPage() {
             <a href="#pricing" className="block text-sm text-zinc-300 hover:text-white" onClick={() => setMobileNavOpen(false)}>Pricing</a>
             <a href="#roi" className="block text-sm text-zinc-300 hover:text-white" onClick={() => setMobileNavOpen(false)}>ROI Calculator</a>
             <Link href="/get-started" onClick={() => setMobileNavOpen(false)}>
-              <Button size="sm" className="w-full mt-2 bg-emerald-600 text-white hover:bg-emerald-500">
+              <Button size="sm" className="w-full mt-2 bg-blue-600 text-white hover:bg-blue-500">
                 Start Free Trial
               </Button>
             </Link>
@@ -413,18 +413,18 @@ export default function WhyVisioAutoPage() {
       {/* HERO */}
       {/* ---------------------------------------------------------------- */}
       <section className="relative overflow-hidden pt-32 pb-24">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(16,185,129,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-emerald-500/5 blur-[140px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-blue-500/5 blur-[140px]" />
 
         <div className="relative mx-auto max-w-5xl px-6 text-center">
-          <Badge className="mb-6 border-emerald-500/20 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/10">
+          <Badge className="mb-6 border-blue-500/20 bg-blue-500/10 text-blue-400 hover:bg-blue-500/10">
             <Sparkles className="mr-1.5 h-3 w-3" />
             South Africa&apos;s First AI Dealership Intelligence Platform
           </Badge>
 
           <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
             We Find Car Buyers{" "}
-            <span className="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
               Before They Walk Into Any Dealership
             </span>
           </h1>
@@ -440,7 +440,7 @@ export default function WhyVisioAutoPage() {
             <Link href="/get-started">
               <Button
                 size="lg"
-                className="h-13 gap-2 bg-emerald-600 px-8 text-base text-white hover:bg-emerald-500"
+                className="h-13 gap-2 bg-blue-600 px-8 text-base text-white hover:bg-blue-500"
               >
                 Start Your Free Trial
                 <ArrowRight className="h-4 w-4" />
@@ -469,7 +469,7 @@ export default function WhyVisioAutoPage() {
                 key={stat.label}
                 className="flex flex-col items-center gap-1 rounded-xl border border-zinc-800/50 bg-zinc-900/50 px-4 py-5"
               >
-                <stat.icon className="mb-1 h-5 w-5 text-emerald-400" />
+                <stat.icon className="mb-1 h-5 w-5 text-blue-400" />
                 <span className="font-mono text-2xl font-bold text-white">
                   {stat.value}
                 </span>
@@ -544,7 +544,7 @@ export default function WhyVisioAutoPage() {
       <section id="solution" className="border-t border-zinc-800/50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
-            <Badge className="mb-4 border-emerald-500/20 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/10">
+            <Badge className="mb-4 border-blue-500/20 bg-blue-500/10 text-blue-400 hover:bg-blue-500/10">
               Our Solution
             </Badge>
             <h2 className="text-3xl font-bold text-white md:text-4xl">
@@ -561,7 +561,7 @@ export default function WhyVisioAutoPage() {
             {tenThings.slice(0, 5).map((item) => (
               <Card
                 key={item.num}
-                className="border-zinc-800/50 bg-zinc-900/50 transition-colors hover:border-emerald-500/30"
+                className="border-zinc-800/50 bg-zinc-900/50 transition-colors hover:border-blue-500/30"
               >
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3">
@@ -577,7 +577,7 @@ export default function WhyVisioAutoPage() {
                   <CardTitle className="mt-2 text-base text-white">
                     {item.title}
                   </CardTitle>
-                  <p className="text-xs font-medium text-emerald-400">
+                  <p className="text-xs font-medium text-blue-400">
                     {item.sub}
                   </p>
                 </CardHeader>
@@ -593,7 +593,7 @@ export default function WhyVisioAutoPage() {
             {tenThings.slice(5, 10).map((item) => (
               <Card
                 key={item.num}
-                className="border-zinc-800/50 bg-zinc-900/50 transition-colors hover:border-emerald-500/30"
+                className="border-zinc-800/50 bg-zinc-900/50 transition-colors hover:border-blue-500/30"
               >
                 <CardHeader className="pb-3">
                   <div className="flex items-center gap-3">
@@ -609,7 +609,7 @@ export default function WhyVisioAutoPage() {
                   <CardTitle className="mt-2 text-base text-white">
                     {item.title}
                   </CardTitle>
-                  <p className="text-xs font-medium text-emerald-400">
+                  <p className="text-xs font-medium text-blue-400">
                     {item.sub}
                   </p>
                 </CardHeader>
@@ -643,16 +643,16 @@ export default function WhyVisioAutoPage() {
 
           <Tabs defaultValue="volume" className="mt-12">
             <TabsList className="mx-auto grid w-full max-w-2xl grid-cols-4 bg-zinc-900 border border-zinc-800">
-              <TabsTrigger value="volume" className="text-xs sm:text-sm data-[state=active]:bg-emerald-600 data-[state=active]:text-white">
+              <TabsTrigger value="volume" className="text-xs sm:text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                 Volume
               </TabsTrigger>
-              <TabsTrigger value="premium" className="text-xs sm:text-sm data-[state=active]:bg-emerald-600 data-[state=active]:text-white">
+              <TabsTrigger value="premium" className="text-xs sm:text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                 Premium
               </TabsTrigger>
-              <TabsTrigger value="luxury" className="text-xs sm:text-sm data-[state=active]:bg-emerald-600 data-[state=active]:text-white">
+              <TabsTrigger value="luxury" className="text-xs sm:text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                 Luxury
               </TabsTrigger>
-              <TabsTrigger value="used" className="text-xs sm:text-sm data-[state=active]:bg-emerald-600 data-[state=active]:text-white">
+              <TabsTrigger value="used" className="text-xs sm:text-sm data-[state=active]:bg-blue-600 data-[state=active]:text-white">
                 Used Cars
               </TabsTrigger>
             </TabsList>
@@ -664,7 +664,7 @@ export default function WhyVisioAutoPage() {
                   <div className="flex flex-col gap-8 lg:flex-row">
                     <div className="flex-1">
                       <div className="mb-2 flex items-center gap-2">
-                        <Building2 className="h-5 w-5 text-emerald-400" />
+                        <Building2 className="h-5 w-5 text-blue-400" />
                         <h3 className="text-xl font-bold text-white">
                           Toyota, VW, Hyundai, Suzuki, Kia
                         </h3>
@@ -683,14 +683,14 @@ export default function WhyVisioAutoPage() {
                             key={f}
                             className="flex items-start gap-2 text-sm text-zinc-300"
                           >
-                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-500" />
                             {f}
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-6 lg:w-72">
-                      <p className="text-xs font-medium uppercase tracking-wider text-emerald-400">
+                    <div className="flex-shrink-0 rounded-xl border border-blue-500/20 bg-blue-500/5 p-6 lg:w-72">
+                      <p className="text-xs font-medium uppercase tracking-wider text-blue-400">
                         The Math
                       </p>
                       <div className="mt-3 space-y-2 font-mono text-sm">
@@ -700,8 +700,8 @@ export default function WhyVisioAutoPage() {
                         <p className="text-zinc-300">
                           x R350K avg vehicle price
                         </p>
-                        <div className="border-t border-emerald-500/20 pt-2">
-                          <p className="text-2xl font-bold text-emerald-400">
+                        <div className="border-t border-blue-500/20 pt-2">
+                          <p className="text-2xl font-bold text-blue-400">
                             = R3.5M in sales
                           </p>
                           <p className="text-zinc-500">
@@ -941,7 +941,7 @@ export default function WhyVisioAutoPage() {
       <section className="border-t border-zinc-800/50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
-            <Badge className="mb-4 border-emerald-500/20 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/10">
+            <Badge className="mb-4 border-blue-500/20 bg-blue-500/10 text-blue-400 hover:bg-blue-500/10">
               Signal Intelligence
             </Badge>
             <h2 className="text-3xl font-bold text-white md:text-4xl">
@@ -957,9 +957,9 @@ export default function WhyVisioAutoPage() {
             {signals.map((sig) => (
               <div
                 key={sig.name}
-                className="group flex flex-col items-center gap-2 rounded-xl border border-zinc-800/50 bg-zinc-900/50 px-3 py-4 transition-colors hover:border-emerald-500/30 hover:bg-emerald-500/5"
+                className="group flex flex-col items-center gap-2 rounded-xl border border-zinc-800/50 bg-zinc-900/50 px-3 py-4 transition-colors hover:border-blue-500/30 hover:bg-blue-500/5"
               >
-                <sig.icon className="h-5 w-5 text-zinc-500 transition-colors group-hover:text-emerald-400" />
+                <sig.icon className="h-5 w-5 text-zinc-500 transition-colors group-hover:text-blue-400" />
                 <span className="text-center text-xs font-medium text-zinc-300">
                   {sig.name}
                 </span>
@@ -997,10 +997,10 @@ export default function WhyVisioAutoPage() {
               <div className="flex gap-1.5">
                 <div className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
                 <div className="h-2.5 w-2.5 rounded-full bg-amber-500/80" />
-                <div className="h-2.5 w-2.5 rounded-full bg-emerald-500/80" />
+                <div className="h-2.5 w-2.5 rounded-full bg-blue-500/80" />
               </div>
               <span className="ml-2 font-mono text-xs text-zinc-500">
-                Visio Auto Market Terminal v2.0
+                Visio Lead Gen Market Terminal v2.0
               </span>
             </div>
             <div className="grid grid-cols-3 gap-px bg-zinc-800/50 p-px">
@@ -1060,7 +1060,7 @@ export default function WhyVisioAutoPage() {
                   </p>
                   <div className="mt-1 flex items-center gap-2">
                     <span
-                      className={`font-mono text-xs font-medium ${row.up ? "text-emerald-400" : "text-red-400"}`}
+                      className={`font-mono text-xs font-medium ${row.up ? "text-blue-400" : "text-red-400"}`}
                     >
                       {row.change}
                     </span>
@@ -1103,13 +1103,13 @@ export default function WhyVisioAutoPage() {
                 key={tier.slug}
                 className={`relative flex flex-col border-zinc-800/50 bg-zinc-900/50 ${
                   tier.popular
-                    ? "ring-2 ring-emerald-500/50 shadow-[0_0_40px_-12px_rgba(16,185,129,0.3)]"
+                    ? "ring-2 ring-blue-500/50 shadow-[0_0_40px_-12px_rgba(59,130,246,0.3)]"
                     : ""
                 }`}
               >
                 {tier.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-emerald-600 text-white hover:bg-emerald-600">
+                    <Badge className="bg-blue-600 text-white hover:bg-blue-600">
                       Most Popular
                     </Badge>
                   </div>
@@ -1131,14 +1131,14 @@ export default function WhyVisioAutoPage() {
                       </span>
                     )}
                   </div>
-                  <p className="mb-5 text-xs text-emerald-400">{tier.leads}</p>
+                  <p className="mb-5 text-xs text-blue-400">{tier.leads}</p>
                   <ul className="space-y-2">
                     {tier.features.map((f) => (
                       <li
                         key={f}
                         className="flex items-start gap-2 text-xs"
                       >
-                        <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-500" />
+                        <CheckCircle2 className="mt-0.5 h-3.5 w-3.5 shrink-0 text-blue-500" />
                         <span className="text-zinc-300">{f}</span>
                       </li>
                     ))}
@@ -1156,7 +1156,7 @@ export default function WhyVisioAutoPage() {
                     <Button
                       className={`w-full ${
                         tier.popular
-                          ? "bg-emerald-600 text-white hover:bg-emerald-500"
+                          ? "bg-blue-600 text-white hover:bg-blue-500"
                           : "bg-zinc-800 text-zinc-300 hover:bg-zinc-700"
                       }`}
                     >
@@ -1180,7 +1180,7 @@ export default function WhyVisioAutoPage() {
       >
         <div className="mx-auto max-w-4xl px-6">
           <div className="text-center">
-            <Badge className="mb-4 border-emerald-500/20 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/10">
+            <Badge className="mb-4 border-blue-500/20 bg-blue-500/10 text-blue-400 hover:bg-blue-500/10">
               <TrendingUp className="mr-1.5 h-3 w-3" />
               ROI Calculator
             </Badge>
@@ -1188,7 +1188,7 @@ export default function WhyVisioAutoPage() {
               Calculate your return
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-              See exactly what Visio Auto can deliver for your dealership.
+              See exactly what Visio Lead Gen can deliver for your dealership.
             </p>
           </div>
 
@@ -1209,7 +1209,7 @@ export default function WhyVisioAutoPage() {
                           onClick={() => setLeads(opt)}
                           className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
                             leads === opt
-                              ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
+                              ? "border-blue-500 bg-blue-500/10 text-blue-400"
                               : "border-zinc-800 bg-zinc-900 text-zinc-400 hover:border-zinc-700"
                           }`}
                         >
@@ -1231,7 +1231,7 @@ export default function WhyVisioAutoPage() {
                           onClick={() => setAvgPrice(opt.value)}
                           className={`rounded-lg border px-3 py-2 text-xs font-medium transition-colors ${
                             avgPrice === opt.value
-                              ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
+                              ? "border-blue-500 bg-blue-500/10 text-blue-400"
                               : "border-zinc-800 bg-zinc-900 text-zinc-400 hover:border-zinc-700"
                           }`}
                         >
@@ -1253,7 +1253,7 @@ export default function WhyVisioAutoPage() {
                           onClick={() => setCloseRate(opt.value)}
                           className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
                             closeRate === opt.value
-                              ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
+                              ? "border-blue-500 bg-blue-500/10 text-blue-400"
                               : "border-zinc-800 bg-zinc-900 text-zinc-400 hover:border-zinc-700"
                           }`}
                         >
@@ -1265,8 +1265,8 @@ export default function WhyVisioAutoPage() {
                 </div>
 
                 {/* Results */}
-                <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-6">
-                  <p className="text-xs font-medium uppercase tracking-wider text-emerald-400">
+                <div className="rounded-xl border border-blue-500/20 bg-blue-500/5 p-6">
+                  <p className="text-xs font-medium uppercase tracking-wider text-blue-400">
                     Your Projected Results
                   </p>
 
@@ -1283,11 +1283,11 @@ export default function WhyVisioAutoPage() {
                       <p className="text-sm text-zinc-400">
                         Projected monthly revenue
                       </p>
-                      <p className="font-mono text-3xl font-bold text-emerald-400">
+                      <p className="font-mono text-3xl font-bold text-blue-400">
                         {formatZAR(revenue)}
                       </p>
                     </div>
-                    <div className="border-t border-emerald-500/20 pt-4">
+                    <div className="border-t border-blue-500/20 pt-4">
                       <div className="flex justify-between">
                         <div>
                           <p className="text-xs text-zinc-500">
@@ -1299,7 +1299,7 @@ export default function WhyVisioAutoPage() {
                         </div>
                         <div>
                           <p className="text-xs text-zinc-500">ROI</p>
-                          <p className="font-mono text-lg font-semibold text-emerald-400">
+                          <p className="font-mono text-lg font-semibold text-blue-400">
                             {roi}x
                           </p>
                         </div>
@@ -1316,7 +1316,7 @@ export default function WhyVisioAutoPage() {
                   </div>
 
                   <Link href="/get-started" className="mt-6 block">
-                    <Button className="w-full bg-emerald-600 text-white hover:bg-emerald-500">
+                    <Button className="w-full bg-blue-600 text-white hover:bg-blue-500">
                       Get Started Now
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -1394,24 +1394,24 @@ export default function WhyVisioAutoPage() {
           {/* Trust badges */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-zinc-500">
             <div className="flex items-center gap-2">
-              <Award className="h-5 w-5 text-emerald-400" />
+              <Award className="h-5 w-5 text-blue-400" />
               <span className="text-sm">Powered by VisioCorp AI</span>
             </div>
             <div className="h-4 w-px bg-zinc-800" />
             <div className="flex items-center gap-2">
-              <Sparkles className="h-5 w-5 text-emerald-400" />
+              <Sparkles className="h-5 w-5 text-blue-400" />
               <span className="text-sm">
                 Same team: Tony Duardo, Tyla, Uncle Waffles, Ciza
               </span>
             </div>
             <div className="h-4 w-px bg-zinc-800" />
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-emerald-400" />
+              <Shield className="h-5 w-5 text-blue-400" />
               <span className="text-sm">POPIA Compliant</span>
             </div>
             <div className="h-4 w-px bg-zinc-800" />
             <div className="flex items-center gap-2">
-              <Lock className="h-5 w-5 text-emerald-400" />
+              <Lock className="h-5 w-5 text-blue-400" />
               <span className="text-sm">SA-Built, SA-Hosted</span>
             </div>
           </div>
@@ -1423,8 +1423,8 @@ export default function WhyVisioAutoPage() {
       {/* ---------------------------------------------------------------- */}
       <section className="border-t border-zinc-800/50 py-24">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <div className="rounded-2xl border border-emerald-500/20 bg-gradient-to-b from-zinc-900 to-zinc-950 p-12">
-            <Shield className="mx-auto mb-4 h-12 w-12 text-emerald-400" />
+          <div className="rounded-2xl border border-blue-500/20 bg-gradient-to-b from-zinc-900 to-zinc-950 p-12">
+            <Shield className="mx-auto mb-4 h-12 w-12 text-blue-400" />
             <h2 className="text-3xl font-bold text-white md:text-4xl">
               Start Your Free Trial
             </h2>
@@ -1436,7 +1436,7 @@ export default function WhyVisioAutoPage() {
               <Link href="/get-started">
                 <Button
                   size="lg"
-                  className="h-13 gap-2 bg-emerald-600 px-10 text-base text-white hover:bg-emerald-500"
+                  className="h-13 gap-2 bg-blue-600 px-10 text-base text-white hover:bg-blue-500"
                 >
                   Start Free Trial
                   <ArrowRight className="h-4 w-4" />
@@ -1463,11 +1463,11 @@ export default function WhyVisioAutoPage() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
             <div className="flex items-center gap-2">
-              <div className="flex h-6 w-6 items-center justify-center rounded bg-emerald-500">
+              <div className="flex h-6 w-6 items-center justify-center rounded bg-blue-500">
                 <Car className="h-3 w-3 text-white" />
               </div>
               <span className="text-sm font-medium text-zinc-400">
-                Visio Auto
+                Visio Lead Gen
               </span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-600">
@@ -1481,7 +1481,7 @@ export default function WhyVisioAutoPage() {
                 href="/why-visio-auto"
                 className="transition-colors hover:text-zinc-400"
               >
-                Why Visio Auto
+                Why Visio Lead Gen
               </Link>
               <Link
                 href="/get-started"
@@ -1498,15 +1498,15 @@ export default function WhyVisioAutoPage() {
             </div>
             <div className="flex items-center gap-4 text-xs text-zinc-600">
               <div className="flex items-center gap-1">
-                <BadgeCheck className="h-3 w-3 text-emerald-500" />
+                <BadgeCheck className="h-3 w-3 text-blue-500" />
                 <span>POPIA Compliant</span>
               </div>
               <div className="flex items-center gap-1">
-                <Shield className="h-3 w-3 text-emerald-500" />
+                <Shield className="h-3 w-3 text-blue-500" />
                 <span>SA-Built</span>
               </div>
               <div className="flex items-center gap-1">
-                <Clock className="h-3 w-3 text-emerald-500" />
+                <Clock className="h-3 w-3 text-blue-500" />
                 <span>24/7 Automated</span>
               </div>
             </div>

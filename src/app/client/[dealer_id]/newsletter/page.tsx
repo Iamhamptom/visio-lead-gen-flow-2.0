@@ -89,7 +89,7 @@ export default function NewsletterArchivePage({
   return (
     <div className="min-h-screen bg-[#09090b] text-zinc-100">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-emerald-900/40 bg-[#09090b]/95 px-4 py-3 backdrop-blur-sm">
+      <header className="sticky top-0 z-50 border-b border-blue-900/40 bg-[#09090b]/95 px-4 py-3 backdrop-blur-sm">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <div className="flex items-center gap-3">
             <Link
@@ -101,8 +101,8 @@ export default function NewsletterArchivePage({
             </Link>
             <span className="text-zinc-700">|</span>
             <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-emerald-500" />
-              <h1 className="font-mono text-sm font-bold tracking-wider text-emerald-400 uppercase">
+              <Mail className="h-4 w-4 text-blue-500" />
+              <h1 className="font-mono text-sm font-bold tracking-wider text-blue-400 uppercase">
                 Intelligence Briefs
               </h1>
             </div>
@@ -116,7 +116,7 @@ export default function NewsletterArchivePage({
       <main className="mx-auto max-w-4xl p-4 space-y-4">
         {loading ? (
           <div className="flex items-center justify-center py-24">
-            <Loader2 className="h-6 w-6 animate-spin text-emerald-500" />
+            <Loader2 className="h-6 w-6 animate-spin text-blue-500" />
           </div>
         ) : selectedHtml ? (
           /* Newsletter viewer */
@@ -126,7 +126,7 @@ export default function NewsletterArchivePage({
                 setSelectedHtml(null)
                 setSelectedId(null)
               }}
-              className="mb-3 flex items-center gap-1.5 font-mono text-xs text-emerald-500 hover:text-emerald-400"
+              className="mb-3 flex items-center gap-1.5 font-mono text-xs text-blue-500 hover:text-blue-400"
             >
               <ArrowLeft className="h-3.5 w-3.5" />
               Back to archive
@@ -140,15 +140,15 @@ export default function NewsletterArchivePage({
           <>
             {/* Latest Brief Banner */}
             {latestNewsletter && (
-              <div className="overflow-hidden rounded-lg border border-emerald-900/40 bg-gradient-to-r from-emerald-950/40 to-[#0d1117]">
+              <div className="overflow-hidden rounded-lg border border-blue-900/40 bg-gradient-to-r from-blue-950/40 to-[#0d1117]">
                 <div className="flex items-center justify-between p-4">
                   <div>
                     <div className="mb-1 flex items-center gap-2">
                       <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
+                        <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
                       </span>
-                      <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-emerald-500">
+                      <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-blue-500">
                         Latest Brief
                       </span>
                     </div>
@@ -163,7 +163,7 @@ export default function NewsletterArchivePage({
                   </div>
                   <button
                     onClick={() => viewNewsletter(latestNewsletter.id)}
-                    className="flex items-center gap-2 rounded-lg bg-emerald-600 px-4 py-2 font-mono text-sm font-semibold text-white transition-colors hover:bg-emerald-500"
+                    className="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 font-mono text-sm font-semibold text-white transition-colors hover:bg-blue-500"
                   >
                     <Eye className="h-4 w-4" />
                     View Brief
@@ -182,7 +182,7 @@ export default function NewsletterArchivePage({
                   <button
                     key={nl.id}
                     onClick={() => viewNewsletter(nl.id)}
-                    className="flex w-full items-center gap-3 rounded border border-zinc-800/50 bg-[#0d1117] px-4 py-3 text-left transition-colors hover:border-emerald-900/40"
+                    className="flex w-full items-center gap-3 rounded border border-zinc-800/50 bg-[#0d1117] px-4 py-3 text-left transition-colors hover:border-blue-900/40"
                   >
                     <FileText className="h-4 w-4 shrink-0 text-zinc-600" />
                     <div className="min-w-0 flex-1">
@@ -197,7 +197,7 @@ export default function NewsletterArchivePage({
                         <span
                           className={`rounded px-1.5 py-0.5 text-[10px] ${
                             nl.type === "weekly"
-                              ? "bg-emerald-900/30 text-emerald-500"
+                              ? "bg-blue-900/30 text-blue-500"
                               : "bg-amber-900/30 text-amber-500"
                           }`}
                         >
@@ -230,7 +230,7 @@ export default function NewsletterArchivePage({
 
         {viewLoading && (
           <div className="flex items-center justify-center py-12">
-            <Loader2 className="h-5 w-5 animate-spin text-emerald-500" />
+            <Loader2 className="h-5 w-5 animate-spin text-blue-500" />
           </div>
         )}
       </main>

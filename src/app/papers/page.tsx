@@ -13,8 +13,8 @@ export const metadata = {
  *
  *   1. Visio Lead Gen (VRL-LEADGEN-001 to 012) — the 12-vertical stack that
  *      underpins the Visio Lead Gen parent brand.
- *   2. Visio Auto (VRL-AUTO-*) — the original 7-paper series underlying the
- *      Visio Auto sibling product, kept in the repo as reference for template
+ *   2. Visio Lead Gen (VRL-AUTO-*) — the original 7-paper series underlying the
+ *      Visio Lead Gen sibling product, kept in the repo as reference for template
  *      depth and cross-product signal sharing.
  *
  * Every paper is backed by a matching research MD in /research/ and every
@@ -155,12 +155,12 @@ const papers: Paper[] = [
     series: "leadgen",
   },
 
-  // --- Visio Auto series (reference / sibling product) ---
+  // --- Visio Lead Gen series (reference / sibling product) ---
   {
     number: "VRL-AUTO-001",
     slug: "suite-overview",
     category: "Suite Overview",
-    title: "The Visio Auto Suite: a six-product operating system for SA dealerships.",
+    title: "The Visio Lead Gen Suite: a six-product operating system for SA dealerships.",
     hook: "The original sibling product. Six-product operating system, R237M ARR steady-state target. Reference depth for the Lead Gen series.",
     accent: "#22c55e",
     series: "auto",
@@ -241,8 +241,8 @@ const papers: Paper[] = [
     number: "VRL-AUTO-010",
     slug: "security",
     category: "VRL Security",
-    title: "Security architecture and threat model for the Visio Auto suite.",
-    hook: "The full security posture underlying the Visio Auto production stack.",
+    title: "Security architecture and threat model for the Visio Lead Gen suite.",
+    hook: "The full security posture underlying the Visio Lead Gen production stack.",
     accent: "#22c55e",
     series: "auto",
   },
@@ -253,7 +253,7 @@ const autoPapers = papers.filter((p) => p.series === "auto");
 
 export default function PapersIndexPage() {
   return (
-    <div className="min-h-screen bg-[#030f0a] text-white">
+    <div className="min-h-screen bg-[#03091a] text-white">
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-6 pt-24 pb-12">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/40">
@@ -313,10 +313,10 @@ export default function PapersIndexPage() {
         <div className="mb-8 flex items-end justify-between">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/40">
-              Series 2 · Visio Auto (sibling product, reference)
+              Series 2 · Visio Lead Gen (sibling product, reference)
             </p>
             <h2 className="mt-2 text-2xl font-extralight tracking-tight">
-              The Visio Auto paper stack
+              The Visio Lead Gen paper stack
             </h2>
           </div>
         </div>

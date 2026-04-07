@@ -38,11 +38,11 @@ export interface PitchContext {
 // System prompt
 // ---------------------------------------------------------------------------
 
-const PITCH_SYSTEM = `You are a pitch deck content writer for Visio Auto — South Africa's first AI-powered lead generation platform for car dealerships.
+const PITCH_SYSTEM = `You are a pitch deck content writer for Visio Lead Gen — South Africa's first AI-powered lead generation platform for car dealerships.
 
 Write compelling, data-driven pitch content that speaks to SA dealership principals and sales managers.
 
-Visio Auto product details:
+Visio Lead Gen product details:
 - AI Signal Engine: tracks 23 buying signals (CIPC registrations, LinkedIn job changes, lease expirations, social media intent, etc.)
 - AI Qualification: every lead scored 0-100 on budget, timeline, trade-in, finance status
 - WhatsApp delivery: leads arrive in <60 seconds
@@ -118,7 +118,7 @@ Generate a JSON array of exactly 7 slides with this structure:
   { "type": "cta", "title": "...", "content": "...", "bullets": [] }
 ]
 
-Make the title slide say "Visio Auto — AI-Powered Leads for ${dealer.name || 'Your Dealership'}".
+Make the title slide say "Visio Lead Gen — AI-Powered Leads for ${dealer.name || 'Your Dealership'}".
 Make ROI math specific to ${brandStr} and ${area}.
 Make the CTA slide say "Start your free trial".
 Return ONLY the JSON array.`,
@@ -159,7 +159,7 @@ function buildFallbackSlides(
   return [
     {
       type: 'title',
-      title: `Visio Auto — AI-Powered Leads for ${dealer.name || 'Your Dealership'}`,
+      title: `Visio Lead Gen — AI-Powered Leads for ${dealer.name || 'Your Dealership'}`,
       content: `Qualified ${brandStr} buyers, delivered to your WhatsApp in under 60 seconds.`,
     },
     {
@@ -176,7 +176,7 @@ function buildFallbackSlides(
     },
     {
       type: 'solution',
-      title: 'Visio Auto: AI Signal Engine + Smart Qualification',
+      title: 'Visio Lead Gen: AI Signal Engine + Smart Qualification',
       content: 'We find buyers before they start shopping, qualify them with AI, and deliver them to your WhatsApp.',
       bullets: [
         '23 buying signals tracked (job changes, lease expirations, new businesses, etc.)',

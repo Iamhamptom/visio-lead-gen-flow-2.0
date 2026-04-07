@@ -7,10 +7,10 @@ export default function PrivacyPolicyPage() {
       <nav className="border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-4xl items-center gap-4 px-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-4 w-4 text-white" />
             </div>
-            <span className="text-lg font-semibold text-white">Visio Auto</span>
+            <span className="text-lg font-semibold text-white">Visio Lead Gen</span>
           </Link>
         </div>
       </nav>
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-lg font-semibold text-white">1. Introduction</h2>
             <p className="mt-2">
-              VisioCorp (Pty) Ltd ("Visio Auto", "we", "us") is committed to protecting your personal information in compliance with the Protection of Personal Information Act, 2013 (POPIA) and all applicable South African data protection legislation. This Privacy Policy describes how we collect, use, store, and protect your data when you use our AI-powered dealership intelligence platform.
+              VisioCorp (Pty) Ltd ("Visio Lead Gen", "we", "us") is committed to protecting your personal information in compliance with the Protection of Personal Information Act, 2013 (POPIA) and all applicable South African data protection legislation. This Privacy Policy describes how we collect, use, store, and protect your data when you use our AI-powered dealership intelligence platform.
             </p>
           </section>
 
@@ -71,7 +71,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-lg font-semibold text-white">6. Your Rights</h2>
             <p className="mt-2">
-              Under POPIA, you have the right to access, correct, or request deletion of your personal information. To exercise these rights, contact us at <a href="mailto:privacy@visiocorp.co" className="text-emerald-400 hover:underline">privacy@visiocorp.co</a>.
+              Under POPIA, you have the right to access, correct, or request deletion of your personal information. To exercise these rights, contact us at <a href="mailto:privacy@visiocorp.co" className="text-blue-400 hover:underline">privacy@visiocorp.co</a>.
             </p>
           </section>
 
@@ -85,7 +85,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-lg font-semibold text-white">8. Contact</h2>
             <p className="mt-2">
-              For privacy-related enquiries, contact our Information Officer at <a href="mailto:privacy@visiocorp.co" className="text-emerald-400 hover:underline">privacy@visiocorp.co</a>.
+              For privacy-related enquiries, contact our Information Officer at <a href="mailto:privacy@visiocorp.co" className="text-blue-400 hover:underline">privacy@visiocorp.co</a>.
             </p>
           </section>
         </div>

@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 /**
- * Visio Auto SVG logo — clean monogram with retro-modern pixel grid accent.
+ * Visio Lead Gen SVG logo — clean monogram with retro-modern pixel grid accent.
  * The "V" is formed from two angular strokes, and the "A" nests inside
- * with a subtle emerald fill. A 4x4 pixel grid sits in the corner as
+ * with a subtle blue fill. A 4x4 pixel grid sits in the corner as
  * a nod to the Windows 2001 pixel aesthetic.
  */
 export function VisioLogoMark({ size = 28 }: { size?: number }) {
@@ -23,15 +23,15 @@ export function VisioLogoMark({ size = 28 }: { size?: number }) {
         y="0.5"
         width="31"
         height="31"
-        stroke="rgba(16,185,129,0.3)"
+        stroke="rgba(59,130,246,0.3)"
         strokeWidth="1"
-        fill="rgba(16,185,129,0.06)"
+        fill="rgba(59,130,246,0.06)"
       />
 
       {/* V letterform */}
       <path
         d="M8 8L16 24L24 8"
-        stroke="rgba(16,185,129,0.9)"
+        stroke="rgba(59,130,246,0.9)"
         strokeWidth="2"
         strokeLinecap="square"
         fill="none"
@@ -43,18 +43,18 @@ export function VisioLogoMark({ size = 28 }: { size?: number }) {
         y1="16"
         x2="21"
         y2="16"
-        stroke="rgba(16,185,129,0.4)"
+        stroke="rgba(59,130,246,0.4)"
         strokeWidth="1"
       />
 
       {/* Pixel grid accent — bottom right corner (XP feel) */}
-      <rect x="25" y="25" width="2" height="2" fill="rgba(16,185,129,0.25)" />
-      <rect x="28" y="25" width="2" height="2" fill="rgba(16,185,129,0.15)" />
-      <rect x="25" y="28" width="2" height="2" fill="rgba(16,185,129,0.15)" />
-      <rect x="28" y="28" width="2" height="2" fill="rgba(16,185,129,0.08)" />
+      <rect x="25" y="25" width="2" height="2" fill="rgba(59,130,246,0.25)" />
+      <rect x="28" y="25" width="2" height="2" fill="rgba(59,130,246,0.15)" />
+      <rect x="25" y="28" width="2" height="2" fill="rgba(59,130,246,0.15)" />
+      <rect x="28" y="28" width="2" height="2" fill="rgba(59,130,246,0.08)" />
 
       {/* Pixel dot — top left */}
-      <rect x="2" y="2" width="2" height="2" fill="rgba(16,185,129,0.15)" />
+      <rect x="2" y="2" width="2" height="2" fill="rgba(59,130,246,0.15)" />
     </svg>
   );
 }
@@ -67,7 +67,7 @@ export function VisioLogoFull() {
     <div className="flex items-center gap-3">
       <VisioLogoMark />
       <span className="text-sm font-light tracking-wide text-white/80">
-        Visio Auto
+        Visio Lead Gen
       </span>
     </div>
   );

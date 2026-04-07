@@ -1,5 +1,5 @@
 /**
- * Visio Auto Suite — shared product registry.
+ * Visio Lead Gen Suite — shared product registry.
  *
  * Single source of truth for all 6 sibling product URLs, papers,
  * tag lines, and Jess's positioning language. Referenced by:
@@ -109,7 +109,7 @@ export const SUITE: readonly SuiteProduct[] = [
     whenToUse:
       "When an OEM marketing team or bank credit-ops team asks 'where is demand forming this week?' — Lightstone + TransUnion sell historical records, never forward-looking intent. Visio Intent is the only product that tells you which buyers are calculating, comparing, test-driving, or financing RIGHT NOW by brand, region, and segment.",
     integration:
-      "Reads from the Visio Auto signal engine via aggregation cron. Every Visio Trust transaction adds k-anonymised data to the Index, completing the flywheel.",
+      "Reads from the Visio Lead Gen signal engine via aggregation cron. Every Visio Trust transaction adds k-anonymised data to the Index, completing the flywheel.",
   },
   {
     key: "open-finance",

@@ -53,8 +53,8 @@ const kpis = [
     change: "+12.3%",
     trend: "up" as const,
     icon: Users,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
   },
   {
     label: "Conversion Rate",
@@ -80,8 +80,8 @@ const kpis = [
     change: "+18.6%",
     trend: "up" as const,
     icon: DollarSign,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
   },
   {
     label: "ROI",
@@ -255,7 +255,7 @@ export default function AnalyticsPage() {
                 className={cn(
                   "rounded-md px-3 py-1.5 text-xs font-medium transition-colors",
                   period === p
-                    ? "bg-emerald-500/20 text-emerald-400"
+                    ? "bg-blue-500/20 text-blue-400"
                     : "text-zinc-400 hover:text-zinc-200"
                 )}
               >
@@ -289,14 +289,14 @@ export default function AnalyticsPage() {
                 </div>
                 <div className="flex items-center gap-0.5 text-xs">
                   {kpi.trend === "up" ? (
-                    <ArrowUpRight className="h-3 w-3 text-emerald-400" />
+                    <ArrowUpRight className="h-3 w-3 text-blue-400" />
                   ) : (
                     <ArrowDownRight className="h-3 w-3 text-red-400" />
                   )}
                   <span
                     className={
                       kpi.trend === "up"
-                        ? "text-emerald-400"
+                        ? "text-blue-400"
                         : "text-red-400"
                     }
                   >
@@ -435,7 +435,7 @@ export default function AnalyticsPage() {
                   stage.stepRate !== null && (
                     <div key={stage.stage} className="text-xs text-zinc-500">
                       <span className="text-zinc-400">{stage.stage}:</span>{" "}
-                      <span className="font-mono text-emerald-400">
+                      <span className="font-mono text-blue-400">
                         {stage.stepRate}%
                       </span>{" "}
                       from previous
@@ -483,7 +483,7 @@ export default function AnalyticsPage() {
               <span>Cold leads</span>
               <span>
                 Peak:{" "}
-                <span className="font-mono text-emerald-400">312 leads</span> at
+                <span className="font-mono text-blue-400">312 leads</span> at
                 60-80 score
               </span>
               <span>Hot leads</span>
@@ -633,7 +633,7 @@ export default function AnalyticsPage() {
             </div>
             <Badge
               variant="outline"
-              className="border-emerald-500/30 bg-emerald-500/10 text-emerald-400"
+              className="border-blue-500/30 bg-blue-500/10 text-blue-400"
             >
               Trending Up
             </Badge>
@@ -671,7 +671,7 @@ export default function AnalyticsPage() {
                       <div className="flex items-center justify-end gap-1">
                         <span className="text-zinc-200">{row.leads}</span>
                         {leadsTrend ? (
-                          <ArrowUpRight className="h-3 w-3 text-emerald-400" />
+                          <ArrowUpRight className="h-3 w-3 text-blue-400" />
                         ) : (
                           <ArrowDownRight className="h-3 w-3 text-red-400" />
                         )}
@@ -681,7 +681,7 @@ export default function AnalyticsPage() {
                       {row.testDrives}
                     </TableCell>
                     <TableCell className="text-right">
-                      <span className="font-mono text-emerald-400">
+                      <span className="font-mono text-blue-400">
                         {row.sales}
                       </span>
                     </TableCell>
@@ -694,7 +694,7 @@ export default function AnalyticsPage() {
                         className={cn(
                           "font-mono",
                           row.roi >= 300
-                            ? "border-emerald-500/30 text-emerald-400"
+                            ? "border-blue-500/30 text-blue-400"
                             : row.roi >= 250
                               ? "border-blue-500/30 text-blue-400"
                               : "border-zinc-700 text-zinc-400"
@@ -718,7 +718,7 @@ export default function AnalyticsPage() {
             </div>
             <div className="text-xs text-zinc-500">
               Total Sales:{" "}
-              <span className="font-mono text-emerald-400">
+              <span className="font-mono text-blue-400">
                 {analyticsMonthly.reduce((s, r) => s + r.sales, 0)}
               </span>
             </div>
@@ -732,7 +732,7 @@ export default function AnalyticsPage() {
             </div>
             <div className="text-xs text-zinc-500">
               Avg ROI:{" "}
-              <span className="font-mono text-emerald-400">
+              <span className="font-mono text-blue-400">
                 {Math.round(
                   analyticsMonthly.reduce((s, r) => s + r.roi, 0) /
                     analyticsMonthly.length

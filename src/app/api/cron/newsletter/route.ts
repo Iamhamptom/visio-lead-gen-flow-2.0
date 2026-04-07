@@ -89,7 +89,7 @@ export async function GET(request: NextRequest) {
                 Authorization: `Bearer ${resendKey}`,
               },
               body: JSON.stringify({
-                from: 'Visio Auto <intelligence@visio-auto.vercel.app>',
+                from: 'Visio Lead Gen <intelligence@visio-auto.vercel.app>',
                 to: [dealer.email],
                 subject: newsletter.subject,
                 html: newsletter.html,

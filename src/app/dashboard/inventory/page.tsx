@@ -164,7 +164,7 @@ const vehicles: Vehicle[] = [
 ];
 
 const conditionLabels: Record<Condition, { label: string; className: string }> = {
-  new: { label: "New", className: "border-emerald-500/30 bg-emerald-500/10 text-emerald-400" },
+  new: { label: "New", className: "border-blue-500/30 bg-blue-500/10 text-blue-400" },
   demo: { label: "Demo", className: "border-blue-500/30 bg-blue-500/10 text-blue-400" },
   used: { label: "Used", className: "border-amber-500/30 bg-amber-500/10 text-amber-400" },
   certified_preowned: { label: "CPO", className: "border-violet-500/30 bg-violet-500/10 text-violet-400" },
@@ -259,7 +259,7 @@ export default function InventoryPage() {
         </div>
         <Dialog open={addDialogOpen} onOpenChange={setAddDialogOpen}>
           <DialogTrigger
-            render={<Button className="bg-emerald-600 text-white hover:bg-emerald-700" />}
+            render={<Button className="bg-blue-600 text-white hover:bg-blue-700" />}
           >
             <Plus className="mr-2 h-4 w-4" />
             Add Vehicle
@@ -350,7 +350,7 @@ export default function InventoryPage() {
                 Cancel
               </DialogClose>
               <Button
-                className="bg-emerald-600 text-white hover:bg-emerald-700"
+                className="bg-blue-600 text-white hover:bg-blue-700"
                 disabled={addLoading || !newVehicle.brand || !newVehicle.model}
                 onClick={async () => {
                   setAddLoading(true);
@@ -412,10 +412,10 @@ export default function InventoryPage() {
         <Card className="border-zinc-800/50 bg-zinc-900/50">
           <CardContent className="p-4">
             <div className="flex items-center gap-2">
-              <TrendingUp className="h-4 w-4 text-emerald-500" />
+              <TrendingUp className="h-4 w-4 text-blue-500" />
               <span className="text-xs text-zinc-500">Fast Movers</span>
             </div>
-            <p className="mt-1 text-2xl font-bold text-emerald-400">
+            <p className="mt-1 text-2xl font-bold text-blue-400">
               {stats.fastMovers}
             </p>
           </CardContent>
@@ -497,7 +497,7 @@ export default function InventoryPage() {
             className={cn(
               "rounded-md p-1.5 transition-colors",
               view === "grid"
-                ? "bg-emerald-500/20 text-emerald-400"
+                ? "bg-blue-500/20 text-blue-400"
                 : "text-zinc-500 hover:text-zinc-300"
             )}
           >
@@ -508,7 +508,7 @@ export default function InventoryPage() {
             className={cn(
               "rounded-md p-1.5 transition-colors",
               view === "list"
-                ? "bg-emerald-500/20 text-emerald-400"
+                ? "bg-blue-500/20 text-blue-400"
                 : "text-zinc-500 hover:text-zinc-300"
             )}
           >
@@ -543,7 +543,7 @@ export default function InventoryPage() {
                     className={cn(
                       "font-mono",
                       vehicle.days_on_lot <= 7
-                        ? "text-emerald-400"
+                        ? "text-blue-400"
                         : vehicle.days_on_lot <= 21
                           ? "text-zinc-300"
                           : "text-amber-400"
@@ -566,7 +566,7 @@ export default function InventoryPage() {
                   </div>
                 </div>
                 <div className="mt-3 flex items-center justify-between">
-                  <p className="text-lg font-bold text-emerald-400">
+                  <p className="text-lg font-bold text-blue-400">
                     {formatPrice(vehicle.price)}
                   </p>
                 </div>
@@ -577,9 +577,9 @@ export default function InventoryPage() {
                 </div>
                 <div className="mt-3 flex items-center justify-between border-t border-zinc-800/50 pt-3">
                   <div className="flex items-center gap-1.5">
-                    <Users className="h-3.5 w-3.5 text-emerald-400" />
+                    <Users className="h-3.5 w-3.5 text-blue-400" />
                     <span className="text-xs text-zinc-400">
-                      <span className="font-mono text-emerald-400">
+                      <span className="font-mono text-blue-400">
                         {vehicle.lead_match_count}
                       </span>{" "}
                       leads match
@@ -638,7 +638,7 @@ export default function InventoryPage() {
                         {conditionLabels[vehicle.condition].label}
                       </Badge>
                     </TableCell>
-                    <TableCell className="text-right font-mono text-emerald-400">
+                    <TableCell className="text-right font-mono text-blue-400">
                       {formatPrice(vehicle.price)}
                     </TableCell>
                     <TableCell className="text-right text-zinc-300">
@@ -649,7 +649,7 @@ export default function InventoryPage() {
                         className={cn(
                           "font-mono",
                           vehicle.days_on_lot <= 7
-                            ? "text-emerald-400"
+                            ? "text-blue-400"
                             : vehicle.days_on_lot <= 21
                               ? "text-zinc-300"
                               : "text-amber-400"
@@ -660,7 +660,7 @@ export default function InventoryPage() {
                     </TableCell>
                     <TableCell className="text-right">
                       <div className="flex items-center justify-end gap-1">
-                        <Users className="h-3 w-3 text-emerald-400" />
+                        <Users className="h-3 w-3 text-blue-400" />
                         <span className="font-mono text-zinc-200">
                           {vehicle.lead_match_count}
                         </span>
@@ -685,7 +685,7 @@ export default function InventoryPage() {
             Try adjusting your filters or add a new vehicle.
           </p>
           <Button
-            className="mt-4 bg-emerald-600 text-white hover:bg-emerald-700"
+            className="mt-4 bg-blue-600 text-white hover:bg-blue-700"
             onClick={() => setAddDialogOpen(true)}
           >
             <Plus className="mr-2 h-4 w-4" />

@@ -44,7 +44,7 @@ export default function StrategyAgent() {
   return (
     <section id="strategy" className="relative py-32 bg-[#020c07]">
       <div className="absolute inset-0 bg-grid opacity-25" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(16,185,129,0.04)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(59,130,246,0.04)_0%,transparent_60%)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -56,17 +56,17 @@ export default function StrategyAgent() {
         >
           <div className="flex items-center gap-3 mb-2">
             <span className="section-label">Strategy Generator</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/80 border border-emerald-500/30 bg-emerald-500/[0.06] px-2 py-0.5">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/80 border border-blue-500/30 bg-blue-500/[0.06] px-2 py-0.5">
               POWERED BY CLAUDE SDK
             </span>
           </div>
           <h2 className="mt-4 heading-xl max-w-4xl">
             Build your dealership&apos;s
             <br />
-            <span className="text-emerald-400">digital strategy</span> with Jess.
+            <span className="text-blue-400">digital strategy</span> with Jess.
           </h2>
           <div className="mt-6 flex items-start gap-3 max-w-2xl">
-            <div className="mt-1.5 h-px w-8 bg-emerald-500/40 shrink-0" />
+            <div className="mt-1.5 h-px w-8 bg-blue-500/40 shrink-0" />
             <p className="text-[15px] leading-relaxed text-white/50">
               Most dealers don&apos;t have a data team. So we built one. Jess uses Visio Intelligence and the same agentic architecture we built for Netcare Health OS to design and execute your full digital strategy &mdash; in your voice, on your platform, owned by you.
             </p>
@@ -86,7 +86,7 @@ export default function StrategyAgent() {
               <div className="flex flex-col items-center lg:items-start gap-3">
                 <JessAvatar size={72} />
                 <div className="text-center lg:text-left">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/60">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/60">
                     Jess &middot; Strategy Agent
                   </div>
                   <div className="font-mono text-[10px] text-white/20 mt-1">
@@ -96,31 +96,31 @@ export default function StrategyAgent() {
               </div>
 
               <div className="font-mono text-[12px] leading-relaxed">
-                <div className="text-emerald-500/40 mb-3">
+                <div className="text-blue-500/40 mb-3">
                   &gt; Strategy session started for: Sandton Premium Motors
                 </div>
 
                 <div className="space-y-3">
                   <div className="text-white/30">
-                    <span className="text-emerald-400/60">[Jess 09:14]</span> Hi Sarah. I&apos;ve already pulled your inventory, your brand mix, and the last 90 days of leads. Before we dive in &mdash; what&apos;s the one number you most want to move this quarter?
+                    <span className="text-blue-400/60">[Jess 09:14]</span> Hi Sarah. I&apos;ve already pulled your inventory, your brand mix, and the last 90 days of leads. Before we dive in &mdash; what&apos;s the one number you most want to move this quarter?
                   </div>
                   <div className="text-white/40">
                     <span className="text-white/40">[Sarah 09:14]</span> We need to move 15 used BMWs in inventory aging past 90 days.
                   </div>
                   <div className="text-white/30">
-                    <span className="text-emerald-400/60">[Jess 09:14]</span> Got it. I&apos;m looking at lease expiry signals across Gauteng matched to BMW 3-series and 5-series buyers. I see 47 high-intent prospects right now. Want me to draft a 4-week campaign that prioritises this segment?
+                    <span className="text-blue-400/60">[Jess 09:14]</span> Got it. I&apos;m looking at lease expiry signals across Gauteng matched to BMW 3-series and 5-series buyers. I see 47 high-intent prospects right now. Want me to draft a 4-week campaign that prioritises this segment?
                   </div>
                   <div className="text-white/40">
                     <span className="text-white/40">[Sarah 09:14]</span> Yes, and add the BMW launch event we&apos;re hosting on the 22nd.
                   </div>
                   <div className="text-white/30">
-                    <span className="text-emerald-400/60">[Jess 09:14]</span> Done. Strategy draft will be on your dashboard in 2 minutes. I&apos;ll also brief the sales floor on WhatsApp before each appointment.
+                    <span className="text-blue-400/60">[Jess 09:14]</span> Done. Strategy draft will be on your dashboard in 2 minutes. I&apos;ll also brief the sales floor on WhatsApp before each appointment.
                   </div>
                 </div>
 
                 <div className="mt-5 flex items-center gap-2">
-                  <span className="text-emerald-500/40">&gt;</span>
-                  <span className="w-2 h-4 bg-emerald-500/50 animate-pulse" />
+                  <span className="text-blue-500/40">&gt;</span>
+                  <span className="w-2 h-4 bg-blue-500/50 animate-pulse" />
                 </div>
               </div>
             </div>
@@ -151,10 +151,10 @@ export default function StrategyAgent() {
               }}
               className="bg-[#020c07] p-7 hover:bg-white/[0.02] transition-colors"
             >
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-500/30">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-500/30">
                 Step {s.step}
               </span>
-              <s.icon className="mt-5 h-5 w-5 text-emerald-500/50" />
+              <s.icon className="mt-5 h-5 w-5 text-blue-500/50" />
               <h4 className="mt-4 text-[14px] font-medium text-white/80">
                 {s.title}
               </h4>

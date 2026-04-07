@@ -48,16 +48,16 @@ export default function CrossBorderLogistics() {
       {/* Header */}
       <div className="border-b border-white/[0.06] px-8 py-5 flex items-center justify-between flex-wrap gap-3">
         <div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/60">
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
             Cross-Border Flow
           </span>
           <h4 className="mt-1 text-xl font-extralight text-white">
-            Sandton showroom → your driveway in <span className="text-emerald-400">~30 days</span>
+            Sandton showroom → your driveway in <span className="text-blue-400">~30 days</span>
           </h4>
         </div>
         <div className="flex items-center gap-2">
-          <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60">
+          <div className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60">
             Concierge managed end-to-end
           </span>
         </div>
@@ -78,14 +78,14 @@ export default function CrossBorderLogistics() {
             className="p-7 hover:bg-white/[0.02] transition-colors"
           >
             <div className="flex items-baseline justify-between mb-4">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-500/40">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-500/40">
                 Stage {stage.code}
               </span>
               <span className="font-mono text-[10px] text-white/25">
                 {stage.duration}
               </span>
             </div>
-            <stage.icon className="h-5 w-5 text-emerald-500/50 mb-4" />
+            <stage.icon className="h-5 w-5 text-blue-500/50 mb-4" />
             <h5 className="text-[14px] font-medium text-white/80 mb-2">
               {stage.title}
             </h5>

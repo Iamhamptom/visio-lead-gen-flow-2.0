@@ -371,7 +371,7 @@ export default function IntelligenceVol1Page() {
       </p>
 
       <div className="callout">
-        <span className="callout-label">Visio Auto Insight</span>
+        <span className="callout-label">Visio Lead Gen Insight</span>
         <p className="text-[14px] leading-relaxed text-white/60 m-0">
           The Suzuki overtake of VW Group is the canary in the coal mine. Suzuki sells almost
           entirely on price-to-feature ratio in the entry passenger segment. The same buyer segment
@@ -835,7 +835,7 @@ export default function IntelligenceVol1Page() {
         of the Eastern Cape and Tshwane component ecosystems.
       </p>
 
-      <h4>8.5.5 The Visio Auto thesis: South Africans supply Africans</h4>
+      <h4>8.5.5 The Visio Lead Gen thesis: South Africans supply Africans</h4>
 
       <p>
         The path out of the manufacturing crisis is not a return to European export dominance
@@ -848,7 +848,7 @@ export default function IntelligenceVol1Page() {
       </p>
 
       <p>
-        Visio Auto Concierge (covered in our companion paper{" "}
+        Visio Lead Gen Concierge (covered in our companion paper{" "}
         <a href="/papers/african-luxury-mobility">VRL-AUTO-003: The African Luxury Mobility Report</a>)
         operationalises this thesis at the premium end: connecting SA premium dealer inventory
         with HNW buyers in Lagos, Lubumbashi, Luanda, Nairobi, Accra, Abidjan, Casablanca, and
@@ -926,7 +926,7 @@ export default function IntelligenceVol1Page() {
       <h2>11. About this report</h2>
 
       <p>
-        Visio Auto Intelligence is delivered free to all dealership partners on the Visio Auto
+        Visio Lead Gen Intelligence is delivered free to all dealership partners on the Visio Lead Gen
         platform. Custom data points and dealership-specific intelligence requests are available at
         no additional cost &mdash; just ask Jess. All analysis belongs to the dealership partner who
         receives it; you are free to share, quote, and republish with attribution.

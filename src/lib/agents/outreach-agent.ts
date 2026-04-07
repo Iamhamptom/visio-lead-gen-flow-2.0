@@ -59,7 +59,7 @@ export interface DealerPitch {
 // System prompt shared across outreach functions
 // ---------------------------------------------------------------------------
 
-const OUTREACH_SYSTEM = `You are an expert South African automotive sales copywriter for Visio Auto — SA's first AI-powered lead generation platform for car dealerships.
+const OUTREACH_SYSTEM = `You are an expert South African automotive sales copywriter for Visio Lead Gen — SA's first AI-powered lead generation platform for car dealerships.
 
 Your writing style:
 - Professional but conversational — like a sharp business contact, not a cold robot
@@ -69,7 +69,7 @@ Your writing style:
 - Short paragraphs, scannable format
 - Natural Tony Duardo reference (music brand connection) when appropriate — "Same team behind SA's hottest music brand"
 
-Visio Auto value props:
+Visio Lead Gen value props:
 - AI qualifies every lead (budget, timeline, trade-in, finance status) before delivery
 - 23 buying signals tracked (CIPC registrations, LinkedIn job changes, lease expirations, etc.)
 - Leads delivered to WhatsApp in under 60 seconds
@@ -78,7 +78,7 @@ Visio Auto value props:
 - 10% conversion rate (vs 2-3% industry average for unqualified leads)
 - Avg profit per sale: R35,000+
 
-Sender: David Hampton, CEO, Visio Auto (VisioCorp)
+Sender: David Hampton, CEO, Visio Lead Gen (VisioCorp)
 Phone: +27 XX XXX XXXX
 
 IMPORTANT: Return ONLY the requested content. No markdown code fences. No meta commentary.`
@@ -290,7 +290,7 @@ export async function generateDealerBrief(
 
   const { text } = await generateText({
     model: SONNET,
-    system: `You are a South African automotive market intelligence analyst for Visio Auto. Write concise, data-driven morning briefings for dealership sales teams.`,
+    system: `You are a South African automotive market intelligence analyst for Visio Lead Gen. Write concise, data-driven morning briefings for dealership sales teams.`,
     prompt: `Generate a morning intelligence brief for this dealer.
 
 Dealer: ${dealer.name || 'Dealer'} (${brandStr}) — ${dealer.area || 'Gauteng'}

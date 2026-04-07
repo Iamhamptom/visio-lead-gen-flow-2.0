@@ -1,5 +1,5 @@
 /**
- * Yoco Payment Gateway — Visio Auto
+ * Yoco Payment Gateway — Visio Lead Gen
  * Docs: https://developer.yoco.com/online/resources/integration-guide
  */
 

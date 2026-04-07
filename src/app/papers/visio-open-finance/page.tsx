@@ -178,7 +178,7 @@ export default function VisioOpenFinancePaperPage() {
         <li><strong>90-day retention.</strong> Bank statements deleted from Supabase Storage automatically after 90 days via cron. No exceptions.</li>
       </ul>
 
-      <h2>8. Integration with the Visio Auto Suite</h2>
+      <h2>8. Integration with the Visio Lead Gen Suite</h2>
 
       <p>
         Visio Open Finance is the <strong>deep approval layer</strong>. Visio Approve handles the

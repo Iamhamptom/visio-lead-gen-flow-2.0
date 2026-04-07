@@ -83,8 +83,8 @@ const kpiConfig = [
     changeDirection: "up" as const,
     subtitle: "Booked this month",
     icon: Car,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
     format: "number" as const,
   },
   {
@@ -116,8 +116,8 @@ const kpiConfig = [
     changeDirection: "up" as const,
     subtitle: "vs R15K spend",
     icon: TrendingUp,
-    color: "text-emerald-400",
-    bg: "bg-emerald-400/10",
+    color: "text-blue-400",
+    bg: "bg-blue-400/10",
     format: "number" as const,
   },
 ];
@@ -395,7 +395,7 @@ export default function DashboardOverview() {
           <Link href="/dashboard/terminal">
             <Button
               size="sm"
-              className="bg-emerald-600 text-white hover:bg-emerald-500"
+              className="bg-blue-600 text-white hover:bg-blue-500"
             >
               <Terminal className="mr-1.5 h-3.5 w-3.5" />
               View Terminal
@@ -469,15 +469,15 @@ export default function DashboardOverview() {
                 <motion.div
                   animate={{
                     boxShadow: [
-                      "0 0 0 0 rgba(16, 185, 129, 0.4)",
-                      "0 0 0 6px rgba(16, 185, 129, 0)",
+                      "0 0 0 0 rgba(59, 130, 246, 0.4)",
+                      "0 0 0 6px rgba(59, 130, 246, 0)",
                     ],
                   }}
                   transition={{ duration: 1.5, repeat: Infinity }}
-                  className="h-2 w-2 rounded-full bg-emerald-400"
+                  className="h-2 w-2 rounded-full bg-blue-400"
                 />
               </div>
-              <Badge className="bg-emerald-500/10 text-emerald-400 ring-emerald-500/20 hover:bg-emerald-500/10">
+              <Badge className="bg-blue-500/10 text-blue-400 ring-blue-500/20 hover:bg-blue-500/10">
                 {signals.length} new
               </Badge>
             </CardHeader>

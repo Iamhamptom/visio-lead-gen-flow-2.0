@@ -126,11 +126,11 @@ const PRICING_TABLE = {
 // Main builder
 // ---------------------------------------------------------------------------
 
-const SYSTEM_PROMPT = `You are a pitch deck writer for Visio Auto, an AI-powered lead generation platform for South African car dealerships. You write compelling, data-driven pitch decks that sell dealers on the value of AI-qualified leads.
+const SYSTEM_PROMPT = `You are a pitch deck writer for Visio Lead Gen, an AI-powered lead generation platform for South African car dealerships. You write compelling, data-driven pitch decks that sell dealers on the value of AI-qualified leads.
 
 Your tone: Professional but energetic. Use South African market context. Back every claim with numbers. Focus on ROI and pain points that SA dealers actually face (AutoTrader costs R800+/lead, slow follow-up kills conversions, generic leads waste salespeople's time).
 
-Visio Auto's 7-Layer Stack:
+Visio Lead Gen's 7-Layer Stack:
 1. Signal Engine — detects 23 life-event buying signals (promotions, new babies, relocations, etc.)
 2. AI Scoring — 100-point qualification with budget, timeline, and intent extraction
 3. VIN Matching — matches qualified buyers to specific vehicles in dealer inventory
@@ -178,7 +178,7 @@ Generate exactly 9 slides as a JSON array. Each slide has: { "type", "title", "s
 Slide order:
 1. type:"hero" — "AI-Powered Leads for ${dealer.name ?? 'Your Dealership'}" — hook them with the value prop
 2. type:"problem" — SA dealership pain points (AutoTrader costs, slow response, low conversion, generic leads)
-3. type:"solution" — Visio Auto's 7-layer stack explanation
+3. type:"solution" — Visio Lead Gen's 7-layer stack explanation
 4. type:"market" — Their brand's market position using the market data provided. Use real numbers.
 5. type:"stats" — Signal demo: "${signalCount} buying signals detected in ${dealer.area ?? 'their area'}" — show actual signal examples
 6. type:"roi" — Personalized ROI calculator with the exact numbers above
@@ -252,7 +252,7 @@ function buildFallbackSlides(
       type: 'hero',
       title: `AI-Powered Leads for ${dealerName}`,
       subtitle: 'Stop chasing. Start closing.',
-      content: `Visio Auto delivers **AI-qualified buyers** directly to your sales team's WhatsApp — in under 60 seconds.\n\nWe detect buying signals before your competitors even know someone is looking.`,
+      content: `Visio Lead Gen delivers **AI-qualified buyers** directly to your sales team's WhatsApp — in under 60 seconds.\n\nWe detect buying signals before your competitors even know someone is looking.`,
       data: { dealer_name: dealerName, brands: dealer.brands ?? [] },
     },
     {
@@ -264,7 +264,7 @@ function buildFallbackSlides(
     },
     {
       type: 'solution',
-      title: 'Visio Auto\'s 7-Layer Intelligence Stack',
+      title: 'Visio Lead Gen\'s 7-Layer Intelligence Stack',
       subtitle: 'From signal to sale — fully automated',
       content: `1. **Signal Engine** — detects 23 life-event buying triggers\n2. **AI Scoring** — 100-point qualification (budget, timeline, intent)\n3. **VIN Matching** — matches buyers to your actual inventory\n4. **WhatsApp Delivery** — hot leads in <60 seconds\n5. **Voice AI** — automated warm-lead follow-up\n6. **Market Terminal** — real-time NAAMSA data & competitor tracking\n7. **Analytics Dashboard** — full pipeline visibility`,
       data: { layers: 7, signal_types: 23, delivery_time: '<60s' },
@@ -305,7 +305,7 @@ function buildFallbackSlides(
       type: 'testimonial',
       title: 'Trusted by Industry Leaders',
       subtitle: 'VisioCorp portfolio',
-      content: `> "Tony Duardo, SA's top music marketer, chose VisioCorp for his artist campaigns — the same AI technology that powers Visio Auto."\n\nVisioCorp builds AI operating systems for businesses across **13 industries**. Visio Auto is our specialist automotive intelligence product, backed by the same infrastructure that manages R10M+ in client operations.`,
+      content: `> "Tony Duardo, SA's top music marketer, chose VisioCorp for his artist campaigns — the same AI technology that powers Visio Lead Gen."\n\nVisioCorp builds AI operating systems for businesses across **13 industries**. Visio Lead Gen is our specialist automotive intelligence product, backed by the same infrastructure that manages R10M+ in client operations.`,
       data: { partner: 'Tony Duardo', industries: 13, parent: 'VisioCorp' },
     },
     {

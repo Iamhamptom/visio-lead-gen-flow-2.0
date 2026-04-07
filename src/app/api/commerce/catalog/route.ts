@@ -1,7 +1,7 @@
 /**
  * GET /api/commerce/catalog
  *
- * Public catalog of every purchasable Visio Auto Suite SKU.
+ * Public catalog of every purchasable Visio Lead Gen Suite SKU.
  * Free for all callers — sibling apps, dealer dashboards, and Jess agent
  * use this as the single source of truth for pricing and entitlements.
  *
@@ -36,7 +36,7 @@ export async function GET(request: NextRequest) {
         snapshot_date: "2026-04-07",
         currency: "ZAR",
         notes:
-          "Single source of truth for all Visio Auto Suite SKUs. Prices in ZAR cents. Quote-only items have amountCents = -1.",
+          "Single source of truth for all Visio Lead Gen Suite SKUs. Prices in ZAR cents. Quote-only items have amountCents = -1.",
         contact: "concierge@visiocorp.co",
       },
       total: enriched.length,

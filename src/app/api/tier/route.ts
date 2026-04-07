@@ -27,7 +27,7 @@ function generateYocoPaymentLink(dealerId: string, tier: TierName): string | nul
   const params = new URLSearchParams({
     amount: String(config.price), // amount in ZAR cents
     currency: 'ZAR',
-    description: `Visio Auto — ${tier.charAt(0).toUpperCase() + tier.slice(1)} Plan (monthly)`,
+    description: `Visio Lead Gen — ${tier.charAt(0).toUpperCase() + tier.slice(1)} Plan (monthly)`,
     metadata_dealer_id: dealerId,
     metadata_tier: tier,
     success_url: `${process.env.NEXT_PUBLIC_APP_URL ?? 'https://visio-auto.vercel.app'}/dashboard/billing?success=true&tier=${tier}`,

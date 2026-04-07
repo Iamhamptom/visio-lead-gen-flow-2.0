@@ -7,10 +7,10 @@ export default function TermsOfServicePage() {
       <nav className="border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-4xl items-center gap-4 px-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-4 w-4 text-white" />
             </div>
-            <span className="text-lg font-semibold text-white">Visio Auto</span>
+            <span className="text-lg font-semibold text-white">Visio Lead Gen</span>
           </Link>
         </div>
       </nav>
@@ -28,14 +28,14 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-lg font-semibold text-white">1. Acceptance of Terms</h2>
             <p className="mt-2">
-              By accessing or using the Visio Auto platform ("Service"), operated by VisioCorp (Pty) Ltd, you agree to be bound by these Terms of Service. If you do not agree, do not use the Service.
+              By accessing or using the Visio Lead Gen platform ("Service"), operated by VisioCorp (Pty) Ltd, you agree to be bound by these Terms of Service. If you do not agree, do not use the Service.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-semibold text-white">2. Service Description</h2>
             <p className="mt-2">
-              Visio Auto is an AI-powered dealership intelligence platform that detects car-buying intent signals and delivers qualified leads to subscribed motor dealerships in South Africa.
+              Visio Lead Gen is an AI-powered dealership intelligence platform that detects car-buying intent signals and delivers qualified leads to subscribed motor dealerships in South Africa.
             </p>
           </section>
 
@@ -82,7 +82,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-lg font-semibold text-white">8. Limitation of Liability</h2>
             <p className="mt-2">
-              Visio Auto provides leads on an "as-is" basis. We are not liable for the outcome of any sales interaction. Our total liability is limited to the fees paid in the preceding 3 months.
+              Visio Lead Gen provides leads on an "as-is" basis. We are not liable for the outcome of any sales interaction. Our total liability is limited to the fees paid in the preceding 3 months.
             </p>
           </section>
 
@@ -96,7 +96,7 @@ export default function TermsOfServicePage() {
           <section>
             <h2 className="text-lg font-semibold text-white">10. Contact</h2>
             <p className="mt-2">
-              For questions about these terms, contact <a href="mailto:legal@visiocorp.co" className="text-emerald-400 hover:underline">legal@visiocorp.co</a>.
+              For questions about these terms, contact <a href="mailto:legal@visiocorp.co" className="text-blue-400 hover:underline">legal@visiocorp.co</a>.
             </p>
           </section>
         </div>

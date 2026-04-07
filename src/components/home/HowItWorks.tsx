@@ -58,18 +58,18 @@ export default function HomeHowItWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             How it works
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white max-w-3xl leading-[1.1]">
             Most dealers wait.
             <br />
-            <span className="text-emerald-400">The best ones hunt.</span>
+            <span className="text-blue-400">The best ones hunt.</span>
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-xl">
             The average SA dealership holds stock 47 days. 25% of walk-ins get rejected for
             finance. The buyers who would have qualified are already browsing competitors
-            online. Visio Auto finds them first.
+            online. Visio Lead Gen finds them first.
           </p>
         </motion.div>
 
@@ -97,10 +97,10 @@ export default function HomeHowItWorks() {
               }}
               className="bg-[#020c07] p-8 hover:bg-white/[0.02] transition-colors group"
             >
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-500/40">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-500/40">
                 Step {step.step}
               </span>
-              <step.icon className="mt-5 h-6 w-6 text-emerald-500/50 group-hover:text-emerald-400 transition-colors" />
+              <step.icon className="mt-5 h-6 w-6 text-blue-500/50 group-hover:text-blue-400 transition-colors" />
               <h3 className="mt-5 text-[15px] font-medium text-white/85">{step.title}</h3>
               <p className="mt-3 text-[13px] leading-relaxed text-white/40">
                 {step.description}
@@ -115,13 +115,13 @@ export default function HomeHowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-10 border-l-[2px] border-l-emerald-500/40 pl-5 max-w-2xl"
+          className="mt-10 border-l-[2px] border-l-blue-500/40 pl-5 max-w-2xl"
         >
           <p className="text-[13px] italic text-white/50 leading-relaxed">
-            &ldquo;Dealers using Visio Auto turn stock 1.6× faster. A typical 40-car-per-month
+            &ldquo;Dealers using Visio Lead Gen turn stock 1.6× faster. A typical 40-car-per-month
             dealer saves approximately R1.25M per year in floorplan interest.&rdquo;
           </p>
-          <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/50">
+          <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/50">
             Visio Research Labs — Stock Velocity Analysis, 2026
           </p>
         </motion.div>

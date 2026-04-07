@@ -103,7 +103,7 @@ export async function POST(
         method: "POST",
         headers: { Authorization: `Bearer ${resendKey}`, "Content-Type": "application/json" },
         body: JSON.stringify({
-          from: "Visio Auto <david@visiocorp.co>",
+          from: "Visio Lead Gen <david@visiocorp.co>",
           to: "davidhampton@visiocorp.co",
           subject: `🔥 New Lead Order: ${dealerName} — R${(amount / 100).toLocaleString()} (${leads_count} leads)`,
           html: `<div style="font-family:sans-serif;">

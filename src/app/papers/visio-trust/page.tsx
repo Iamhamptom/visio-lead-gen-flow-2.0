@@ -147,7 +147,7 @@ export default function VisioTrustPaperPage() {
       <p>
         Visio Trust&apos;s central technical artefact is the <code>vt_transactions</code> table
         &mdash; the <strong>single source of truth for any car transaction flowing through the
-        Visio Auto suite</strong>:
+        Visio Lead Gen suite</strong>:
       </p>
 
       <pre><code>{`vt_transactions:
@@ -174,7 +174,7 @@ export default function VisioTrustPaperPage() {
 
       <p>
         Every other product writes its primary key into this table. This is the layer that makes
-        &ldquo;Visio Auto Suite&rdquo; a coherent product line rather than five separate apps. A
+        &ldquo;Visio Lead Gen Suite&rdquo; a coherent product line rather than five separate apps. A
         dealer&apos;s history of stock velocity, F&amp;I attach rates, customer touchpoints, and
         escrow throughput all live in <code>vt_transactions</code> joined to the sibling tables.
         Leaving the suite means losing the entire historical view &mdash; which is the central

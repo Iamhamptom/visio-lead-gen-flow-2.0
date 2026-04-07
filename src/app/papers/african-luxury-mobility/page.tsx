@@ -161,7 +161,7 @@ export default function AfricanLuxuryPaperPage() {
 
       <p>
         Based on HNW concentration, current import flows, and the practical viability of the
-        Sandton-to-driveway logistics model, Visio Auto Concierge prioritises the following
+        Sandton-to-driveway logistics model, Visio Lead Gen Concierge prioritises the following
         markets:
       </p>
 
@@ -250,9 +250,9 @@ export default function AfricanLuxuryPaperPage() {
       <h4>3.2 The seven-language baseline</h4>
 
       <p>
-        Visio Auto Concierge supports a baseline of <strong>seven working languages</strong>:
+        Visio Lead Gen Concierge supports a baseline of <strong>seven working languages</strong>:
         English, French, Portuguese, Swahili, Arabic, Lingala, and Nigerian Pidgin. Jess
-        (Visio Auto&apos;s AI agent) can converse in all seven via voice and text. Native-speaker
+        (Visio Lead Gen&apos;s AI agent) can converse in all seven via voice and text. Native-speaker
         human concierge support is available on escalation for every region.
       </p>
 
@@ -489,7 +489,7 @@ export default function AfricanLuxuryPaperPage() {
       <h2>10. The Visio Concierge proposition</h2>
 
       <p>
-        Visio Auto Concierge applies the Visio Auto signal-mining and AI-agent platform to the
+        Visio Lead Gen Concierge applies the Visio Lead Gen signal-mining and AI-agent platform to the
         African HNW market. We don&apos;t replace SA premium dealers &mdash; we connect them to
         the buyers they&apos;ve always known existed but never had the operational capacity to
         serve directly.

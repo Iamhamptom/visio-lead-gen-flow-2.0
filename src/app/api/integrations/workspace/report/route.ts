@@ -3,7 +3,7 @@ import { reportToWorkspace, type WorkspaceReport } from '@/lib/integrations/work
 
 // ---------------------------------------------------------------------------
 // POST /api/integrations/workspace/report
-// Send Visio Auto performance report to Visio Workspace
+// Send Visio Lead Gen performance report to Visio Workspace
 // Called by the analytics cron or manually
 // ---------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ export async function POST(request: NextRequest) {
   const now = new Date()
   const report: WorkspaceReport = {
     product_id: 'visio-auto',
-    product_name: 'Visio Auto',
+    product_name: 'Visio Lead Gen',
     period: `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`,
     metrics,
     reported_at: now.toISOString(),

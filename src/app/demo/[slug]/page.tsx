@@ -128,7 +128,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
     return (
       <div className="min-h-screen bg-zinc-950 flex items-center justify-center">
         <div className="text-center">
-          <Loader2 className="w-8 h-8 animate-spin text-emerald-500 mx-auto mb-3" />
+          <Loader2 className="w-8 h-8 animate-spin text-blue-500 mx-auto mb-3" />
           <p className="text-sm text-zinc-500">Loading your demo...</p>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
           <Car className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
           <h1 className="text-xl font-bold text-white mb-2">Demo not found</h1>
           <p className="text-sm text-zinc-500 mb-6">We couldn&apos;t find inventory for this dealership yet. Contact us to get set up.</p>
-          <a href="https://wa.me/27662346203?text=Hi%20Tony%2C%20I%20want%20to%20see%20the%20AI%20leads%20demo" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-500">
+          <a href="https://wa.me/27662346203?text=Hi%20Tony%2C%20I%20want%20to%20see%20the%20AI%20leads%20demo" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-semibold hover:bg-blue-500">
             WhatsApp Us
           </a>
         </div>
@@ -158,10 +158,10 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
       <nav className="border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl sticky top-0 z-50">
         <div className="max-w-5xl mx-auto flex h-14 items-center justify-between px-6">
           <div className="flex items-center gap-2">
-            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-3.5 w-3.5 text-white" />
             </div>
-            <span className="text-sm font-semibold">Visio Auto</span>
+            <span className="text-sm font-semibold">Visio Lead Gen</span>
           </div>
           <span className="text-xs text-zinc-500">AI-Powered Lead Intelligence</span>
         </div>
@@ -174,7 +174,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
           {screen === "cars" && (
             <motion.div key="cars" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
               <div className="text-center mb-10">
-                <p className="text-xs text-emerald-400 uppercase tracking-widest mb-3">Personalized for {data.dealer_name}</p>
+                <p className="text-xs text-blue-400 uppercase tracking-widest mb-3">Personalized for {data.dealer_name}</p>
                 <h1 className="text-3xl font-bold mb-3">
                   We found these on your lot, {firstName}.
                 </h1>
@@ -191,13 +191,13 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                     className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 hover:border-zinc-700 transition-colors"
                   >
                     <div className="flex items-center gap-2 mb-3">
-                      <Car className="w-4 h-4 text-emerald-400" />
+                      <Car className="w-4 h-4 text-blue-400" />
                       <span className="text-xs text-zinc-500 uppercase tracking-wider">{car.condition}</span>
                     </div>
                     <h3 className="font-semibold text-white mb-1">
                       {car.year} {car.brand} {car.model}
                     </h3>
-                    <p className="text-lg font-mono font-bold text-emerald-400">
+                    <p className="text-lg font-mono font-bold text-blue-400">
                       R{car.price.toLocaleString()}
                     </p>
                     {car.mileage && (
@@ -210,7 +210,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
               <div className="text-center">
                 <button
                   onClick={() => { setScreen("scanning"); setScanCount(0); setVisibleSignals(0); }}
-                  className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-500 transition-colors text-sm"
+                  className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-colors text-sm"
                 >
                   <Search className="w-4 h-4" />
                   See who&apos;s looking for these →
@@ -230,18 +230,18 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
               {/* Pulse animation */}
               <div className="flex justify-center mb-8">
                 <div className="relative">
-                  <div className="w-24 h-24 rounded-full bg-emerald-500/10 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center animate-pulse">
-                      <Zap className="w-8 h-8 text-emerald-400" />
+                  <div className="w-24 h-24 rounded-full bg-blue-500/10 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center animate-pulse">
+                      <Zap className="w-8 h-8 text-blue-400" />
                     </div>
                   </div>
-                  <div className="absolute inset-0 rounded-full border-2 border-emerald-500/30 animate-ping" />
+                  <div className="absolute inset-0 rounded-full border-2 border-blue-500/30 animate-ping" />
                 </div>
               </div>
 
               {/* Counter */}
               <div className="text-center mb-8">
-                <span className="text-5xl font-mono font-bold text-emerald-400">{Math.min(scanCount, data.signals_count)}</span>
+                <span className="text-5xl font-mono font-bold text-blue-400">{Math.min(scanCount, data.signals_count)}</span>
                 <p className="text-sm text-zinc-500 mt-1">potential buyers detected</p>
               </div>
 
@@ -259,7 +259,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                       <p className="text-xs text-white truncate">{sig.text}</p>
                       <p className="text-[10px] text-zinc-500">{sig.area}</p>
                     </div>
-                    <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse shrink-0" />
                   </motion.div>
                 ))}
               </div>
@@ -306,7 +306,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
               <div className="text-center">
                 <button
                   onClick={() => setScreen("pricing")}
-                  className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-500 transition-colors text-sm"
+                  className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-colors text-sm"
                 >
                   <Zap className="w-4 h-4" />
                   ENRICH — Unlock Full Leads
@@ -333,13 +333,13 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                     onClick={() => setSelectedPkg(pkg.id)}
                     className={`relative rounded-xl border p-6 text-left transition-all ${
                       selectedPkg === pkg.id
-                        ? "border-emerald-500 bg-emerald-500/5 ring-1 ring-emerald-500/50"
+                        ? "border-blue-500 bg-blue-500/5 ring-1 ring-blue-500/50"
                         : "border-zinc-800 bg-zinc-900/50 hover:border-zinc-700"
                     }`}
                   >
                     {pkg.popular && (
                       <div className="absolute -top-2.5 left-1/2 -translate-x-1/2">
-                        <span className="px-3 py-0.5 rounded-full bg-emerald-600 text-[10px] font-bold text-white uppercase tracking-wider">
+                        <span className="px-3 py-0.5 rounded-full bg-blue-600 text-[10px] font-bold text-white uppercase tracking-wider">
                           Most Popular
                         </span>
                       </div>
@@ -348,10 +348,10 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                     <div className="mb-3">
                       <span className="text-2xl font-mono font-bold text-white">R{pkg.price.toLocaleString()}</span>
                     </div>
-                    <p className="text-xs text-emerald-400 mb-3">{pkg.leads} enriched leads</p>
+                    <p className="text-xs text-blue-400 mb-3">{pkg.leads} enriched leads</p>
                     <p className="text-[11px] text-zinc-500">R{pkg.perLead}/lead</p>
                     {selectedPkg === pkg.id && (
-                      <CheckCircle2 className="absolute top-4 right-4 w-5 h-5 text-emerald-500" />
+                      <CheckCircle2 className="absolute top-4 right-4 w-5 h-5 text-blue-500" />
                     )}
                   </button>
                 ))}
@@ -365,7 +365,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                   "Matched specifically to YOUR inventory",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-xs text-zinc-400">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-blue-500 shrink-0" />
                     {item}
                   </div>
                 ))}
@@ -375,7 +375,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                 <button
                   onClick={handleOrder}
                   disabled={submitting}
-                  className="inline-flex items-center gap-2 px-10 py-3.5 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-500 transition-colors text-sm disabled:opacity-50"
+                  className="inline-flex items-center gap-2 px-10 py-3.5 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-colors text-sm disabled:opacity-50"
                 >
                   {submitting ? (
                     <Loader2 className="w-4 h-4 animate-spin" />
@@ -397,9 +397,9 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ type: "spring", stiffness: 200 }}
-                  className="w-20 h-20 rounded-full bg-emerald-500/10 flex items-center justify-center mx-auto mb-6"
+                  className="w-20 h-20 rounded-full bg-blue-500/10 flex items-center justify-center mx-auto mb-6"
                 >
-                  <Sparkles className="w-10 h-10 text-emerald-400" />
+                  <Sparkles className="w-10 h-10 text-blue-400" />
                 </motion.div>
 
                 <h2 className="text-2xl font-bold mb-2">DEEP RESEARCH MODE — ON</h2>
@@ -410,11 +410,11 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                 {/* Cars being researched */}
                 <div className="grid gap-3 sm:grid-cols-3 max-w-lg mx-auto mb-10">
                   {data.cars.slice(0, 3).map((car, i) => (
-                    <div key={i} className="rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-3 text-center">
+                    <div key={i} className="rounded-lg border border-blue-500/20 bg-blue-500/5 p-3 text-center">
                       <p className="text-xs font-semibold text-white">{car.year} {car.brand} {car.model}</p>
                       <div className="flex items-center justify-center gap-1 mt-1">
-                        <Loader2 className="w-3 h-3 animate-spin text-emerald-400" />
-                        <span className="text-[10px] text-emerald-400">Enriching buyers...</span>
+                        <Loader2 className="w-3 h-3 animate-spin text-blue-400" />
+                        <span className="text-[10px] text-blue-400">Enriching buyers...</span>
                       </div>
                     </div>
                   ))}
@@ -428,7 +428,7 @@ export default function DemoFunnelPage({ params }: { params: Promise<{ slug: str
                     "Full support — reply to your confirmation email anytime",
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2 text-xs text-zinc-400">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-blue-500 shrink-0" />
                       {item}
                     </div>
                   ))}

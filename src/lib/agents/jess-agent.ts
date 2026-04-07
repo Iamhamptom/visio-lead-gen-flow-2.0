@@ -23,12 +23,12 @@ import {
 import { createCheckout as createYocoCheckout } from '@/lib/payments/yoco'
 
 // =============================================================================
-// Jess — SA Car Expert Agent for Visio Auto
+// Jess — SA Car Expert Agent for Visio Lead Gen
 // Hyper-conversational, action-taking. Extends visioAgent's 22 tools with 6 more.
 // =============================================================================
 
 // ---------------------------------------------------------------------------
-// Visio Auto positioning — the 7 SA data gaps
+// Visio Lead Gen positioning — the 7 SA data gaps
 // ---------------------------------------------------------------------------
 
 const VISIO_AUTO_GAPS = [
@@ -42,7 +42,7 @@ const VISIO_AUTO_GAPS = [
     key: 'signals',
     gap: 'Buying-signal detection (life events, intent feeds)',
     our_advantage:
-      "Visio Auto's signal engine watches 38+ signal types: job changes, marriage, relocation, finance approvals, social posts. Approximately zero competitors do this in SA.",
+      "Visio Lead Gen's signal engine watches 38+ signal types: job changes, marriage, relocation, finance approvals, social posts. Approximately zero competitors do this in SA.",
   },
   {
     key: 'valuation',
@@ -243,7 +243,7 @@ const jessExtraTools = {
 
   get_visio_auto_pitch: tool({
     description:
-      'Get the Visio Auto positioning pitch. Pass an angle (conversion, signals, valuation, sentiment, finance, insurance, service_history) to focus on one gap, or omit for the full 7-gap pitch.',
+      'Get the Visio Lead Gen positioning pitch. Pass an angle (conversion, signals, valuation, sentiment, finance, insurance, service_history) to focus on one gap, or omit for the full 7-gap pitch.',
     inputSchema: z.object({
       angle: z
         .enum([
@@ -267,13 +267,13 @@ const jessExtraTools = {
   }),
 
   // ──────────────────────────────────────────────────────────────────
-  // Visio Auto Suite — sibling product routing
+  // Visio Lead Gen Suite — sibling product routing
   // (added 2026-04-07 when the 6 sub-products went live)
   // ──────────────────────────────────────────────────────────────────
 
   recommend_suite_product: tool({
     description:
-      'CRITICAL: When a user describes a buying or selling situation, call this to get the right Visio Auto Suite sibling product (Approve, Inspect, BDC, Intent, Open Finance, Trust). Returns the product, its live URL, paper, and the reason it fits. Always use this rather than guessing which product to recommend.',
+      'CRITICAL: When a user describes a buying or selling situation, call this to get the right Visio Lead Gen Suite sibling product (Approve, Inspect, BDC, Intent, Open Finance, Trust). Returns the product, its live URL, paper, and the reason it fits. Always use this rather than guessing which product to recommend.',
     inputSchema: z.object({
       situation: z
         .string()
@@ -287,7 +287,7 @@ const jessExtraTools = {
         return {
           recommendation: null,
           fallback:
-            'No specific suite product matched. Recommend the full Visio Auto Suite at /papers/suite-overview.',
+            'No specific suite product matched. Recommend the full Visio Lead Gen Suite at /papers/suite-overview.',
         }
       }
       return {
@@ -310,7 +310,7 @@ const jessExtraTools = {
 
   list_suite_products: tool({
     description:
-      'List all 6 Visio Auto Suite sibling products with their live URLs, papers, and revenue targets. Use when the user asks "what products do you have?" or "show me everything Visio Auto can do".',
+      'List all 6 Visio Lead Gen Suite sibling products with their live URLs, papers, and revenue targets. Use when the user asks "what products do you have?" or "show me everything Visio Lead Gen can do".',
     inputSchema: z.object({}),
     execute: async () => {
       return {
@@ -334,7 +334,7 @@ const jessExtraTools = {
 
   get_suite_product: tool({
     description:
-      'Get full details about a specific Visio Auto Suite sibling product by key (approve, inspect, bdc, intent, open-finance, trust). Returns the live URL, paper, integration details, and full description.',
+      'Get full details about a specific Visio Lead Gen Suite sibling product by key (approve, inspect, bdc, intent, open-finance, trust). Returns the live URL, paper, integration details, and full description.',
     inputSchema: z.object({
       key: z.enum([
         'approve',
@@ -358,7 +358,7 @@ const jessExtraTools = {
 
   list_commerce_catalog: tool({
     description:
-      'List all purchasable Visio Auto Suite SKUs from the commerce catalog. Filter by family (subscription | one_off | custom) or product (approve | inspect | bdc | intent | open-finance | trust | leads | concierge). Use this when a user asks "what can I buy?" or "show me your pricing".',
+      'List all purchasable Visio Lead Gen Suite SKUs from the commerce catalog. Filter by family (subscription | one_off | custom) or product (approve | inspect | bdc | intent | open-finance | trust | leads | concierge). Use this when a user asks "what can I buy?" or "show me your pricing".',
     inputSchema: z.object({
       family: z.enum(['subscription', 'one_off', 'custom']).optional(),
       product: z
@@ -464,7 +464,7 @@ const jessExtraTools = {
 
   start_commerce_subscription: tool({
     description:
-      'Start a recurring subscription for a Visio Auto Suite SKU. Creates the subscription row + a Yoco checkout. Returns the checkout URL the user can click to pay. Use this when a user has confirmed they want to subscribe — always confirm the SKU and email first, then call this. CRITICAL: only call after the user has explicitly confirmed they want to buy.',
+      'Start a recurring subscription for a Visio Lead Gen Suite SKU. Creates the subscription row + a Yoco checkout. Returns the checkout URL the user can click to pay. Use this when a user has confirmed they want to subscribe — always confirm the SKU and email first, then call this. CRITICAL: only call after the user has explicitly confirmed they want to buy.',
     inputSchema: z.object({
       sku: z.string().describe("e.g. 'bdc-pro', 'trust-velocity', 'intent-growth'"),
       buyer_email: z.string().email(),
@@ -601,7 +601,7 @@ const jessExtraTools = {
       try {
         const checkout = await createYocoCheckout({
           amountInCents: order.total_cents,
-          description: `Visio Auto — Order ${order.order_number}`,
+          description: `Visio Lead Gen — Order ${order.order_number}`,
           successUrl: `${baseUrl}/shop/success?order=${order.order_number}`,
           cancelUrl: `${baseUrl}/shop?cancelled=${order.order_number}`,
           metadata: {
@@ -631,7 +631,7 @@ const jessExtraTools = {
 
   check_user_entitlements: tool({
     description:
-      'Check what Visio Auto Suite products and tiers a user has access to. Use to confirm a current customer before talking pricing, or to upsell a free user to a paid tier.',
+      'Check what Visio Lead Gen Suite products and tiers a user has access to. Use to confirm a current customer before talking pricing, or to upsell a free user to a paid tier.',
     inputSchema: z.object({
       email: z.string().email(),
     }),
@@ -716,7 +716,7 @@ const jessExtraTools = {
 // Jess system prompt
 // ---------------------------------------------------------------------------
 
-export const JESS_SYSTEM_PROMPT = `You are Jess, the AI car expert for Visio Auto — South Africa's smartest automotive intelligence platform.
+export const JESS_SYSTEM_PROMPT = `You are Jess, the AI car expert for Visio Lead Gen — South Africa's smartest automotive intelligence platform.
 
 # Who you are
 You are NOT just an information bot. You ACT on the user's behalf. You are warm, sharp, locally fluent (Joburg, Cape Town, Durban, Sandton, Umhlanga, Menlyn). You speak like a knowledgeable SA friend who happens to know every car on the road, every dealer, every finance trick.
@@ -724,7 +724,7 @@ You are NOT just an information bot. You ACT on the user's behalf. You are warm,
 # Be hyper-conversational and action-taking
 - When a buyer asks "find me a Hilux under R450k" → call search_inventory AND match_vehicles. If they look warm, offer to schedule_followup or book_test_drive.
 - When a dealer asks "how am I doing?" → call get_analytics AND get_roi_report AND search_leads filtered by their dealer_id.
-- When a lead asks "why Visio Auto?" → call get_visio_auto_pitch with the angle most relevant to them.
+- When a lead asks "why Visio Lead Gen?" → call get_visio_auto_pitch with the angle most relevant to them.
 - When someone mentions an industry stat → call get_market_stat (NEVER recite from memory).
 - ALWAYS end your response with the next concrete action you can take for them. Be proactive: "Want me to book that test drive?" / "Should I qualify this lead now?" / "I can pull the full ROI report — say the word."
 
@@ -732,7 +732,7 @@ You are NOT just an information bot. You ACT on the user's behalf. You are warm,
 When citing ANY macro statistic — vehicle population, market share, sales volumes, average prices, traffic stats, registration counts, import figures — you MUST hedge with "approximately", "around", "roughly", or "about".
   GOOD: "There are approximately 12.7 million registered vehicles in SA"
   BAD:  "There are 12,734,221 registered vehicles"
-EXCEPTION: Specific listings from the Visio Auto database (real cars with real prices) are exact — those are products, not stats.
+EXCEPTION: Specific listings from the Visio Lead Gen database (real cars with real prices) are exact — those are products, not stats.
 
 # POPIA & legal boundaries (HARD)
 - Vehicle data (specs, prices, listings) is NOT personal information — safe to share.
@@ -740,8 +740,8 @@ EXCEPTION: Specific listings from the Visio Auto database (real cars with real p
 - All outreach must identify the sender and offer opt-out (s69).
 - If a user asks for someone's personal details tied to a vehicle, decline politely and explain POPIA briefly.
 
-# What makes Visio Auto different (the 7 gaps — sell them)
-The SA car industry has 7 data gaps no one else fills. Visio Auto closes them all:
+# What makes Visio Lead Gen different (the 7 gaps — sell them)
+The SA car industry has 7 data gaps no one else fills. Visio Lead Gen closes them all:
 1. Real-time dealer-level conversion data (nobody else publishes this)
 2. Buying-signal detection — 38+ life-event signals (nobody else attempts this in SA)
 3. Consumer-facing instant valuations (Lightstone is dealer-only — we open it up)
@@ -771,7 +771,7 @@ When you do not know which product fits, ALWAYS call recommend_suite_product wit
 Crucial: when you recommend a sibling product, give the FULL URL so the user can click. Do not just say "Visio Approve" — say "Visio Approve at https://visio-approve.vercel.app".
 
 # HOW JESS SELLS — the value walkthrough motion (you can take payment in chat)
-You are not just an information bot. You are the salesperson for the Visio Auto Suite. You can quote, you can take orders, you can start subscriptions, you can return Yoco checkout links inline in the chat. The user can pay without leaving the conversation.
+You are not just an information bot. You are the salesperson for the Visio Lead Gen Suite. You can quote, you can take orders, you can start subscriptions, you can return Yoco checkout links inline in the chat. The user can pay without leaving the conversation.
 
 The 4-step selling motion:
 
@@ -788,7 +788,7 @@ Don't just name the product — pitch why it pays for itself.
 **Step 3 — Handle objections honestly.**
 - "Is this regulated?" → Walk through the legal posture: not a credit provider, not a credit bureau, not financial advice, POPIA compliant. Cite suite-overview paper.
 - "Is the data live?" → Be honest: Visio Intent ships with demo flag until live signal feed is wired; Visio Trust escrow runs in stub mode until Stitch partnership lands. Say so. The Honesty Protocol is the brand.
-- "Why not use {Conversica/Lightstone/Carvana}?" → Explain why those don't fit SA: SMS-first, English-only, $1.5K-5K USD per month, capital-intensive vertical retail. Visio Auto Suite is the SA-shape answer.
+- "Why not use {Conversica/Lightstone/Carvana}?" → Explain why those don't fit SA: SMS-first, English-only, $1.5K-5K USD per month, capital-intensive vertical retail. Visio Lead Gen Suite is the SA-shape answer.
 - "Do you have customers yet?" → Be honest. The suite is brand new — year-1 target is 50 paying dealers and R10M ARR. Year-2 target is R237M ARR. The buyer is becoming an early customer.
 
 **Step 4 — Close.**
@@ -818,7 +818,7 @@ Always:
 # Never
 - Never quote macro stats without "approximately" / "around" / "roughly".
 - Never fabricate data. If a tool returns nothing, say "I don't have current data on that — want me to dig deeper?"
-- Never recommend a specific dealer without checking the Visio Auto database.
+- Never recommend a specific dealer without checking the Visio Lead Gen database.
 - Never share personal information about identifiable persons.
 `
 

@@ -71,7 +71,7 @@ export default function HomeFooter() {
             <Link href="/" className="flex items-center gap-3">
               <VisioLogoMark size={32} />
               <span className="text-base font-light tracking-wide text-white/80">
-                Visio Auto
+                Visio Lead Gen
               </span>
             </Link>
             <p className="mt-5 text-[13px] leading-relaxed text-white/40 max-w-xs">
@@ -96,7 +96,7 @@ export default function HomeFooter() {
                       href={p.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[12px] text-white/35 hover:text-emerald-400/80 transition-colors"
+                      className="text-[12px] text-white/35 hover:text-blue-400/80 transition-colors"
                     >
                       {p.shortName} ↗
                     </a>
@@ -135,7 +135,7 @@ export default function HomeFooter() {
               href="https://instagram.com/visiocorp"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/30 hover:text-emerald-400 transition-colors"
+              className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/30 hover:text-blue-400 transition-colors"
             >
               @visiocorp
             </a>

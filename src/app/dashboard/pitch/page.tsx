@@ -52,16 +52,16 @@ const TEMPLATES = [
 ]
 
 const SLIDE_COLORS: Record<string, string> = {
-  hero: 'bg-emerald-500/10 text-emerald-400 ring-emerald-500/20',
+  hero: 'bg-blue-500/10 text-blue-400 ring-blue-500/20',
   problem: 'bg-red-500/10 text-red-400 ring-red-500/20',
   solution: 'bg-blue-500/10 text-blue-400 ring-blue-500/20',
   stats: 'bg-purple-500/10 text-purple-400 ring-purple-500/20',
   roi: 'bg-amber-500/10 text-amber-400 ring-amber-500/20',
   features: 'bg-cyan-500/10 text-cyan-400 ring-cyan-500/20',
   market: 'bg-indigo-500/10 text-indigo-400 ring-indigo-500/20',
-  pricing: 'bg-emerald-500/10 text-emerald-400 ring-emerald-500/20',
+  pricing: 'bg-blue-500/10 text-blue-400 ring-blue-500/20',
   testimonial: 'bg-pink-500/10 text-pink-400 ring-pink-500/20',
-  cta: 'bg-emerald-500/10 text-emerald-400 ring-emerald-500/20',
+  cta: 'bg-blue-500/10 text-blue-400 ring-blue-500/20',
 }
 
 // ---------------------------------------------------------------------------
@@ -170,7 +170,7 @@ export default function PitchBuilderPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-            <Presentation className="h-6 w-6 text-emerald-400" />
+            <Presentation className="h-6 w-6 text-blue-400" />
             Pitch Builder
           </h1>
           <p className="mt-1 text-sm text-zinc-500">
@@ -178,7 +178,7 @@ export default function PitchBuilderPage() {
           </p>
         </div>
         {slides.length > 0 && (
-          <Badge className="bg-emerald-500/10 text-emerald-400 ring-emerald-500/20">
+          <Badge className="bg-blue-500/10 text-blue-400 ring-blue-500/20">
             {slides.length} slides
           </Badge>
         )}
@@ -199,7 +199,7 @@ export default function PitchBuilderPage() {
             <Card className="border-zinc-800/50 bg-zinc-900/50">
               <CardHeader>
                 <CardTitle className="text-white flex items-center gap-2">
-                  <Sparkles className="h-4 w-4 text-emerald-400" />
+                  <Sparkles className="h-4 w-4 text-blue-400" />
                   Quick Generate
                 </CardTitle>
               </CardHeader>
@@ -262,7 +262,7 @@ export default function PitchBuilderPage() {
                 <Button
                   onClick={generatePitch}
                   disabled={generating || !dealerId}
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                 >
                   {generating ? (
                     <>
@@ -293,7 +293,7 @@ export default function PitchBuilderPage() {
                     { step: '4', title: 'Export and share', desc: 'Download as HTML presentation, Markdown, or JSON for VisioPitch' },
                   ].map((item) => (
                     <div key={item.step} className="flex gap-3">
-                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-xs font-bold text-emerald-400">
+                      <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-500/10 text-xs font-bold text-blue-400">
                         {item.step}
                       </div>
                       <div>
@@ -320,7 +320,7 @@ export default function PitchBuilderPage() {
                     onClick={() => setCurrentSlide(i)}
                     className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors ${
                       i === currentSlide
-                        ? 'bg-emerald-500/15 text-emerald-400 ring-1 ring-emerald-500/30'
+                        ? 'bg-blue-500/15 text-blue-400 ring-1 ring-blue-500/30'
                         : 'bg-zinc-800/50 text-zinc-500 hover:text-zinc-300'
                     }`}
                   >
@@ -397,7 +397,7 @@ export default function PitchBuilderPage() {
                     onClick={() => { setCurrentSlide(i); setEditing(false) }}
                     className={`w-full text-left rounded-lg px-3 py-2.5 text-sm transition-colors ${
                       i === currentSlide
-                        ? 'bg-emerald-500/10 text-emerald-400 ring-1 ring-emerald-500/20'
+                        ? 'bg-blue-500/10 text-blue-400 ring-1 ring-blue-500/20'
                         : 'bg-zinc-900/50 text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-200'
                     }`}
                   >
@@ -436,7 +436,7 @@ export default function PitchBuilderPage() {
                         <Button
                           size="sm"
                           onClick={saveEdit}
-                          className="bg-emerald-600 hover:bg-emerald-700 text-white"
+                          className="bg-blue-600 hover:bg-blue-700 text-white"
                         >
                           Save
                         </Button>
@@ -451,7 +451,7 @@ export default function PitchBuilderPage() {
                           <input
                             value={editTitle}
                             onChange={(e) => setEditTitle(e.target.value)}
-                            className="w-full rounded-lg bg-zinc-950 border border-zinc-800 px-3 py-2 text-sm text-zinc-200 focus:outline-none focus:ring-1 focus:ring-emerald-500/50"
+                            className="w-full rounded-lg bg-zinc-950 border border-zinc-800 px-3 py-2 text-sm text-zinc-200 focus:outline-none focus:ring-1 focus:ring-blue-500/50"
                           />
                         </div>
                         <div>
@@ -482,10 +482,10 @@ export default function PitchBuilderPage() {
         {/* ---- EXPORT TAB ---- */}
         <TabsContent value="export">
           <div className="grid gap-4 sm:grid-cols-3">
-            <Card className="border-zinc-800/50 bg-zinc-900/50 hover:border-emerald-500/30 transition-colors cursor-pointer group">
+            <Card className="border-zinc-800/50 bg-zinc-900/50 hover:border-blue-500/30 transition-colors cursor-pointer group">
               <CardContent className="pt-6 text-center space-y-3" onClick={() => exportPitch('html')}>
-                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 group-hover:bg-emerald-500/20 transition-colors">
-                  <Globe className="h-6 w-6 text-emerald-400" />
+                <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+                  <Globe className="h-6 w-6 text-blue-400" />
                 </div>
                 <h3 className="font-semibold text-white">HTML Presentation</h3>
                 <p className="text-xs text-zinc-500">

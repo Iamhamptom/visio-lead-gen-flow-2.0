@@ -37,7 +37,7 @@ export default function HomeTrustBar() {
               transition={{ delay: i * 0.06, duration: 0.5 }}
               className="flex items-center gap-2"
             >
-              <item.icon className="h-3.5 w-3.5 text-emerald-500/50" />
+              <item.icon className="h-3.5 w-3.5 text-blue-500/50" />
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/35">
                 {item.label}
               </span>

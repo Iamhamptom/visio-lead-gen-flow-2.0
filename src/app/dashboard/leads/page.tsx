@@ -414,11 +414,11 @@ function statusBadge(status: string) {
   const styles: Record<string, string> = {
     new: "bg-zinc-500/10 text-zinc-400",
     contacted: "bg-blue-500/10 text-blue-400",
-    qualified: "bg-emerald-500/10 text-emerald-400",
+    qualified: "bg-blue-500/10 text-blue-400",
     test_drive_booked: "bg-purple-500/10 text-purple-400",
     test_drive_done: "bg-purple-500/10 text-purple-300",
     negotiating: "bg-amber-500/10 text-amber-400",
-    sold: "bg-emerald-600/10 text-emerald-300",
+    sold: "bg-blue-600/10 text-blue-300",
     lost: "bg-red-500/10 text-red-400",
     inactive: "bg-zinc-600/10 text-zinc-500",
   };
@@ -539,7 +539,7 @@ export default function LeadsPage() {
                 placeholder="Search leads by name, brand, area..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="h-8 w-full rounded-lg border border-zinc-800 bg-zinc-950 pl-9 pr-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/20"
+                className="h-8 w-full rounded-lg border border-zinc-800 bg-zinc-950 pl-9 pr-3 text-sm text-zinc-200 placeholder-zinc-600 outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/20"
               />
             </div>
 
@@ -548,7 +548,7 @@ export default function LeadsPage() {
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
-                className="h-8 appearance-none rounded-lg border border-zinc-800 bg-zinc-950 pl-3 pr-8 text-sm text-zinc-300 outline-none focus:border-emerald-500/50"
+                className="h-8 appearance-none rounded-lg border border-zinc-800 bg-zinc-950 pl-3 pr-8 text-sm text-zinc-300 outline-none focus:border-blue-500/50"
               >
                 <option value="all">All Statuses</option>
                 <option value="new">New</option>
@@ -566,7 +566,7 @@ export default function LeadsPage() {
               <select
                 value={tierFilter}
                 onChange={(e) => setTierFilter(e.target.value)}
-                className="h-8 appearance-none rounded-lg border border-zinc-800 bg-zinc-950 pl-3 pr-8 text-sm text-zinc-300 outline-none focus:border-emerald-500/50"
+                className="h-8 appearance-none rounded-lg border border-zinc-800 bg-zinc-950 pl-3 pr-8 text-sm text-zinc-300 outline-none focus:border-blue-500/50"
               >
                 <option value="all">All Scores</option>
                 <option value="hot">Hot (80+)</option>
@@ -638,7 +638,7 @@ export default function LeadsPage() {
                   <TableCell className="font-medium text-zinc-200">
                     <Link
                       href={`/dashboard/leads/${lead.id}`}
-                      className="hover:text-emerald-400 transition-colors"
+                      className="hover:text-blue-400 transition-colors"
                     >
                       {lead.name}
                     </Link>
@@ -677,7 +677,7 @@ export default function LeadsPage() {
                       <Button
                         variant="ghost"
                         size="icon-xs"
-                        className="text-zinc-500 hover:text-emerald-400"
+                        className="text-zinc-500 hover:text-blue-400"
                         onClick={() => window.open(`https://wa.me/${lead.phone?.replace(/\s/g, '').replace(/^\+/, '')}`, '_blank')}
                       >
                         <MessageCircle className="h-3 w-3" />
@@ -686,7 +686,7 @@ export default function LeadsPage() {
                         <Button
                           variant="ghost"
                           size="icon-xs"
-                          className="text-zinc-500 hover:text-emerald-400"
+                          className="text-zinc-500 hover:text-blue-400"
                         >
                           <Eye className="h-3 w-3" />
                         </Button>

@@ -27,7 +27,7 @@ export default function VisioIntentPaperPage() {
           they tell you what was sold, when, and at what price, after the fact. None of them
           publish forward-looking buying intent data. This paper introduces{" "}
           <strong>Visio Intent</strong>, a subscription data product that aggregates the 38
-          buying-intent signals from the Visio Auto platform into a composite Index, enforces
+          buying-intent signals from the Visio Lead Gen platform into a composite Index, enforces
           k-anonymity at minimum cell size 5 to satisfy POPIA, and sells the resulting view to
           OEM marketing teams and bank credit ops teams. Target:{" "}
           <strong>R7.2M ARR from 30 subscribers at blended R20K/month</strong>.
@@ -66,7 +66,7 @@ export default function VisioIntentPaperPage() {
       <h2>2. The signal feed</h2>
 
       <p>
-        Every signal that fires across the Visio Auto suite is k-anonymised, aggregated, and
+        Every signal that fires across the Visio Lead Gen suite is k-anonymised, aggregated, and
         stored in <code>vint_signals_aggregate</code>:
       </p>
 
@@ -222,7 +222,7 @@ is_demo       boolean -- Honesty Protocol flag`}</code></pre>
         The first three layers (NaTIS, Lightstone, TransUnion) are mature, well-funded, and own
         the historical record. The fourth layer &mdash; real-time, k-anonymity-protected,
         methodologically transparent buying intent &mdash; does not exist anywhere in SA today.
-        We build it as a side-effect of running the Visio Auto suite, and sell it back to the
+        We build it as a side-effect of running the Visio Lead Gen suite, and sell it back to the
         OEMs and banks that need it most.
       </p>
 

@@ -61,13 +61,13 @@ function Panel({
 }) {
   return (
     <div
-      className={`overflow-hidden rounded border border-emerald-900/30 bg-[#0d1117] ${className}`}
+      className={`overflow-hidden rounded border border-blue-900/30 bg-[#0d1117] ${className}`}
     >
-      <div className="flex items-center justify-between border-b border-emerald-900/20 px-3 py-1.5">
-        <span className="font-mono text-[11px] font-semibold tracking-wider text-emerald-500 uppercase">
+      <div className="flex items-center justify-between border-b border-blue-900/20 px-3 py-1.5">
+        <span className="font-mono text-[11px] font-semibold tracking-wider text-blue-500 uppercase">
           {title}
         </span>
-        <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
+        <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
       </div>
       <div className="p-3">{children}</div>
     </div>
@@ -83,7 +83,7 @@ function TickerBar() {
   const doubled = [...TICKER_DATA, ...TICKER_DATA]
 
   return (
-    <div className="overflow-hidden rounded border border-emerald-900/30 bg-[#0d1117]">
+    <div className="overflow-hidden rounded border border-blue-900/30 bg-[#0d1117]">
       <div className="relative flex overflow-hidden">
         <div className="flex animate-[ticker_40s_linear_infinite] gap-6 whitespace-nowrap px-4 py-2">
           {doubled.map((item, i) => (
@@ -94,13 +94,13 @@ function TickerBar() {
               </span>
               <span
                 className={`tabular-nums font-medium ${
-                  item.direction === "up" ? "text-emerald-400" : "text-red-400"
+                  item.direction === "up" ? "text-blue-400" : "text-red-400"
                 }`}
               >
                 {item.direction === "up" ? "\u2191" : "\u2193"}
                 {item.changePercent}%
               </span>
-              <span className="text-emerald-900/60">|</span>
+              <span className="text-blue-900/60">|</span>
             </span>
           ))}
         </div>
@@ -203,9 +203,9 @@ function MarketSharePanel() {
               if (!active || !payload?.length) return null
               const data = payload[0]
               return (
-                <div className="rounded border border-emerald-900/40 bg-[#0d1117] px-3 py-2 font-mono text-xs shadow-xl">
+                <div className="rounded border border-blue-900/40 bg-[#0d1117] px-3 py-2 font-mono text-xs shadow-xl">
                   <p className="font-semibold text-zinc-200">{data.name}</p>
-                  <p className="tabular-nums text-emerald-400">{data.value}%</p>
+                  <p className="tabular-nums text-blue-400">{data.value}%</p>
                 </div>
               )
             }}
@@ -407,7 +407,7 @@ function FinancePanel() {
             {item.change && (
               <div
                 className={`mt-0.5 font-mono text-[10px] tabular-nums ${
-                  item.direction === "up" ? "text-emerald-400" : "text-red-400"
+                  item.direction === "up" ? "text-blue-400" : "text-red-400"
                 }`}
               >
                 {item.change}
@@ -527,20 +527,20 @@ function ChineseBrandPanel() {
     <Panel title="Chinese Brand Tracker">
       <Table>
         <TableHeader>
-          <TableRow className="border-emerald-900/20 hover:bg-transparent">
-            <TableHead className="h-7 text-[10px] font-semibold uppercase tracking-wider text-emerald-600">
+          <TableRow className="border-blue-900/20 hover:bg-transparent">
+            <TableHead className="h-7 text-[10px] font-semibold uppercase tracking-wider text-blue-600">
               Brand
             </TableHead>
-            <TableHead className="h-7 text-right text-[10px] font-semibold uppercase tracking-wider text-emerald-600">
+            <TableHead className="h-7 text-right text-[10px] font-semibold uppercase tracking-wider text-blue-600">
               Units
             </TableHead>
-            <TableHead className="h-7 text-right text-[10px] font-semibold uppercase tracking-wider text-emerald-600">
+            <TableHead className="h-7 text-right text-[10px] font-semibold uppercase tracking-wider text-blue-600">
               YoY
             </TableHead>
-            <TableHead className="h-7 text-right text-[10px] font-semibold uppercase tracking-wider text-emerald-600">
+            <TableHead className="h-7 text-right text-[10px] font-semibold uppercase tracking-wider text-blue-600">
               Share
             </TableHead>
-            <TableHead className="h-7 text-[10px] font-semibold uppercase tracking-wider text-emerald-600">
+            <TableHead className="h-7 text-[10px] font-semibold uppercase tracking-wider text-blue-600">
               Top Model
             </TableHead>
           </TableRow>
@@ -549,12 +549,12 @@ function ChineseBrandPanel() {
           {CHINESE_BRAND_DATA.map((item) => (
             <TableRow
               key={item.brand}
-              className="border-zinc-800/50 hover:bg-emerald-950/20"
+              className="border-zinc-800/50 hover:bg-blue-950/20"
             >
               <TableCell className="py-1.5 font-mono text-xs font-medium text-zinc-200">
                 {item.brand}
                 {item.note && (
-                  <span className="ml-1.5 rounded bg-emerald-900/40 px-1 py-0.5 text-[9px] text-emerald-400">
+                  <span className="ml-1.5 rounded bg-blue-900/40 px-1 py-0.5 text-[9px] text-blue-400">
                     NEW
                   </span>
                 )}
@@ -562,7 +562,7 @@ function ChineseBrandPanel() {
               <TableCell className="py-1.5 text-right font-mono text-xs tabular-nums text-zinc-300">
                 {item.units.toLocaleString()}
               </TableCell>
-              <TableCell className="py-1.5 text-right font-mono text-xs tabular-nums text-emerald-400">
+              <TableCell className="py-1.5 text-right font-mono text-xs tabular-nums text-blue-400">
                 +{item.yoyGrowth}%
               </TableCell>
               <TableCell className="py-1.5 text-right font-mono text-xs tabular-nums text-zinc-400">
@@ -576,8 +576,8 @@ function ChineseBrandPanel() {
         </TableBody>
       </Table>
       {/* BYD callout */}
-      <div className="mt-2 rounded border border-emerald-900/30 bg-emerald-950/20 px-3 py-2">
-        <p className="font-mono text-[10px] text-emerald-500">
+      <div className="mt-2 rounded border border-blue-900/30 bg-blue-950/20 px-3 py-2">
+        <p className="font-mono text-[10px] text-blue-500">
           <span className="font-bold">BYD ALERT:</span> 60-70 new dealerships planned across SA.
           YoY growth +340%. Watch this space.
         </p>
@@ -596,13 +596,13 @@ function RegionalPanel() {
       <div className="space-y-1.5">
         {REGIONAL_DATA.map((item) => (
           <div key={item.province} className="flex items-center gap-2">
-            <span className="w-6 shrink-0 font-mono text-[10px] font-bold text-emerald-600">
+            <span className="w-6 shrink-0 font-mono text-[10px] font-bold text-blue-600">
               {item.abbrev}
             </span>
             <span className="w-24 shrink-0 text-[11px] text-zinc-400">{item.province}</span>
             <div className="relative h-4 flex-1 overflow-hidden rounded-sm bg-zinc-900">
               <div
-                className="h-full rounded-sm bg-emerald-700/60 transition-all"
+                className="h-full rounded-sm bg-blue-700/60 transition-all"
                 style={{ width: `${(item.share / 50) * 100}%` }}
               />
             </div>
@@ -618,7 +618,7 @@ function RegionalPanel() {
       {/* Total */}
       <div className="mt-3 flex items-center justify-between border-t border-zinc-800 pt-2">
         <span className="text-[11px] font-semibold text-zinc-400">TOTAL</span>
-        <span className="font-mono text-sm font-bold tabular-nums text-emerald-400">
+        <span className="font-mono text-sm font-bold tabular-nums text-blue-400">
           {REGIONAL_DATA.reduce((sum, r) => sum + r.units, 0).toLocaleString()} units
         </span>
       </div>
@@ -661,9 +661,9 @@ export default function MarketTerminalPage() {
       </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between border-t border-emerald-900/20 px-2 py-2">
+      <div className="flex items-center justify-between border-t border-blue-900/20 px-2 py-2">
         <span className="font-mono text-[10px] text-zinc-600">
-          Source: NAAMSA / TransUnion Auto / Visio Auto Intelligence
+          Source: NAAMSA / TransUnion Auto / Visio Lead Gen Intelligence
         </span>
         <span className="font-mono text-[10px] text-zinc-600">
           Data period: March 2026 | Updated daily

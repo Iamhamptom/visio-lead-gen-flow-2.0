@@ -21,7 +21,7 @@ export const metadata = {
  */
 export default function ModesPage() {
   return (
-    <div className="min-h-screen bg-[#030f0a] text-white">
+    <div className="min-h-screen bg-[#03091a] text-white">
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-6 pt-24 pb-16">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/40">

@@ -40,7 +40,7 @@ export default function WindowFrame({
         <div className="flex items-center gap-2">
           <div className="h-2.5 w-2.5 rounded-full bg-red-500/60 group-hover:bg-red-500 transition-colors" />
           <div className="h-2.5 w-2.5 rounded-full bg-yellow-500/60 group-hover:bg-yellow-500 transition-colors" />
-          <div className="h-2.5 w-2.5 rounded-full bg-emerald-500/60 group-hover:bg-emerald-500 transition-colors" />
+          <div className="h-2.5 w-2.5 rounded-full bg-blue-500/60 group-hover:bg-blue-500 transition-colors" />
         </div>
 
         {/* Title */}
@@ -51,11 +51,11 @@ export default function WindowFrame({
         {/* Status indicator */}
         <div className="flex items-center gap-1.5">
           {variant === "terminal" && (
-            <span className="font-mono text-[9px] text-emerald-500/40">LIVE</span>
+            <span className="font-mono text-[9px] text-blue-500/40">LIVE</span>
           )}
           {variant === "browser" && (
             <div className="flex items-center gap-1 bg-white/[0.04] px-2 py-0.5 rounded-sm">
-              <div className="h-1.5 w-1.5 rounded-full bg-emerald-500/40" />
+              <div className="h-1.5 w-1.5 rounded-full bg-blue-500/40" />
               <span className="font-mono text-[8px] text-white/20">SECURE</span>
             </div>
           )}
@@ -95,7 +95,7 @@ export function MiniWindow({
       <div className="flex items-center gap-1.5 px-3 py-1.5 border-b border-white/[0.04] bg-white/[0.02]">
         <div className="h-1.5 w-1.5 rounded-full bg-red-500/40" />
         <div className="h-1.5 w-1.5 rounded-full bg-yellow-500/40" />
-        <div className="h-1.5 w-1.5 rounded-full bg-emerald-500/40" />
+        <div className="h-1.5 w-1.5 rounded-full bg-blue-500/40" />
         <span className="ml-2 font-mono text-[8px] uppercase tracking-[0.2em] text-white/15">
           {title}
         </span>

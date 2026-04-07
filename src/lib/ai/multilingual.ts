@@ -56,12 +56,12 @@ export function detectLanguage(text: string): Language {
  * Common car-buying greetings by language.
  */
 export const GREETINGS: Record<Language, string> = {
-  en: "Hi! I'm your AI car advisor at Visio Auto. I'll help you find the perfect vehicle. What are you looking for?",
-  af: "Hallo! Ek is jou KI-motoradviseur by Visio Auto. Ek sal jou help om die perfekte voertuig te vind. Waarna soek jy?",
-  zu: "Sawubona! Ngingumeluleki wakho wezimoto we-AI ku-Visio Auto. Ngizokusiza uthole imoto efanele. Ufunani?",
-  st: "Dumela! Ke moeletsi wa hao wa koloi ya AI ho Visio Auto. Ke tla o thusa ho fumana koloi e nepahetseng. O batla eng?",
-  ts: "Avuxeni! Ndzi mutsundzuxi wa wena wa movha wa AI eka Visio Auto. Ndzi ta ku pfuna ku kuma movha lowu faneleke. U lava yini?",
-  xh: "Molo! Ndingumcebisi wakho wemoto we-AI ku-Visio Auto. Ndiza kukunceda ufumane imoto efanelekileyo. Ukhangela ntoni?",
+  en: "Hi! I'm your AI car advisor at Visio Lead Gen. I'll help you find the perfect vehicle. What are you looking for?",
+  af: "Hallo! Ek is jou KI-motoradviseur by Visio Lead Gen. Ek sal jou help om die perfekte voertuig te vind. Waarna soek jy?",
+  zu: "Sawubona! Ngingumeluleki wakho wezimoto we-AI ku-Visio Lead Gen. Ngizokusiza uthole imoto efanele. Ufunani?",
+  st: "Dumela! Ke moeletsi wa hao wa koloi ya AI ho Visio Lead Gen. Ke tla o thusa ho fumana koloi e nepahetseng. O batla eng?",
+  ts: "Avuxeni! Ndzi mutsundzuxi wa wena wa movha wa AI eka Visio Lead Gen. Ndzi ta ku pfuna ku kuma movha lowu faneleke. U lava yini?",
+  xh: "Molo! Ndingumcebisi wakho wemoto we-AI ku-Visio Lead Gen. Ndiza kukunceda ufumane imoto efanelekileyo. Ukhangela ntoni?",
 }
 
 /**

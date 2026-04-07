@@ -31,7 +31,7 @@ const fadeUp = {
 
 export default function HomeHero() {
   return (
-    <section className="relative min-h-[92vh] overflow-hidden bg-[#030f0a] flex items-center">
+    <section className="relative min-h-[92vh] overflow-hidden bg-[#03091a] flex items-center">
       {/* Background car image — subtle, stays in its lane */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 ken-burns">
@@ -43,20 +43,20 @@ export default function HomeHero() {
             className="object-cover object-right opacity-30 mix-blend-screen pointer-events-none"
           />
         </div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_left,rgba(3,15,10,0.7)_0%,transparent_70%)]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#030f0a] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_left,rgba(3,9,26,0.7)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#03091a] via-transparent to-transparent" />
       </div>
 
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-grid opacity-30 z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.05)_0%,transparent_60%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.05)_0%,transparent_60%)] z-0" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-6xl px-6 pt-32 pb-20 w-full">
         {/* Eyebrow */}
         <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
-          <span className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70 border border-emerald-500/25 bg-emerald-500/[0.04] px-3 py-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70 border border-blue-500/25 bg-blue-500/[0.04] px-3 py-1.5">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
             Visio Lead Gen · Twelve Verticals · South Africa
           </span>
         </motion.div>
@@ -73,7 +73,7 @@ export default function HomeHero() {
           <br />
           Any vertical.
           <br />
-          <span className="text-emerald-400">Delivered.</span>
+          <span className="text-blue-400">Delivered.</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -100,7 +100,7 @@ export default function HomeHero() {
         >
           <Link
             href="/modes"
-            className="inline-flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-400 px-8 py-4 font-mono text-[12px] uppercase tracking-[0.2em] text-[#030f0a] font-medium transition-colors"
+            className="inline-flex items-center gap-2.5 bg-blue-500 hover:bg-blue-400 px-8 py-4 font-mono text-[12px] uppercase tracking-[0.2em] text-[#03091a] font-medium transition-colors"
           >
             Pick a Mode
             <ArrowRight className="h-4 w-4" />
@@ -123,7 +123,7 @@ export default function HomeHero() {
         >
           {STATS.map((stat) => (
             <div key={stat.label} className="bg-white/[0.02] px-5 py-5 text-center">
-              <div className="font-mono text-2xl md:text-3xl font-extralight text-emerald-400">
+              <div className="font-mono text-2xl md:text-3xl font-extralight text-blue-400">
                 {stat.value}
               </div>
               <div className="font-mono text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-white/40 mt-1.5">

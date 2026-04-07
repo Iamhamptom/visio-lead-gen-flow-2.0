@@ -71,12 +71,12 @@ export function KPICard({
   format = "number",
   delay = 0,
   subtitle,
-  color = "text-emerald-400",
-  bg = "bg-emerald-400/10",
+  color = "text-blue-400",
+  bg = "bg-blue-400/10",
 }: KPICardProps) {
   const changeColor =
     changeDirection === "up"
-      ? "text-emerald-400"
+      ? "text-blue-400"
       : changeDirection === "down"
         ? "text-red-400"
         : "text-zinc-500";

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 /**
- * Core Offerings — the three things Visio Auto actually sells.
+ * Core Offerings — the three things Visio Lead Gen actually sells.
  *
  * 1. Qualified Leads  → /pricing + /get-started
  * 2. Sales Intelligence → /intelligence + /research
@@ -22,7 +22,7 @@ const OFFERINGS = [
     eyebrow: "Qualified Leads",
     title: "Buyer-intent leads, delivered to your sales floor.",
     description:
-      "Stop bidding on Google Ads for buyers who are not ready. Visio Auto watches the signals that predict a car purchase — and routes the ready-to-buy prospects directly to your team on WhatsApp.",
+      "Stop bidding on Google Ads for buyers who are not ready. Visio Lead Gen watches the signals that predict a car purchase — and routes the ready-to-buy prospects directly to your team on WhatsApp.",
     href: "/pricing?category=leads",
     ctaLabel: "See Lead Packs",
     image: "/generated/car-volume.png",
@@ -36,7 +36,7 @@ const OFFERINGS = [
     href: "/intelligence",
     ctaLabel: "See Intelligence",
     image: "/generated/dashboard.png",
-    imageAlt: "Cinematic dashboard with ambient emerald lighting",
+    imageAlt: "Cinematic dashboard with ambient blue lighting",
   },
   {
     eyebrow: "The Full Suite",
@@ -52,9 +52,9 @@ const OFFERINGS = [
 
 export default function HomeCoreOfferings() {
   return (
-    <section id="product" className="relative py-32 bg-[#030f0a]">
+    <section id="product" className="relative py-32 bg-[#03091a]">
       <div className="absolute inset-0 bg-dots opacity-25" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.04)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.04)_0%,transparent_60%)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -64,16 +64,16 @@ export default function HomeCoreOfferings() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             What you get
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white max-w-3xl leading-[1.1]">
             Three offerings.
             <br />
-            <span className="text-emerald-400">One platform.</span>
+            <span className="text-blue-400">One platform.</span>
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-xl">
-            The core of Visio Auto is simple: we sell qualified car buyers to dealerships, and
+            The core of Visio Lead Gen is simple: we sell qualified car buyers to dealerships, and
             world-class market intelligence to the OEMs and banks who fund them.
           </p>
         </motion.div>
@@ -108,12 +108,12 @@ export default function HomeCoreOfferings() {
                     className="object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#030f0a]/80 via-transparent to-[#030f0a]/40" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#03091a]/80 via-transparent to-[#03091a]/40" />
                 </div>
 
                 {/* Content */}
                 <div className={`p-8 lg:p-12 flex flex-col justify-center ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/70">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/70">
                     {offer.eyebrow}
                   </span>
                   <h3 className="mt-4 text-2xl md:text-3xl font-extralight tracking-tight text-white leading-snug">
@@ -122,7 +122,7 @@ export default function HomeCoreOfferings() {
                   <p className="mt-4 text-[14px] leading-relaxed text-white/50">
                     {offer.description}
                   </p>
-                  <div className="mt-6 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/80 group-hover:text-emerald-400 transition-colors">
+                  <div className="mt-6 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/80 group-hover:text-blue-400 transition-colors">
                     {offer.ctaLabel}
                     <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>

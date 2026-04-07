@@ -2,7 +2,7 @@
  * AI Newsletter Generator
  *
  * Generates personalized weekly intelligence briefs and market alerts
- * for Visio Auto dealer clients using Claude Sonnet 4.6.
+ * for Visio Lead Gen dealer clients using Claude Sonnet 4.6.
  * Returns both HTML (email) and plain text (WhatsApp).
  */
 
@@ -216,7 +216,7 @@ export async function generateWeeklyNewsletter(
   try {
     const { text: aiContent } = await generateText({
       model: MODEL,
-      system: `You are the Visio Auto AI Newsletter Writer. You produce premium weekly intelligence briefs for South African car dealers — think Bloomberg Terminal meets automotive CRM.
+      system: `You are the Visio Lead Gen AI Newsletter Writer. You produce premium weekly intelligence briefs for South African car dealers — think Bloomberg Terminal meets automotive CRM.
 
 Rules:
 - Use South African context (Rands, provinces, local market dynamics)
@@ -291,7 +291,7 @@ export async function generateMarketAlert(
   try {
     const { text: analysis } = await generateText({
       model: MODEL,
-      system: `You are Visio Auto's market alert analyst. Produce a concise, actionable market alert for a South African car dealer. Include: what happened, why it matters to their business specifically, and what they should do in the next 48 hours. Use Rands and SA context. Keep it to 150-200 words.`,
+      system: `You are Visio Lead Gen's market alert analyst. Produce a concise, actionable market alert for a South African car dealer. Include: what happened, why it matters to their business specifically, and what they should do in the next 48 hours. Use Rands and SA context. Keep it to 150-200 words.`,
       prompt: `ALERT: ${event.title}
 Details: ${event.description}
 Impact level: ${event.impact_level}
@@ -314,7 +314,7 @@ Write the alert analysis with recommended actions.`,
       analysis,
       '',
       `---`,
-      `Powered by Visio Auto AI`,
+      `Powered by Visio Lead Gen AI`,
       `visio-auto.vercel.app`,
     ].join('\n')
 
@@ -449,7 +449,7 @@ function buildNewsletterHTML(
     <div class="header">
       <div class="header-logo">
         <div class="logo-mark">VA</div>
-        <div class="logo-text">Visio Auto Intelligence</div>
+        <div class="logo-text">Visio Lead Gen Intelligence</div>
       </div>
       <h1>Weekly Intelligence Brief &mdash; ${dealerName}</h1>
       <div class="meta">Week of ${weekOf} &bull; Confidential</div>
@@ -460,7 +460,7 @@ function buildNewsletterHTML(
       ${formattedContent}
     </div>
     <div class="footer">
-      <p>Powered by <a href="https://visio-auto.vercel.app">Visio Auto AI</a> &bull; Upgrade your plan at visio-auto.vercel.app</p>
+      <p>Powered by <a href="https://visio-auto.vercel.app">Visio Lead Gen AI</a> &bull; Upgrade your plan at visio-auto.vercel.app</p>
       <p>This brief is confidential and prepared exclusively for ${dealerName}.</p>
     </div>
   </div>
@@ -510,7 +510,7 @@ function buildAlertHTML(
       ${analysis.split('\n').map((p) => `<p>${p}</p>`).join('')}
     </div>
     <div class="footer">
-      <p>Powered by <a href="https://visio-auto.vercel.app">Visio Auto AI</a></p>
+      <p>Powered by <a href="https://visio-auto.vercel.app">Visio Lead Gen AI</a></p>
     </div>
   </div>
 </body>
@@ -534,7 +534,7 @@ function buildPlainText(
     content,
     '',
     `━━━━━━━━━━━━━━━━━━━━━━━━`,
-    `Powered by Visio Auto AI`,
+    `Powered by Visio Lead Gen AI`,
     `Upgrade: visio-auto.vercel.app`,
   ].join('\n')
 }
@@ -568,7 +568,7 @@ function buildFallbackNewsletter(
       : 'No lead data available for this period.',
     '',
     `Opportunity Spotlight`,
-    `Check the Visio Auto terminal for AI-identified opportunities in your area.`,
+    `Check the Visio Lead Gen terminal for AI-identified opportunities in your area.`,
     '',
     `Industry News`,
     `Visit visio-auto.vercel.app/dashboard/terminal/news for the latest SA automotive news.`,

@@ -34,9 +34,9 @@ const signalColorMap: Record<string, { icon: string; bg: string; bar: string }> 
     bar: "bg-pink-400",
   },
   new_business: {
-    icon: "text-emerald-400",
-    bg: "bg-emerald-400/10",
-    bar: "bg-emerald-400",
+    icon: "text-blue-400",
+    bg: "bg-blue-400/10",
+    bar: "bg-blue-400",
   },
   relocation: {
     icon: "text-blue-400",
@@ -51,9 +51,9 @@ const signalColorMap: Record<string, { icon: string; bg: string; bar: string }> 
 };
 
 const defaultColor = {
-  icon: "text-emerald-400",
-  bg: "bg-emerald-400/10",
-  bar: "bg-emerald-400",
+  icon: "text-blue-400",
+  bg: "bg-blue-400/10",
+  bar: "bg-blue-400",
 };
 
 interface SignalFeedProps {
@@ -145,7 +145,7 @@ export function SignalFeed({ signals, loading }: SignalFeedProps) {
                   <span className="text-[11px] text-zinc-600">
                     {signal.created_at}
                   </span>
-                  <button className="flex items-center gap-1 rounded-md px-2 py-0.5 text-[11px] font-medium text-emerald-400/70 opacity-0 transition-all hover:bg-emerald-400/10 hover:text-emerald-400 group-hover:opacity-100">
+                  <button className="flex items-center gap-1 rounded-md px-2 py-0.5 text-[11px] font-medium text-blue-400/70 opacity-0 transition-all hover:bg-blue-400/10 hover:text-blue-400 group-hover:opacity-100">
                     <Sparkles className="h-3 w-3" />
                     Convert to Lead
                     <ArrowRight className="h-3 w-3" />

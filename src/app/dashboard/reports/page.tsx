@@ -132,7 +132,7 @@ export default function ReportsDashboard() {
       {/* Generate section */}
       <div className="rounded-xl border border-zinc-800/50 bg-zinc-900/50 p-5">
         <h2 className="text-sm font-semibold text-white flex items-center gap-2 mb-4">
-          <FileText className="h-4 w-4 text-emerald-400" />
+          <FileText className="h-4 w-4 text-blue-400" />
           Generate Report
         </h2>
         <div className="flex flex-wrap items-end gap-4">
@@ -147,7 +147,7 @@ export default function ReportsDashboard() {
                 value={selectedDealer}
                 onChange={(e) => setSelectedDealer(e.target.value)}
                 disabled={dealersLoading}
-                className="w-full appearance-none rounded-lg border border-zinc-700 bg-zinc-800/50 py-2 pl-9 pr-8 text-sm text-zinc-200 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500/30"
+                className="w-full appearance-none rounded-lg border border-zinc-700 bg-zinc-800/50 py-2 pl-9 pr-8 text-sm text-zinc-200 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30"
               >
                 {dealersLoading && <option>Loading...</option>}
                 {dealers.map((d) => (
@@ -170,7 +170,7 @@ export default function ReportsDashboard() {
               <select
                 value={period}
                 onChange={(e) => setPeriod(e.target.value)}
-                className="w-full appearance-none rounded-lg border border-zinc-700 bg-zinc-800/50 py-2 pl-9 pr-8 text-sm text-zinc-200 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500/30"
+                className="w-full appearance-none rounded-lg border border-zinc-700 bg-zinc-800/50 py-2 pl-9 pr-8 text-sm text-zinc-200 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500/30"
               >
                 <option value="this_month">This Month</option>
                 <option value="last_month">Last Month</option>
@@ -184,7 +184,7 @@ export default function ReportsDashboard() {
           <button
             onClick={generateReport}
             disabled={loading || !selectedDealer}
-            className="flex items-center gap-2 rounded-lg bg-emerald-500 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="flex items-center gap-2 rounded-lg bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {loading ? (
               <Loader2 className="h-4 w-4 animate-spin" />
@@ -205,7 +205,7 @@ export default function ReportsDashboard() {
               <button
                 onClick={sendToClient}
                 disabled={sending}
-                className="flex items-center gap-1.5 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5 text-xs font-medium text-emerald-400 hover:bg-emerald-500/20 disabled:opacity-50 transition-colors"
+                className="flex items-center gap-1.5 rounded-lg border border-blue-500/30 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-400 hover:bg-blue-500/20 disabled:opacity-50 transition-colors"
               >
                 {sending ? (
                   <Loader2 className="h-3 w-3 animate-spin" />

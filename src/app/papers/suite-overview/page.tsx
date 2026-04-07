@@ -1,7 +1,7 @@
 import PaperLayout from "@/components/papers/PaperLayout";
 
 export const metadata = {
-  title: "The Visio Auto Suite — VRL-AUTO-010 | Visio Research Labs",
+  title: "The Visio Lead Gen Suite — VRL-AUTO-010 | Visio Research Labs",
   description:
     "A six-product operating system for the SA automotive market. Six structural information asymmetries. One unified ledger. Asset-light Carvana for South Africa. R237M ARR target.",
 };
@@ -11,7 +11,7 @@ export default function SuiteOverviewPaperPage() {
     <PaperLayout
       paperNumber="VRL-AUTO-010"
       category="Suite Overview"
-      title="The Visio Auto Suite: A six-product operating system for the SA automotive market."
+      title="The Visio Lead Gen Suite: A six-product operating system for the SA automotive market."
       subtitle="Six structural information asymmetries. One unified ledger. Asset-light Carvana for South Africa. R237M ARR target by year 2."
       publishDate="April 2026"
       authors="Dr. David Hampton, VRL"
@@ -94,7 +94,7 @@ export default function SuiteOverviewPaperPage() {
         These three decisions are deliberate. They are also the same three decisions that
         Carvana made differently &mdash; Carvana built one product, one experience, one ledger
         from day one, and paid for it with $20 billion in capital and a near-bankruptcy. The
-        Visio Auto Suite achieves the same coherence through software architecture instead of
+        Visio Lead Gen Suite achieves the same coherence through software architecture instead of
         capital investment.
       </p>
 
@@ -189,7 +189,7 @@ export default function SuiteOverviewPaperPage() {
       <p>
         In every case, the existing competition either does not address the SA-specific shape of
         the problem (US-built tools), does not address the long-tail economics (UVeye, hardware),
-        or addresses the wrong layer (vertical retail instead of coordination). The Visio Auto
+        or addresses the wrong layer (vertical retail instead of coordination). The Visio Lead Gen
         Suite is the first product line built specifically for the South African market shape, at
         South African pricing, on South African channels (WhatsApp), in South African languages
         (English + Afrikaans + Zulu), against South African regulation.
@@ -201,7 +201,7 @@ export default function SuiteOverviewPaperPage() {
         ↓
 Buyers use Visio Approve + Visio Open Finance + Visio Inspect on dealer pages
         ↓
-Every interaction fires a signal into the Visio Auto signal engine
+Every interaction fires a signal into the Visio Lead Gen signal engine
         ↓
 Signals are k-anonymity-aggregated into Visio Intent
         ↓
@@ -290,7 +290,7 @@ The improved economics fund more dealer subscriptions to Visio BDC + Visio Trust
       </p>
 
       <p className="footnote">
-        Cite as: Hampton, D. (2026). &ldquo;The Visio Auto Suite: A Six-Product Operating System
+        Cite as: Hampton, D. (2026). &ldquo;The Visio Lead Gen Suite: A Six-Product Operating System
         for the South African Automotive Market&rdquo;. Visio Research Labs, VRL-AUTO-010.
       </p>
     </PaperLayout>

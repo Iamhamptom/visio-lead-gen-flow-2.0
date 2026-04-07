@@ -4,9 +4,9 @@ import { VisioLogoMark } from "@/components/landing/VisioLogo";
 import { ArrowLeft, Shield, FileText, Globe2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Visio Auto | Built in South Africa",
+  title: "About Visio Lead Gen | Built in South Africa",
   description:
-    "Visio Auto is the AI platform South African car dealerships use to find buyers, close sales, and stay ahead of the market. Built in SA. POPIA compliant. Honesty Protocol enforced.",
+    "Visio Lead Gen is the AI platform South African car dealerships use to find buyers, close sales, and stay ahead of the market. Built in SA. POPIA compliant. Honesty Protocol enforced.",
 };
 
 export default function AboutPage() {
@@ -16,9 +16,9 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <VisioLogoMark size={24} />
-            <span className="text-sm font-light tracking-wide text-white/80">Visio Auto</span>
+            <span className="text-sm font-light tracking-wide text-white/80">Visio Lead Gen</span>
             <span className="text-white/20 mx-1">/</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60">
               About
             </span>
           </Link>
@@ -35,19 +35,19 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative py-24">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.05)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.05)_0%,transparent_70%)]" />
 
         <div className="relative mx-auto max-w-3xl px-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70 border border-emerald-500/30 bg-emerald-500/[0.05] px-3 py-1.5">
-            About Visio Auto
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70 border border-blue-500/30 bg-blue-500/[0.05] px-3 py-1.5">
+            About Visio Lead Gen
           </span>
           <h1 className="mt-8 text-4xl md:text-5xl font-extralight tracking-tight text-white leading-[1.1]">
             Built in South Africa, for
             <br />
-            <span className="text-emerald-400">South African dealerships</span>.
+            <span className="text-blue-400">South African dealerships</span>.
           </h1>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-2xl">
-            Visio Auto is the AI platform South African car dealerships use to find qualified
+            Visio Lead Gen is the AI platform South African car dealerships use to find qualified
             buyers, close more sales, and out-price the competition. We built it because nobody
             else was going to build it for the SA market — not Conversica, not Carvana, not
             Lightstone, not TransUnion. They were all building for somewhere else.
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
           <div className="mt-10 grid gap-px md:grid-cols-3 bg-white/[0.04] border border-white/[0.06]">
             <div className="bg-[#020c07] p-6">
-              <Shield className="h-5 w-5 text-emerald-500/50 mb-4" />
+              <Shield className="h-5 w-5 text-blue-500/50 mb-4" />
               <h3 className="text-[14px] font-medium text-white/80">Every figure cited</h3>
               <p className="mt-2 text-[12px] text-white/35 leading-relaxed">
                 Every number in our research papers has a public source URL and a verified-at
@@ -84,7 +84,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-[#020c07] p-6">
-              <FileText className="h-5 w-5 text-emerald-500/50 mb-4" />
+              <FileText className="h-5 w-5 text-blue-500/50 mb-4" />
               <h3 className="text-[14px] font-medium text-white/80">Published methodology</h3>
               <p className="mt-2 text-[12px] text-white/35 leading-relaxed">
                 Our methods are public. Our affordability engine, signal taxonomy, and
@@ -92,7 +92,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-[#020c07] p-6">
-              <Globe2 className="h-5 w-5 text-emerald-500/50 mb-4" />
+              <Globe2 className="h-5 w-5 text-blue-500/50 mb-4" />
               <h3 className="text-[14px] font-medium text-white/80">POPIA compliant</h3>
               <p className="mt-2 text-[12px] text-white/35 leading-relaxed">
                 Registered Information Officer. Consent gates at every input. 90-day retention.
@@ -122,7 +122,7 @@ export default function AboutPage() {
           <div className="mt-8">
             <Link
               href="/research"
-              className="inline-flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/[0.05] px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/80 hover:bg-emerald-500/[0.1] transition-colors"
+              className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/[0.05] px-5 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/80 hover:bg-blue-500/[0.1] transition-colors"
             >
               Read Our Research
             </Link>
@@ -140,7 +140,7 @@ export default function AboutPage() {
             Meet Jess. She runs the platform.
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50">
-            Jess is the AI sales agent who operates the Visio Auto platform. She speaks seven
+            Jess is the AI sales agent who operates the Visio Lead Gen platform. She speaks seven
             languages, knows every dealer in SA, can book test drives, pre-qualify buyers,
             explain affordability, and close sales in chat. She is available 24/7 in the chat
             widget on every page.
@@ -163,10 +163,10 @@ export default function AboutPage() {
           </p>
           <Link
             href="/"
-            className="mt-4 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/60 hover:text-emerald-400 transition-colors"
+            className="mt-4 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/60 hover:text-blue-400 transition-colors"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to Visio Auto
+            Back to Visio Lead Gen
           </Link>
         </div>
       </footer>

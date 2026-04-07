@@ -197,7 +197,7 @@ export default function VisioBDCPaperPage() {
         dealers can afford.
       </p>
 
-      <h2>8. Integration with the Visio Auto Suite</h2>
+      <h2>8. Integration with the Visio Lead Gen Suite</h2>
 
       <ul>
         <li><strong>Inbound</strong> &mdash; fed by the visio-auto signal engine (<code>signals</code> table)</li>

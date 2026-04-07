@@ -33,11 +33,11 @@ export function Q1SalesBarChart() {
   return (
     <div className="border border-white/[0.06] bg-white/[0.02] p-8 relative overflow-hidden">
       <div className="mb-6">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/60">
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
           Q1 2026 New Vehicle Sales
         </span>
         <h4 className="mt-2 text-xl font-extralight text-white">
-          The market is <span className="text-emerald-400">accelerating</span>
+          The market is <span className="text-blue-400">accelerating</span>
         </h4>
       </div>
 
@@ -84,7 +84,7 @@ export function Q1SalesBarChart() {
               <motion.rect
                 x={x}
                 width={barWidth}
-                fill="url(#emeraldGradient)"
+                fill="url(#blueGradient)"
                 initial={{ height: 0, y: chartHeight + 20 }}
                 animate={
                   isInView
@@ -119,7 +119,7 @@ export function Q1SalesBarChart() {
               <motion.text
                 x={x + barWidth / 2}
                 textAnchor="middle"
-                fill="rgba(16, 185, 129, 0.9)"
+                fill="rgba(59, 130, 246, 0.9)"
                 fontSize="13"
                 fontFamily="monospace"
                 fontWeight="300"
@@ -152,7 +152,7 @@ export function Q1SalesBarChart() {
                 x={x + barWidth / 2}
                 y={chartHeight + 52}
                 textAnchor="middle"
-                fill="rgba(16, 185, 129, 0.6)"
+                fill="rgba(59, 130, 246, 0.6)"
                 fontSize="9"
                 fontFamily="monospace"
               >
@@ -164,9 +164,9 @@ export function Q1SalesBarChart() {
 
         {/* Gradient def */}
         <defs>
-          <linearGradient id="emeraldGradient" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stopColor="rgba(16, 185, 129, 0.6)" />
-            <stop offset="100%" stopColor="rgba(16, 185, 129, 0.05)" />
+          <linearGradient id="blueGradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor="rgba(59, 130, 246, 0.6)" />
+            <stop offset="100%" stopColor="rgba(59, 130, 246, 0.05)" />
           </linearGradient>
         </defs>
       </svg>
@@ -208,11 +208,11 @@ export function BrandRankingChart() {
     <div className="border border-white/[0.06] bg-white/[0.02] p-8 relative overflow-hidden">
       <div className="mb-6 flex items-baseline justify-between flex-wrap gap-2">
         <div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/60">
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
             March 2026 Top 10 OEMs
           </span>
           <h4 className="mt-2 text-xl font-extralight text-white">
-            Asian brands hold <span className="text-emerald-400">5 of top 10</span>
+            Asian brands hold <span className="text-blue-400">5 of top 10</span>
           </h4>
         </div>
         <div className="font-mono text-[10px] text-white/30">
@@ -235,7 +235,7 @@ export function BrandRankingChart() {
               <text
                 x="0"
                 y={y + rowHeight / 2 + 4}
-                fill={d.asian ? "rgba(16,185,129,0.9)" : "rgba(255,255,255,0.6)"}
+                fill={d.asian ? "rgba(59,130,246,0.9)" : "rgba(255,255,255,0.6)"}
                 fontSize="12"
                 fontFamily="monospace"
                 fontWeight="400"
@@ -259,7 +259,7 @@ export function BrandRankingChart() {
                 height="14"
                 fill={
                   d.asian
-                    ? "url(#emeraldBarGradient)"
+                    ? "url(#blueBarGradient)"
                     : "rgba(255,255,255,0.15)"
                 }
                 initial={{ width: 0 }}
@@ -275,7 +275,7 @@ export function BrandRankingChart() {
               <motion.text
                 x={labelWidth + barWidth + 8}
                 y={y + rowHeight / 2 + 4}
-                fill={d.asian ? "rgba(16,185,129,0.9)" : "rgba(255,255,255,0.6)"}
+                fill={d.asian ? "rgba(59,130,246,0.9)" : "rgba(255,255,255,0.6)"}
                 fontSize="11"
                 fontFamily="monospace"
                 fontWeight="300"
@@ -290,9 +290,9 @@ export function BrandRankingChart() {
         })}
 
         <defs>
-          <linearGradient id="emeraldBarGradient" x1="0" x2="1" y1="0" y2="0">
-            <stop offset="0%" stopColor="rgba(16, 185, 129, 0.7)" />
-            <stop offset="100%" stopColor="rgba(16, 185, 129, 0.3)" />
+          <linearGradient id="blueBarGradient" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stopColor="rgba(59, 130, 246, 0.7)" />
+            <stop offset="100%" stopColor="rgba(59, 130, 246, 0.3)" />
           </linearGradient>
         </defs>
       </svg>
@@ -338,7 +338,7 @@ export function ExportCrisisChart() {
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-red-400/70 border border-red-500/30 bg-red-500/[0.06] px-2 py-0.5">
             CRISIS
           </span>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/60">
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
             Vehicle Exports
           </span>
         </div>
@@ -386,7 +386,7 @@ export function ExportCrisisChart() {
               cx={p.x}
               cy={p.y}
               r={data[i].alert ? 6 : 4}
-              fill={data[i].alert ? "rgba(239, 68, 68, 1)" : "rgba(16, 185, 129, 0.6)"}
+              fill={data[i].alert ? "rgba(239, 68, 68, 1)" : "rgba(59, 130, 246, 0.6)"}
               initial={{ scale: 0 }}
               animate={isInView ? { scale: 1 } : { scale: 0 }}
               transition={{ delay: 1 + i * 0.15, type: "spring", stiffness: 300 }}
@@ -436,9 +436,9 @@ export function BrandShareDonut() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const data = [
-    { brand: "Toyota", share: 24.8, color: "rgba(16, 185, 129, 0.9)" },
-    { brand: "Suzuki", share: 12.0, color: "rgba(16, 185, 129, 0.7)" },
-    { brand: "VW Group", share: 11.5, color: "rgba(16, 185, 129, 0.55)" },
+    { brand: "Toyota", share: 24.8, color: "rgba(59, 130, 246, 0.9)" },
+    { brand: "Suzuki", share: 12.0, color: "rgba(59, 130, 246, 0.7)" },
+    { brand: "VW Group", share: 11.5, color: "rgba(59, 130, 246, 0.55)" },
     { brand: "Chinese OEMs", share: 17.2, color: "rgba(245, 158, 11, 0.7)" },
     { brand: "Other", share: 34.5, color: "rgba(255, 255, 255, 0.15)" },
   ];
@@ -481,7 +481,7 @@ export function BrandShareDonut() {
   return (
     <div className="border border-white/[0.06] bg-white/[0.02] p-8 relative overflow-hidden">
       <div className="mb-6">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/60">
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
           2025 Brand Share
         </span>
         <h4 className="mt-2 text-xl font-extralight text-white">
@@ -527,7 +527,7 @@ export function BrandShareDonut() {
             x="100"
             y="110"
             textAnchor="middle"
-            fill="rgba(16,185,129,0.6)"
+            fill="rgba(59,130,246,0.6)"
             fontSize="8"
             fontFamily="monospace"
           >

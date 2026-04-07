@@ -13,7 +13,7 @@ import Footer from "@/components/home/Footer";
 import ClickPop from "@/components/landing/ClickPop";
 
 /**
- * Visio Auto — the home page.
+ * Visio Lead Gen — the home page.
  *
  * World-class B2B SaaS landing structure. 11 sections (including nav + footer),
  * single clear message, one CTA repeated three times, zero engineering jargon.
@@ -44,7 +44,7 @@ import ClickPop from "@/components/landing/ClickPop";
  */
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#030f0a]">
+    <div className="min-h-screen bg-[#03091a]">
       <ClickPop />
       <Navbar />
       <Hero />

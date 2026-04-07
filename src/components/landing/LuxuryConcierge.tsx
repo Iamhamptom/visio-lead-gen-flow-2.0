@@ -124,12 +124,12 @@ export default function LuxuryConcierge() {
           <h2 className="mt-4 heading-xl max-w-4xl">
             Sandton inventory.
             <br />
-            <span className="text-emerald-400">African doorstep.</span>
+            <span className="text-blue-400">African doorstep.</span>
           </h2>
           <div className="mt-6 flex items-start gap-3 max-w-2xl">
-            <div className="mt-1.5 h-px w-8 bg-emerald-500/40 shrink-0" />
+            <div className="mt-1.5 h-px w-8 bg-blue-500/40 shrink-0" />
             <p className="text-[15px] leading-relaxed text-white/50">
-              <span className="text-emerald-400/80 font-medium">South Africans supplying Africans.</span>{" "}
+              <span className="text-blue-400/80 font-medium">South Africans supplying Africans.</span>{" "}
               South Africa is the gateway to luxury automotive on the African continent. We
               connect SA&apos;s premium dealer network with high-net-worth buyers across Lagos,
               Lubumbashi, Luanda, Nairobi, Accra, and Abidjan &mdash; multilingual concierge,
@@ -140,7 +140,7 @@ export default function LuxuryConcierge() {
 
           <div className="mt-4 max-w-2xl pl-11">
             <p className="text-[13px] leading-relaxed text-white/35">
-              Knight Frank Wealth Report 2025 forecasts <span className="text-emerald-400/70">UHNWI growth +119% in Côte d&apos;Ivoire, +90% in Nigeria, +40% in Zambia</span> over the next 5 years. The wealth is exploding in exactly the markets that lack premium dealer infrastructure. SA dealers can serve them &mdash; if they can speak the language and ship the vehicle. Visio Concierge does both.
+              Knight Frank Wealth Report 2025 forecasts <span className="text-blue-400/70">UHNWI growth +119% in Côte d&apos;Ivoire, +90% in Nigeria, +40% in Zambia</span> over the next 5 years. The wealth is exploding in exactly the markets that lack premium dealer infrastructure. SA dealers can serve them &mdash; if they can speak the language and ship the vehicle. Visio Concierge does both.
             </p>
           </div>
         </motion.div>
@@ -158,7 +158,7 @@ export default function LuxuryConcierge() {
             <div className="border border-white/[0.06] bg-white/[0.02] p-6 flex items-center gap-4">
               <JessAvatar size={64} />
               <div>
-                <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/70">
+                <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/70">
                   Jess &middot; Concierge Agent
                 </div>
                 <p className="text-[13px] text-white/60 mt-1">
@@ -170,7 +170,7 @@ export default function LuxuryConcierge() {
             </div>
 
             <div className="border border-white/[0.06] bg-white/[0.02] p-6">
-              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/60">
+              <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/60">
                 Currencies Accepted
               </span>
               <div className="mt-3 grid grid-cols-3 gap-2">
@@ -231,7 +231,7 @@ export default function LuxuryConcierge() {
               >
                 <div className="flex items-baseline justify-between mb-4">
                   <span className="text-2xl">{m.flag}</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-500/40">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-500/40">
                     {m.code}
                   </span>
                 </div>
@@ -239,7 +239,7 @@ export default function LuxuryConcierge() {
                   {m.city}
                   <span className="text-white/40 text-sm font-mono ml-2">{m.country}</span>
                 </h4>
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60 mt-2">
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60 mt-2">
                   {m.population}
                 </p>
                 <p className="text-[12px] text-white/40 mt-3 leading-relaxed">
@@ -267,7 +267,7 @@ export default function LuxuryConcierge() {
           <div>
             <span className="section-label">Why Visio Concierge</span>
             <h3 className="mt-3 heading-md max-w-md">
-              Trust earned in <span className="text-emerald-400">every detail</span>.
+              Trust earned in <span className="text-blue-400">every detail</span>.
             </h3>
             <div className="mt-8 space-y-px bg-white/[0.04] border border-white/[0.06]">
               {trustPillars.map((p, i) => (
@@ -279,7 +279,7 @@ export default function LuxuryConcierge() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="bg-[#020c07] p-6 flex items-start gap-4"
                 >
-                  <p.icon className="h-5 w-5 text-emerald-500/50 mt-0.5 shrink-0" />
+                  <p.icon className="h-5 w-5 text-blue-500/50 mt-0.5 shrink-0" />
                   <div>
                     <h5 className="text-[14px] font-medium text-white/80">{p.title}</h5>
                     <p className="text-[12px] leading-relaxed text-white/35 mt-1">
@@ -355,7 +355,7 @@ export default function LuxuryConcierge() {
                   Speak to a concierge in your language.
                 </h3>
                 <p className="mt-3 text-[14px] text-white/50 max-w-md">
-                  WhatsApp the Visio Auto Concierge desk. Available 24/7 in EN, FR, PT, SW, AR.
+                  WhatsApp the Visio Lead Gen Concierge desk. Available 24/7 in EN, FR, PT, SW, AR.
                   Initial inventory match within 60 minutes.
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -363,7 +363,7 @@ export default function LuxuryConcierge() {
                     href="https://wa.me/27000000000?text=Hi%20Jess%20—%20I%27m%20interested%20in%20the%20Visio%20Concierge%20service"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-emerald-500/40 bg-emerald-500/[0.08] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400 hover:bg-emerald-500/[0.15] transition-colors"
+                    className="border border-blue-500/40 bg-blue-500/[0.08] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400 hover:bg-blue-500/[0.15] transition-colors"
                   >
                     WhatsApp Concierge →
                   </a>

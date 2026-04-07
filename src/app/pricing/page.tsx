@@ -70,7 +70,7 @@ const PAPER_SLUG: Record<string, string> = {
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-[#030f0a] text-white">
+    <div className="min-h-screen bg-[#03091a] text-white">
       {/* Hero */}
       <section className="mx-auto max-w-6xl px-6 pt-24 pb-12">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/40">
@@ -173,8 +173,8 @@ export default function PricingPage() {
 
       {/* Contact CTA */}
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/[0.03] p-8">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/70">
+        <div className="rounded-xl border border-blue-500/20 bg-blue-500/[0.03] p-8">
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/70">
             Ready to start
           </p>
           <h3 className="mt-3 text-2xl font-extralight tracking-tight text-white">
@@ -189,7 +189,7 @@ export default function PricingPage() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/get-started"
-              className="rounded-md bg-emerald-500 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.2em] text-[#030f0a] hover:bg-emerald-400"
+              className="rounded-md bg-blue-500 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.2em] text-[#03091a] hover:bg-blue-400"
             >
               Start a conversation →
             </Link>

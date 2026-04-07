@@ -140,13 +140,13 @@ function Panel({
 }) {
   return (
     <div
-      className={`overflow-hidden rounded border border-emerald-900/30 bg-[#0d1117] ${className}`}
+      className={`overflow-hidden rounded border border-blue-900/30 bg-[#0d1117] ${className}`}
     >
-      <div className="flex items-center justify-between border-b border-emerald-900/20 px-3 py-1.5">
-        <span className="font-mono text-[11px] font-semibold tracking-wider text-emerald-500 uppercase">
+      <div className="flex items-center justify-between border-b border-blue-900/20 px-3 py-1.5">
+        <span className="font-mono text-[11px] font-semibold tracking-wider text-blue-500 uppercase">
           {title}
         </span>
-        <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
+        <span className="h-1.5 w-1.5 rounded-full bg-blue-600" />
       </div>
       <div className="p-3">{children}</div>
     </div>
@@ -202,7 +202,7 @@ function CategoryIcon({ category }: { category: AlertCategory }) {
   const iconMap: Record<AlertCategory, React.ReactNode> = {
     interest_rate: <Percent className="h-4 w-4 text-blue-400" />,
     fuel_price: <Fuel className="h-4 w-4 text-amber-400" />,
-    model_launch: <Car className="h-4 w-4 text-emerald-400" />,
+    model_launch: <Car className="h-4 w-4 text-blue-400" />,
     competitor: <Shield className="h-4 w-4 text-violet-400" />,
   }
   return <>{iconMap[category]}</>
@@ -272,8 +272,8 @@ function AlertCard({ alert }: { alert: MarketAlert }) {
           {/* Impact Analysis */}
           <div>
             <div className="mb-1 flex items-center gap-1.5">
-              <TrendingUp className="h-3.5 w-3.5 text-emerald-500" />
-              <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-emerald-500">
+              <TrendingUp className="h-3.5 w-3.5 text-blue-500" />
+              <span className="font-mono text-[11px] font-semibold uppercase tracking-wider text-blue-500">
                 Impact Analysis
               </span>
             </div>
@@ -331,10 +331,10 @@ function QuickStatsBar() {
       </div>
       <div className="ml-auto flex items-center gap-1.5">
         <span className="relative flex h-2 w-2">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
         </span>
-        <span className="font-mono text-[11px] text-emerald-600">LIVE MONITORING</span>
+        <span className="font-mono text-[11px] text-blue-600">LIVE MONITORING</span>
       </div>
     </div>
   )
@@ -379,7 +379,7 @@ export default function AlertsPage() {
       {/* Header */}
       <Panel title="Market Alerts">
         <div className="flex items-center gap-2">
-          <AlertTriangle className="h-4 w-4 text-emerald-500" />
+          <AlertTriangle className="h-4 w-4 text-blue-500" />
           <span className="text-sm text-zinc-300">
             Real-time market events with AI impact analysis
           </span>
@@ -398,7 +398,7 @@ export default function AlertsPage() {
             onClick={() => setSeverityFilter(opt.key)}
             className={`rounded px-2.5 py-1 font-mono text-[11px] font-medium transition-colors ${
               severityFilter === opt.key
-                ? "bg-emerald-900/50 text-emerald-400"
+                ? "bg-blue-900/50 text-blue-400"
                 : "bg-zinc-900 text-zinc-500 hover:text-zinc-300"
             }`}
           >
@@ -412,7 +412,7 @@ export default function AlertsPage() {
             onClick={() => setCategoryFilter(opt.key)}
             className={`rounded px-2.5 py-1 font-mono text-[11px] font-medium transition-colors ${
               categoryFilter === opt.key
-                ? "bg-emerald-900/50 text-emerald-400"
+                ? "bg-blue-900/50 text-blue-400"
                 : "bg-zinc-900 text-zinc-500 hover:text-zinc-300"
             }`}
           >
@@ -434,7 +434,7 @@ export default function AlertsPage() {
                 setSeverityFilter("all")
                 setCategoryFilter("all")
               }}
-              className="font-mono text-xs text-emerald-600 hover:text-emerald-400"
+              className="font-mono text-xs text-blue-600 hover:text-blue-400"
             >
               Clear filters
             </button>
@@ -443,9 +443,9 @@ export default function AlertsPage() {
       </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between border-t border-emerald-900/20 px-2 py-2">
+      <div className="flex items-center justify-between border-t border-blue-900/20 px-2 py-2">
         <span className="font-mono text-[10px] text-zinc-600">
-          Source: SARB / DoE / NAAMSA / Visio Auto Intelligence
+          Source: SARB / DoE / NAAMSA / Visio Lead Gen Intelligence
         </span>
         <span className="font-mono text-[10px] text-zinc-600">
           Monitoring active | Updated in real-time

@@ -17,12 +17,12 @@ interface Template {
 
 const TEMPLATES: Record<string, Template> = {
   WELCOME: {
-    en: 'Hi {name}! \u{1F697} I\'m your AI car advisor from Visio Auto. I\'ve found {count} vehicles matching your preferences. Let me show you the best deals!',
-    af: 'Hi {name}! \u{1F697} Ek is jou KI-motoradviseur van Visio Auto. Ek het {count} voertuie gevind wat by jou voorkeure pas. Kom ek wys jou die beste aanbiedings!',
-    zu: 'Sawubona {name}! \u{1F697} Ngingu-AI car advisor wakho ovela ku-Visio Auto. Ngithole izimoto ezingu-{count} ezifanele lokho okufunayo. Ake ngikukhombise!',
-    st: 'Dumela {name}! \u{1F697} Ke moeletsi wa hao wa koloi ea AI ho tswa ho Visio Auto. Ke fumane likoloi tse {count} tse tsamaelanang le seo o se ratang. Ha ke o bontshe!',
-    ts: 'Xewani {name}! \u{1F697} Ndzi AI car advisor wa wena ku suka eka Visio Auto. Ndzi kumile timovha ta {count} leti faneleke. A ndzi ku kombisa!',
-    xh: 'Molo {name}! \u{1F697} Ndingumluleki wakho we-AI weemoto ovela ku-Visio Auto. Ndifumene iimoto eziyi-{count} ezifanele. Makhe ndikubonise!',
+    en: 'Hi {name}! \u{1F697} I\'m your AI car advisor from Visio Lead Gen. I\'ve found {count} vehicles matching your preferences. Let me show you the best deals!',
+    af: 'Hi {name}! \u{1F697} Ek is jou KI-motoradviseur van Visio Lead Gen. Ek het {count} voertuie gevind wat by jou voorkeure pas. Kom ek wys jou die beste aanbiedings!',
+    zu: 'Sawubona {name}! \u{1F697} Ngingu-AI car advisor wakho ovela ku-Visio Lead Gen. Ngithole izimoto ezingu-{count} ezifanele lokho okufunayo. Ake ngikukhombise!',
+    st: 'Dumela {name}! \u{1F697} Ke moeletsi wa hao wa koloi ea AI ho tswa ho Visio Lead Gen. Ke fumane likoloi tse {count} tse tsamaelanang le seo o se ratang. Ha ke o bontshe!',
+    ts: 'Xewani {name}! \u{1F697} Ndzi AI car advisor wa wena ku suka eka Visio Lead Gen. Ndzi kumile timovha ta {count} leti faneleke. A ndzi ku kombisa!',
+    xh: 'Molo {name}! \u{1F697} Ndingumluleki wakho we-AI weemoto ovela ku-Visio Lead Gen. Ndifumene iimoto eziyi-{count} ezifanele. Makhe ndikubonise!',
   },
 
   VEHICLE_MATCH: {

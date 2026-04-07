@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
                 Authorization: `Bearer ${resendKey}`,
               },
               body: JSON.stringify({
-                from: 'Visio Auto <reports@visioauto.co.za>',
+                from: 'Visio Lead Gen <reports@visioauto.co.za>',
                 to: [dealer.email],
                 subject: `Your Monthly ROI Report — ${dealer.name}`,
                 html,

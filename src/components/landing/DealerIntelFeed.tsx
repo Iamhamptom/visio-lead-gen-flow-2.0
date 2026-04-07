@@ -27,7 +27,7 @@ const intelCards = [
   {
     icon: TrendingUp,
     badge: "Q1 2026",
-    badgeColor: "emerald",
+    badgeColor: "blue",
     headline: "March 2026 = best March since 2007",
     metric: "58,060 units",
     change: "+17.3% YoY",
@@ -38,7 +38,7 @@ const intelCards = [
   {
     icon: Zap,
     badge: "Macro",
-    badgeColor: "emerald",
+    badgeColor: "blue",
     headline: "Prime rate at 10.25%",
     metric: "−150 bps since Sept 2024",
     change: "13-yr dealer confidence high",
@@ -60,7 +60,7 @@ const intelCards = [
   {
     icon: Globe2,
     badge: "Top 10",
-    badgeColor: "emerald",
+    badgeColor: "blue",
     headline: "4 of top 10 brands are Asian",
     metric: "GWM, Chery, Mahindra, Jetour",
     change: "~10,000 units in March alone",
@@ -93,7 +93,7 @@ const intelCards = [
   {
     icon: TrendingUp,
     badge: "Super Group",
-    badgeColor: "emerald",
+    badgeColor: "blue",
     headline: "Asian brand sales +102% in 6 months",
     metric: "30% of new car volumes",
     change: "Dealership rev R6bn (+12.7%)",
@@ -104,7 +104,7 @@ const intelCards = [
   {
     icon: Zap,
     badge: "EV Policy",
-    badgeColor: "emerald",
+    badgeColor: "blue",
     headline: "150% tax deduction now live",
     metric: "Effective 1 March 2026",
     change: "10-year window",
@@ -115,7 +115,7 @@ const intelCards = [
 ];
 
 const colorMap = {
-  emerald: "border-emerald-500/30 bg-emerald-500/[0.06] text-emerald-400/80",
+  blue: "border-blue-500/30 bg-blue-500/[0.06] text-blue-400/80",
   amber: "border-amber-500/30 bg-amber-500/[0.06] text-amber-400/80",
   red: "border-red-500/30 bg-red-500/[0.06] text-red-400/80",
 };
@@ -137,7 +137,7 @@ export default function DealerIntelFeed() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#020c07] via-transparent to-[#020c07]" />
       </div>
       <div className="absolute inset-0 bg-grid opacity-25 z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.05)_0%,transparent_60%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.05)_0%,transparent_60%)] z-0" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -149,23 +149,23 @@ export default function DealerIntelFeed() {
         >
           <div className="flex items-center gap-3 mb-2">
             <span className="section-label">Live Dealer Intelligence</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/80 border border-emerald-500/30 bg-emerald-500/[0.06] px-2 py-0.5">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/80 border border-blue-500/30 bg-blue-500/[0.06] px-2 py-0.5">
               UPDATED Q1 2026
             </span>
           </div>
           <h2 className="mt-4 heading-xl max-w-4xl">
             What&apos;s actually happening
             <br />
-            in the <span className="text-emerald-400">SA market</span> &mdash; right now.
+            in the <span className="text-blue-400">SA market</span> &mdash; right now.
           </h2>
           <div className="mt-6 flex items-start gap-3 max-w-2xl">
-            <div className="mt-1.5 h-px w-8 bg-emerald-500/40 shrink-0" />
+            <div className="mt-1.5 h-px w-8 bg-blue-500/40 shrink-0" />
             <p className="text-[15px] leading-relaxed text-white/50">
               Verified data. Cited sources. Actionable insight on every card.
               This is the live face of the{" "}
               <a
                 href="/papers/intelligence-vol-1"
-                className="text-emerald-400/80 hover:text-emerald-400 underline underline-offset-4"
+                className="text-blue-400/80 hover:text-blue-400 underline underline-offset-4"
               >
                 Visio Intelligence Report
               </a>{" "}
@@ -223,7 +223,7 @@ export default function DealerIntelFeed() {
             >
               {/* Header row */}
               <div className="flex items-start justify-between mb-5">
-                <card.icon className="h-5 w-5 text-emerald-500/50 group-hover:text-emerald-400 transition-colors" />
+                <card.icon className="h-5 w-5 text-blue-500/50 group-hover:text-blue-400 transition-colors" />
                 <span
                   className={`font-mono text-[9px] uppercase tracking-[0.25em] border px-2 py-0.5 ${
                     colorMap[card.badgeColor as keyof typeof colorMap]
@@ -240,7 +240,7 @@ export default function DealerIntelFeed() {
 
               {/* Metric + change */}
               <div className="mt-3 flex items-baseline gap-3 flex-wrap">
-                <span className="font-mono text-2xl font-extralight text-emerald-400">
+                <span className="font-mono text-2xl font-extralight text-blue-400">
                   {card.metric}
                 </span>
                 <span className="font-mono text-[11px] text-white/40">
@@ -253,9 +253,9 @@ export default function DealerIntelFeed() {
 
               {/* Insight */}
               <div className="flex items-start gap-2.5">
-                <div className="mt-1.5 h-1 w-1 rounded-full bg-emerald-500/60 shrink-0" />
+                <div className="mt-1.5 h-1 w-1 rounded-full bg-blue-500/60 shrink-0" />
                 <p className="text-[13px] leading-relaxed text-white/55">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/70 mr-2">
+                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/70 mr-2">
                     What this means →
                   </span>
                   {card.insight}
@@ -282,7 +282,7 @@ export default function DealerIntelFeed() {
         >
           <a
             href="/papers/intelligence-vol-1"
-            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/60 hover:text-emerald-400 transition-colors border-b border-emerald-500/20 pb-1"
+            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/60 hover:text-blue-400 transition-colors border-b border-blue-500/20 pb-1"
           >
             Read the full Intelligence Report Vol.1 →
           </a>

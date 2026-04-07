@@ -13,8 +13,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function HomeFinalCTA() {
   return (
-    <section className="relative py-32 bg-[#030f0a] overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.06)_0%,transparent_60%)]" />
+    <section className="relative py-32 bg-[#03091a] overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.06)_0%,transparent_60%)]" />
       <div className="absolute inset-0 bg-dots opacity-25" />
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
@@ -24,13 +24,13 @@ export default function HomeFinalCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             Get started
           </span>
           <h2 className="mt-6 text-5xl md:text-6xl font-extralight tracking-tight text-white leading-[1.05]">
             Start free.
             <br />
-            <span className="text-emerald-400">Pay when it works.</span>
+            <span className="text-blue-400">Pay when it works.</span>
           </h2>
           <p className="mt-8 text-[16px] text-white/50 max-w-xl mx-auto leading-relaxed">
             Join the South African dealerships finding qualified buyers before they walk into
@@ -40,7 +40,7 @@ export default function HomeFinalCTA() {
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
               href="/get-started"
-              className="inline-flex items-center gap-2.5 bg-emerald-500 hover:bg-emerald-400 px-8 py-4 font-mono text-[12px] uppercase tracking-[0.2em] text-[#030f0a] font-medium transition-colors"
+              className="inline-flex items-center gap-2.5 bg-blue-500 hover:bg-blue-400 px-8 py-4 font-mono text-[12px] uppercase tracking-[0.2em] text-[#03091a] font-medium transition-colors"
             >
               Start Free Trial
               <ArrowRight className="h-4 w-4" />

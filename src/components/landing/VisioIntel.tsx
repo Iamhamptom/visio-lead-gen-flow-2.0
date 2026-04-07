@@ -61,7 +61,7 @@ export default function VisioIntel() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section id="intelligence" className="relative py-32 bg-[#030f0a] overflow-hidden">
+    <section id="intelligence" className="relative py-32 bg-[#03091a] overflow-hidden">
       {/* Bar chart infographic accent — top right */}
       <div className="absolute top-20 right-0 w-[600px] h-[400px] z-0 opacity-20">
         <Image
@@ -70,10 +70,10 @@ export default function VisioIntel() {
           fill
           className="object-cover mix-blend-screen pointer-events-none"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#030f0a]" />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#03091a]" />
       </div>
       <div className="absolute inset-0 bg-dots opacity-30 z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(16,185,129,0.05)_0%,transparent_60%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(59,130,246,0.05)_0%,transparent_60%)] z-0" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -85,17 +85,17 @@ export default function VisioIntel() {
         >
           <div className="flex items-center gap-3 mb-2">
             <span className="section-label">Visio Intelligence</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/80 border border-emerald-500/30 bg-emerald-500/[0.06] px-2 py-0.5">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/80 border border-blue-500/30 bg-blue-500/[0.06] px-2 py-0.5">
               FREE FOR PARTNERS
             </span>
           </div>
           <h2 className="mt-4 heading-xl max-w-4xl">
             A Bloomberg Terminal
             <br />
-            for the <span className="text-emerald-400">SA auto industry</span>.
+            for the <span className="text-blue-400">SA auto industry</span>.
           </h2>
           <div className="mt-6 flex items-start gap-3 max-w-2xl">
-            <div className="mt-1.5 h-px w-8 bg-emerald-500/40 shrink-0" />
+            <div className="mt-1.5 h-px w-8 bg-blue-500/40 shrink-0" />
             <p className="text-[15px] leading-relaxed text-white/50">
               Visio Intelligence delivers research-grade market data to every
               dealership partner, every month, free. Built by Visio Research
@@ -115,7 +115,7 @@ export default function VisioIntel() {
         >
           {reportFeatures.map((f) => (
             <div key={f.label} className="bg-white/[0.02] px-5 py-5 text-center">
-              <div className="font-mono text-xl font-extralight text-emerald-400">
+              <div className="font-mono text-xl font-extralight text-blue-400">
                 {f.value}
               </div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/30 mt-1">
@@ -139,7 +139,7 @@ export default function VisioIntel() {
               <div className="border-b border-white/[0.06] pb-6 mb-6">
                 <div className="flex items-start justify-between flex-wrap gap-4">
                   <div>
-                    <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/50">
+                    <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/50">
                       VRL-AUTO-001 &middot; April 2026
                     </span>
                     <h3 className="mt-2 text-2xl md:text-3xl font-extralight tracking-tight text-white leading-tight max-w-2xl">
@@ -151,7 +151,7 @@ export default function VisioIntel() {
                   </div>
                   <a
                     href="/papers/intelligence-vol-1"
-                    className="inline-flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/[0.05] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/80 hover:bg-emerald-500/[0.1] transition-colors"
+                    className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/[0.05] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/80 hover:bg-blue-500/[0.1] transition-colors"
                   >
                     <Download className="h-3.5 w-3.5" />
                     Read Full Report
@@ -164,15 +164,15 @@ export default function VisioIntel() {
                 {intelCategories.map((cat) => (
                   <div key={cat.label}>
                     <div className="flex items-center gap-2 mb-4">
-                      <FileText className="h-3.5 w-3.5 text-emerald-500/50" />
-                      <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/60">
+                      <FileText className="h-3.5 w-3.5 text-blue-500/50" />
+                      <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/60">
                         {cat.label}
                       </span>
                     </div>
                     <ul className="space-y-2.5">
                       {cat.items.map((item) => (
                         <li key={item} className="flex items-start gap-2.5 text-[12px] text-white/45 leading-relaxed">
-                          <div className="mt-1.5 h-1 w-1 rounded-full bg-emerald-500/40 shrink-0" />
+                          <div className="mt-1.5 h-1 w-1 rounded-full bg-blue-500/40 shrink-0" />
                           {item}
                         </li>
                       ))}
@@ -184,9 +184,9 @@ export default function VisioIntel() {
               {/* Footer note */}
               <div className="mt-8 pt-6 border-t border-white/[0.06]">
                 <p className="font-mono text-[11px] text-white/25 leading-relaxed">
-                  Vol.1 covers verified 2025 NAAMSA data: <span className="text-emerald-400/60">596,818 units (+15.7% YoY)</span>,
-                  Toyota Hilux <span className="text-emerald-400/60">36,525 units (#1, 13th straight year)</span>,
-                  <span className="text-emerald-400/60"> Suzuki overtakes VW for #2</span>, Chery #8 (+26.7%),
+                  Vol.1 covers verified 2025 NAAMSA data: <span className="text-blue-400/60">596,818 units (+15.7% YoY)</span>,
+                  Toyota Hilux <span className="text-blue-400/60">36,525 units (#1, 13th straight year)</span>,
+                  <span className="text-blue-400/60"> Suzuki overtakes VW for #2</span>, Chery #8 (+26.7%),
                   Q4 2025 unemployment 5-year low at 31.4%, BankservAfrica avg take-home R18,098.
                   Every figure cited. Sources: NAAMSA, Stats SA, CIPC, SARB, Motus SENS, TransUnion, AutoTrader.
                 </p>
@@ -204,12 +204,12 @@ export default function VisioIntel() {
           transition={{ duration: 0.6 }}
           className="mt-16 grid md:grid-cols-2 gap-px bg-white/[0.04] border border-white/[0.06]"
         >
-          <div className="bg-[#030f0a] p-8">
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-500/50">
+          <div className="bg-[#03091a] p-8">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-500/50">
               Custom Tracking
             </span>
             <h4 className="mt-3 text-xl font-extralight text-white">
-              Track what matters to <span className="text-emerald-400">you</span>.
+              Track what matters to <span className="text-blue-400">you</span>.
             </h4>
             <p className="mt-3 text-[13px] leading-relaxed text-white/40">
               Need to monitor a specific competitor, model, brand, or region?
@@ -217,12 +217,12 @@ export default function VisioIntel() {
               your monthly report. No extra charge for partners.
             </p>
           </div>
-          <div className="bg-[#030f0a] p-8">
-            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-500/50">
+          <div className="bg-[#03091a] p-8">
+            <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-500/50">
               Your Data, Your Property
             </span>
             <h4 className="mt-3 text-xl font-extralight text-white">
-              All intelligence belongs to <span className="text-emerald-400">your dealership</span>.
+              All intelligence belongs to <span className="text-blue-400">your dealership</span>.
             </h4>
             <p className="mt-3 text-[13px] leading-relaxed text-white/40">
               You own the reports, the custom data points, and any insights
@@ -242,7 +242,7 @@ export default function VisioIntel() {
         >
           <a
             href="/papers/intelligence-vol-1"
-            className="inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/60 hover:text-emerald-400 transition-colors border-b border-emerald-500/20 pb-1"
+            className="inline-flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/60 hover:text-blue-400 transition-colors border-b border-blue-500/20 pb-1"
           >
             Read Vol. 1 — South African Automotive Intelligence Report
             <ArrowRight className="h-3.5 w-3.5" />

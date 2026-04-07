@@ -47,10 +47,10 @@ export async function POST(request: NextRequest) {
 
   for (const vpLead of incomingLeads) {
     try {
-      // Map to Visio Auto format
+      // Map to Visio Lead Gen format
       const mapped = mapVPraiLeadToVisioAuto(vpLead)
 
-      // Re-score with Visio Auto scoring engine
+      // Re-score with Visio Lead Gen scoring engine
       const { score, tier } = scoreLead({
         budget_min: mapped.budget_min,
         budget_max: mapped.budget_max,

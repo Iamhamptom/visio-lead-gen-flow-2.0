@@ -51,7 +51,7 @@ export const SIGNAL_CATEGORIES: SignalCategory[] = [
         type: 'new_driver_age',
         label: 'New Driver Age',
         icon: 'KeyRound',
-        color: 'text-emerald-400',
+        color: 'text-blue-400',
         description: 'Teenager turning 18 — parent likely purchasing first car',
       },
     ],
@@ -71,7 +71,7 @@ export const SIGNAL_CATEGORIES: SignalCategory[] = [
         type: 'promotion',
         label: 'Promotion',
         icon: 'TrendingUp',
-        color: 'text-emerald-400',
+        color: 'text-blue-400',
         description: 'Career advancement — disposable income increase, upgrade signal',
       },
       {
@@ -98,7 +98,7 @@ export const SIGNAL_CATEGORIES: SignalCategory[] = [
         type: 'new_business',
         label: 'New Business',
         icon: 'Briefcase',
-        color: 'text-emerald-400',
+        color: 'text-blue-400',
         description: 'New CIPC registration — business vehicle or fleet needed',
       },
       {

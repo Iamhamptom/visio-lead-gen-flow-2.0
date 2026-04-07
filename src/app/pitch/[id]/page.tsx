@@ -18,16 +18,16 @@ import type { PitchSlide } from '@/lib/agents/pitch-builder'
 // ---------------------------------------------------------------------------
 
 const SLIDE_ACCENT: Record<string, { bg: string; text: string; glow: string }> = {
-  hero: { bg: 'from-emerald-950/40', text: 'text-emerald-400', glow: 'shadow-emerald-500/10' },
+  hero: { bg: 'from-blue-950/40', text: 'text-blue-400', glow: 'shadow-blue-500/10' },
   problem: { bg: 'from-red-950/30', text: 'text-red-400', glow: 'shadow-red-500/10' },
   solution: { bg: 'from-blue-950/30', text: 'text-blue-400', glow: 'shadow-blue-500/10' },
   stats: { bg: 'from-purple-950/30', text: 'text-purple-400', glow: 'shadow-purple-500/10' },
   roi: { bg: 'from-amber-950/30', text: 'text-amber-400', glow: 'shadow-amber-500/10' },
   features: { bg: 'from-cyan-950/30', text: 'text-cyan-400', glow: 'shadow-cyan-500/10' },
   market: { bg: 'from-indigo-950/30', text: 'text-indigo-400', glow: 'shadow-indigo-500/10' },
-  pricing: { bg: 'from-emerald-950/30', text: 'text-emerald-400', glow: 'shadow-emerald-500/10' },
+  pricing: { bg: 'from-blue-950/30', text: 'text-blue-400', glow: 'shadow-blue-500/10' },
   testimonial: { bg: 'from-pink-950/30', text: 'text-pink-400', glow: 'shadow-pink-500/10' },
-  cta: { bg: 'from-emerald-950/40', text: 'text-emerald-400', glow: 'shadow-emerald-500/10' },
+  cta: { bg: 'from-blue-950/40', text: 'text-blue-400', glow: 'shadow-blue-500/10' },
 }
 
 // ---------------------------------------------------------------------------
@@ -39,7 +39,7 @@ const DEMO_SLIDES: PitchSlide[] = [
     type: 'hero',
     title: 'AI-Powered Leads for Your Dealership',
     subtitle: 'Stop chasing. Start closing.',
-    content: 'Visio Auto delivers **AI-qualified buyers** directly to your sales team\'s WhatsApp -- in under 60 seconds.\n\nWe detect buying signals before your competitors even know someone is looking.',
+    content: 'Visio Lead Gen delivers **AI-qualified buyers** directly to your sales team\'s WhatsApp -- in under 60 seconds.\n\nWe detect buying signals before your competitors even know someone is looking.',
     data: {},
   },
   {
@@ -51,7 +51,7 @@ const DEMO_SLIDES: PitchSlide[] = [
   },
   {
     type: 'solution',
-    title: 'Visio Auto\'s 7-Layer Intelligence Stack',
+    title: 'Visio Lead Gen\'s 7-Layer Intelligence Stack',
     subtitle: 'From signal to sale -- fully automated',
     content: '1. **Signal Engine** -- detects 23 life-event buying triggers\n2. **AI Scoring** -- 100-point qualification (budget, timeline, intent)\n3. **VIN Matching** -- matches buyers to your actual inventory\n4. **WhatsApp Delivery** -- hot leads in <60 seconds\n5. **Voice AI** -- automated warm-lead follow-up\n6. **Market Terminal** -- real-time NAAMSA data & competitor tracking\n7. **Analytics Dashboard** -- full pipeline visibility',
     data: {},
@@ -123,7 +123,7 @@ export default function PitchViewerPage() {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center bg-zinc-950">
-        <Loader2 className="h-8 w-8 animate-spin text-emerald-400" />
+        <Loader2 className="h-8 w-8 animate-spin text-blue-400" />
       </div>
     )
   }
@@ -147,7 +147,7 @@ export default function PitchViewerPage() {
       {/* Top bar */}
       <header className="relative z-10 flex items-center justify-between px-6 py-4 lg:px-10">
         <div className="flex items-center gap-2">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500">
             <Car className="h-3.5 w-3.5 text-white" />
           </div>
           <span className="text-sm font-semibold text-zinc-400">VISIO AUTO</span>
@@ -193,7 +193,7 @@ export default function PitchViewerPage() {
             <div className="pt-6">
               <Link
                 href="/get-quote"
-                className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 transition-all hover:bg-emerald-500 hover:shadow-emerald-500/30"
+                className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-500 hover:shadow-blue-500/30"
               >
                 Get Started
                 <ExternalLink className="h-4 w-4" />
@@ -207,7 +207,7 @@ export default function PitchViewerPage() {
       <div className="relative z-10 px-8 lg:px-20">
         <div className="h-0.5 w-full rounded-full bg-zinc-800/50">
           <div
-            className="h-full rounded-full bg-emerald-500 transition-all duration-500"
+            className="h-full rounded-full bg-blue-500 transition-all duration-500"
             style={{ width: `${((current + 1) / slides.length) * 100}%` }}
           />
         </div>
@@ -238,9 +238,9 @@ export default function PitchViewerPage() {
               className={cn(
                 'h-1.5 rounded-full transition-all duration-300',
                 i === current
-                  ? 'w-6 bg-emerald-400'
+                  ? 'w-6 bg-blue-400'
                   : i < current
-                    ? 'w-1.5 bg-emerald-400/40'
+                    ? 'w-1.5 bg-blue-400/40'
                     : 'w-1.5 bg-zinc-700'
               )}
             />

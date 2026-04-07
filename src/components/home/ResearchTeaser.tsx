@@ -31,7 +31,7 @@ const FEATURED = [
   {
     number: "VRL-AUTO-010",
     category: "The Thesis",
-    title: "The Visio Auto Suite — Overview",
+    title: "The Visio Lead Gen Suite — Overview",
     description:
       "Six structural information asymmetries. Six products. One unified platform. The asset-light path to the Carvana experience for South Africa.",
     href: "/papers/suite-overview",
@@ -51,13 +51,13 @@ export default function HomeResearchTeaser() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70">
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
             Research
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white max-w-3xl leading-[1.1]">
             Published research.
             <br />
-            <span className="text-emerald-400">Peer-grade.</span> Free for partners.
+            <span className="text-blue-400">Peer-grade.</span> Free for partners.
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-2xl">
             Our work is published under Creative Commons Attribution 4.0. 10 papers covering
@@ -93,8 +93,8 @@ export default function HomeResearchTeaser() {
                 href={paper.href}
                 className="block bg-[#020c07] p-8 hover:bg-white/[0.02] transition-colors group h-full flex flex-col"
               >
-                <FileText className="h-5 w-5 text-emerald-500/50 mb-5" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-500/50">
+                <FileText className="h-5 w-5 text-blue-500/50 mb-5" />
+                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-500/50">
                   {paper.category}
                 </span>
                 <h3 className="mt-3 text-xl font-extralight tracking-tight text-white leading-snug">
@@ -103,7 +103,7 @@ export default function HomeResearchTeaser() {
                 <p className="mt-4 text-[13px] leading-relaxed text-white/40 flex-1">
                   {paper.description}
                 </p>
-                <div className="mt-6 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-emerald-400/60 group-hover:text-emerald-400 transition-colors">
+                <div className="mt-6 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-blue-400/60 group-hover:text-blue-400 transition-colors">
                   Read Paper
                   <ArrowUpRight className="h-3 w-3" />
                 </div>
@@ -122,7 +122,7 @@ export default function HomeResearchTeaser() {
         >
           <Link
             href="/research"
-            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/70 hover:text-emerald-400 transition-colors border-b border-emerald-500/20 pb-1"
+            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/70 hover:text-blue-400 transition-colors border-b border-blue-500/20 pb-1"
           >
             Read all 10 papers
             <ArrowUpRight className="h-3 w-3" />

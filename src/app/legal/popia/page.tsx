@@ -7,10 +7,10 @@ export default function PopiaCompliancePage() {
       <nav className="border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-4xl items-center gap-4 px-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500">
               <Car className="h-4 w-4 text-white" />
             </div>
-            <span className="text-lg font-semibold text-white">Visio Auto</span>
+            <span className="text-lg font-semibold text-white">Visio Lead Gen</span>
           </Link>
         </div>
       </nav>
@@ -63,7 +63,7 @@ export default function PopiaCompliancePage() {
           <section>
             <h2 className="text-lg font-semibold text-white">Opt-Out Mechanism</h2>
             <p className="mt-2">
-              Any individual can opt out of our lead database by replying "STOP" to any WhatsApp or SMS message, or by emailing <a href="mailto:optout@visiocorp.co" className="text-emerald-400 hover:underline">optout@visiocorp.co</a>. We process opt-out requests within 48 hours.
+              Any individual can opt out of our lead database by replying "STOP" to any WhatsApp or SMS message, or by emailing <a href="mailto:optout@visiocorp.co" className="text-blue-400 hover:underline">optout@visiocorp.co</a>. We process opt-out requests within 48 hours.
             </p>
           </section>
 
@@ -88,14 +88,14 @@ export default function PopiaCompliancePage() {
           <section>
             <h2 className="text-lg font-semibold text-white">Information Officer</h2>
             <p className="mt-2">
-              Our designated Information Officer can be reached at <a href="mailto:privacy@visiocorp.co" className="text-emerald-400 hover:underline">privacy@visiocorp.co</a> for any POPIA-related enquiries or requests.
+              Our designated Information Officer can be reached at <a href="mailto:privacy@visiocorp.co" className="text-blue-400 hover:underline">privacy@visiocorp.co</a> for any POPIA-related enquiries or requests.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-semibold text-white">Information Regulator</h2>
             <p className="mt-2">
-              Complaints may be lodged with the Information Regulator of South Africa at <a href="https://inforegulator.org.za" className="text-emerald-400 hover:underline" target="_blank" rel="noopener noreferrer">inforegulator.org.za</a>.
+              Complaints may be lodged with the Information Regulator of South Africa at <a href="https://inforegulator.org.za" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">inforegulator.org.za</a>.
             </p>
           </section>
         </div>

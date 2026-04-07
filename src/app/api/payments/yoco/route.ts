@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     }
 
     const amountCents = amount ?? TIER_AMOUNTS[tier];
-    const description = `Visio Auto — ${TIER_LABELS[tier]} Subscription`;
+    const description = `Visio Lead Gen — ${TIER_LABELS[tier]} Subscription`;
 
     const baseUrl =
       process.env.NEXT_PUBLIC_APP_URL ||

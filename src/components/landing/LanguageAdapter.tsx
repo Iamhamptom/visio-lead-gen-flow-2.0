@@ -78,7 +78,7 @@ export default function LanguageAdapter() {
             onClick={() => setIndex(i)}
             className={`shrink-0 px-4 py-3 font-mono text-[10px] uppercase tracking-[0.2em] transition-all ${
               i === index
-                ? "bg-emerald-500/[0.08] text-emerald-400 border-b-[2px] border-emerald-500/40"
+                ? "bg-blue-500/[0.08] text-blue-400 border-b-[2px] border-blue-500/40"
                 : "text-white/30 hover:text-white/60 border-b-[2px] border-transparent"
             }`}
           >
@@ -96,7 +96,7 @@ export default function LanguageAdapter() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className="flex items-baseline justify-between mb-4">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-400/70">
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/70">
               {current.lang}
             </span>
             <span className="font-mono text-[9px] text-white/25">
@@ -114,8 +114,8 @@ export default function LanguageAdapter() {
           </p>
 
           <div className="mt-6 flex items-center gap-2">
-            <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/50">
+            <div className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/50">
               Jess speaks 7 languages &middot; voice + text
             </span>
           </div>

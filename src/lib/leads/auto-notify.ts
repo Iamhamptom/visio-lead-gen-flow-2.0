@@ -87,7 +87,7 @@ const EMAIL_TEMPLATE = `
 <head><meta charset="utf-8"></head>
 <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
   <div style="background: #1a1a2e; color: #fff; padding: 20px; border-radius: 8px 8px 0 0;">
-    <h2 style="margin:0;">New Lead Assigned — Visio Auto</h2>
+    <h2 style="margin:0;">New Lead Assigned — Visio Lead Gen</h2>
   </div>
   <div style="background: #f5f5f5; padding: 20px; border-radius: 0 0 8px 8px;">
     <table style="width:100%; border-collapse: collapse;">

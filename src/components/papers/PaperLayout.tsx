@@ -37,7 +37,7 @@ export default function PaperLayout({
     <div className="min-h-screen bg-[#020c07] text-white/80">
       {/* Reading progress bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-[2px] bg-emerald-500/60 origin-left z-50"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-blue-500/60 origin-left z-50"
         style={{ scaleX }}
       />
 
@@ -47,10 +47,10 @@ export default function PaperLayout({
           <Link href="/" className="flex items-center gap-3 group">
             <VisioLogoMark size={24} />
             <span className="text-[13px] font-light tracking-wide text-white/70">
-              Visio Auto
+              Visio Lead Gen
             </span>
             <span className="text-white/20 mx-1">/</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400/60">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/60">
               VRL Papers
             </span>
           </Link>
@@ -59,7 +59,7 @@ export default function PaperLayout({
             className="inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white/30 hover:text-white/70 transition-colors"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to Visio Auto
+            Back to Visio Lead Gen
           </Link>
         </div>
       </header>
@@ -67,7 +67,7 @@ export default function PaperLayout({
       {/* Hero / metadata */}
       <section className="relative bg-[#020c07] border-b border-white/[0.06]">
         <div className="absolute inset-0 bg-grid opacity-30" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.04)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.04)_0%,transparent_60%)]" />
 
         <div className="relative mx-auto max-w-4xl px-6 py-24">
           {/* Paper label */}
@@ -77,7 +77,7 @@ export default function PaperLayout({
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="inline-flex items-center gap-3"
           >
-            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-emerald-400/70 border border-emerald-500/30 bg-emerald-500/[0.05] px-3 py-1.5">
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70 border border-blue-500/30 bg-blue-500/[0.05] px-3 py-1.5">
               {paperNumber}
             </span>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/30">
@@ -142,7 +142,7 @@ export default function PaperLayout({
               <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-white/30">
                 License
               </div>
-              <div className="font-mono text-[12px] text-emerald-400/70 mt-1.5">
+              <div className="font-mono text-[12px] text-blue-400/70 mt-1.5">
                 CC BY 4.0
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function PaperLayout({
           @apply text-xl font-extralight tracking-tight text-white/90 mt-12 mb-4;
         }
         .paper-content h4 {
-          @apply text-base font-medium text-emerald-400/80 mt-8 mb-3 uppercase tracking-wider;
+          @apply text-base font-medium text-blue-400/80 mt-8 mb-3 uppercase tracking-wider;
           font-family: var(--font-mono);
           font-size: 11px;
           letter-spacing: 0.2em;
@@ -199,19 +199,19 @@ export default function PaperLayout({
         }
         .paper-content ul li::before {
           content: "—";
-          @apply text-emerald-500/40 mr-3;
+          @apply text-blue-500/40 mr-3;
         }
         .paper-content ol {
           list-style: decimal;
         }
         .paper-content blockquote {
-          @apply border-l-[3px] border-l-emerald-500/60 bg-white/[0.02] px-6 py-4 my-6 text-[15px] leading-relaxed text-white/55 italic;
+          @apply border-l-[3px] border-l-blue-500/60 bg-white/[0.02] px-6 py-4 my-6 text-[15px] leading-relaxed text-white/55 italic;
         }
         .paper-content code {
-          @apply font-mono text-[12px] text-emerald-400/80 bg-white/[0.04] px-1.5 py-0.5 rounded-sm;
+          @apply font-mono text-[12px] text-blue-400/80 bg-white/[0.04] px-1.5 py-0.5 rounded-sm;
         }
         .paper-content a {
-          @apply text-emerald-400/80 hover:text-emerald-400 underline underline-offset-4;
+          @apply text-blue-400/80 hover:text-blue-400 underline underline-offset-4;
         }
         .paper-content strong {
           @apply text-white/80 font-medium;
@@ -232,10 +232,10 @@ export default function PaperLayout({
           @apply px-4 py-3 text-white/60 border-b border-white/[0.04];
         }
         .paper-content .callout {
-          @apply border-l-[3px] border-l-emerald-500/60 bg-white/[0.02] px-6 py-5 my-8;
+          @apply border-l-[3px] border-l-blue-500/60 bg-white/[0.02] px-6 py-5 my-8;
         }
         .paper-content .callout-label {
-          @apply font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/70 mb-2 block;
+          @apply font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/70 mb-2 block;
         }
         .paper-content .footnote {
           @apply text-[12px] text-white/30 leading-relaxed;

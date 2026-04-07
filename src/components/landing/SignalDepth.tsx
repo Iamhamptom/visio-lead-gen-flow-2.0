@@ -34,7 +34,7 @@ export default function SignalDepth() {
   return (
     <section id="signals" className="relative py-32 bg-[#020c07]">
       <div className="absolute inset-0 bg-grid opacity-20" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.04)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.04)_0%,transparent_60%)]" />
 
       <div className="relative mx-auto max-w-6xl px-6">
         {/* Header */}
@@ -48,15 +48,15 @@ export default function SignalDepth() {
           <h2 className="mt-4 heading-xl max-w-3xl">
             How deep our agents go
             <br />
-            to find <span className="text-emerald-400">your buyer</span>.
+            to find <span className="text-blue-400">your buyer</span>.
           </h2>
           <div className="mt-6 flex items-start gap-3 max-w-2xl">
-            <div className="mt-1.5 h-px w-8 bg-emerald-500/40 shrink-0" />
+            <div className="mt-1.5 h-px w-8 bg-blue-500/40 shrink-0" />
             <p className="text-[15px] leading-relaxed text-white/50">
-              Anyone can list life events. What makes Visio Auto different is how
-              <span className="text-emerald-400/90"> deep</span> our agents go to
+              Anyone can list life events. What makes Visio Lead Gen different is how
+              <span className="text-blue-400/90"> deep</span> our agents go to
               find the buyer behind the signal &mdash; and how
-              <span className="text-emerald-400/90"> safely</span> we do it.
+              <span className="text-blue-400/90"> safely</span> we do it.
             </p>
           </div>
         </motion.div>
@@ -75,7 +75,7 @@ export default function SignalDepth() {
               <div className="flex flex-col items-center lg:items-start gap-3">
                 <JessAvatar size={80} />
                 <div className="text-center lg:text-left">
-                  <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-400/60">
+                  <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-400/60">
                     Found by Jess
                   </div>
                   <div className="font-mono text-[10px] text-white/20 mt-1">
@@ -86,7 +86,7 @@ export default function SignalDepth() {
 
               {/* Story */}
               <div>
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-emerald-500/40">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-blue-500/40">
                   Case Study
                 </span>
                 <h3 className="mt-3 text-2xl md:text-3xl font-extralight tracking-tight text-white leading-tight">
@@ -116,7 +116,7 @@ export default function SignalDepth() {
                       &mdash; A public Instagram post from his wife celebrating a milestone anniversary &mdash; the kind of moment people buy themselves milestone cars for.
                     </span>
                   </p>
-                  <p className="text-emerald-400/80">
+                  <p className="text-blue-400/80">
                     Within 90 seconds, Jess delivered the lead to a Cape Town Porsche Centre with full context, intent score (94/100), and a suggested approach. The dealer placed a discreet call that afternoon.
                   </p>
                   <p className="font-mono text-[12px] text-white/30 italic">
@@ -125,10 +125,10 @@ export default function SignalDepth() {
                 </div>
 
                 {/* Disclaimer */}
-                <div className="mt-8 border-l-[2px] border-emerald-500/30 pl-4 py-1">
+                <div className="mt-8 border-l-[2px] border-blue-500/30 pl-4 py-1">
                   <p className="text-[11px] text-white/30 leading-relaxed">
-                    <span className="text-emerald-400/60">Note:</span> All identifying details have been anonymized. This case study reflects Visio Auto&apos;s methodology, not a specific person. All data sources used were public and legally accessible. POPIA compliance verified by our Information Officer. Read our methodology in the{" "}
-                    <a href="/papers/security" className="text-emerald-400/80 hover:text-emerald-400 underline underline-offset-4">
+                    <span className="text-blue-400/60">Note:</span> All identifying details have been anonymized. This case study reflects Visio Lead Gen&apos;s methodology, not a specific person. All data sources used were public and legally accessible. POPIA compliance verified by our Information Officer. Read our methodology in the{" "}
+                    <a href="/papers/security" className="text-blue-400/80 hover:text-blue-400 underline underline-offset-4">
                       Security &amp; Privacy Whitepaper
                     </a>.
                   </p>
@@ -152,7 +152,7 @@ export default function SignalDepth() {
           <div className="text-center mb-12">
             <span className="section-label">Our Philosophy</span>
             <h3 className="mt-4 heading-md">
-              People-first. <span className="text-emerald-400">Always.</span>
+              People-first. <span className="text-blue-400">Always.</span>
             </h3>
           </div>
 
@@ -170,7 +170,7 @@ export default function SignalDepth() {
                 }}
                 className="bg-[#020c07] p-8 hover:bg-white/[0.02] transition-colors"
               >
-                <point.icon className="h-5 w-5 text-emerald-500/50 mb-5" />
+                <point.icon className="h-5 w-5 text-blue-500/50 mb-5" />
                 <h4 className="text-[15px] font-medium text-white/80 mb-2">
                   {point.title}
                 </h4>
@@ -197,7 +197,7 @@ export default function SignalDepth() {
             { value: "POPIA", label: "Compliant", detail: "Information Officer registered" },
           ].map((s) => (
             <div key={s.label} className="bg-white/[0.02] px-5 py-6">
-              <div className="font-mono text-2xl font-extralight text-emerald-400">
+              <div className="font-mono text-2xl font-extralight text-blue-400">
                 {s.value}
               </div>
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/40 mt-1">
@@ -220,7 +220,7 @@ export default function SignalDepth() {
         >
           <a
             href="/papers/security"
-            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-emerald-400/60 hover:text-emerald-400 transition-colors border-b border-emerald-500/20 pb-1"
+            className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/60 hover:text-blue-400 transition-colors border-b border-blue-500/20 pb-1"
           >
             Read the full Security &amp; Privacy Whitepaper →
           </a>

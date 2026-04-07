@@ -185,14 +185,14 @@ export default function GetQuotePage() {
     return (
       <div className="flex-1 flex items-center justify-center px-4 py-12">
         <div className="max-w-md w-full text-center space-y-6">
-          <div className="mx-auto size-20 rounded-full bg-emerald-500/20 flex items-center justify-center">
-            <svg className="size-10 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <div className="mx-auto size-20 rounded-full bg-blue-500/20 flex items-center justify-center">
+            <svg className="size-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </div>
           <h2 className="text-2xl font-bold text-white">You're all set!</h2>
           <p className="text-zinc-400 text-lg">
-            We'll WhatsApp you matched vehicles in under <span className="text-emerald-400 font-semibold">60 seconds</span>.
+            We'll WhatsApp you matched vehicles in under <span className="text-blue-400 font-semibold">60 seconds</span>.
           </p>
           <p className="text-zinc-500 text-sm">
             Check your WhatsApp on <span className="text-white">{form.phone}</span> for your AI-matched deals.
@@ -200,12 +200,12 @@ export default function GetQuotePage() {
           <div className="pt-4">
             <a
               href="/"
-              className="inline-flex items-center gap-2 text-sm text-emerald-400 hover:text-emerald-300 transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition-colors"
             >
               <svg className="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              Back to Visio Auto
+              Back to Visio Lead Gen
             </a>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function GetQuotePage() {
           </div>
           <div className="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
             <div
-              className="h-full bg-emerald-500 rounded-full transition-all duration-500 ease-out"
+              className="h-full bg-blue-500 rounded-full transition-all duration-500 ease-out"
               style={{ width: `${(step / TOTAL_STEPS) * 100}%` }}
             />
           </div>
@@ -236,7 +236,7 @@ export default function GetQuotePage() {
         <div className="px-4 pt-8 pb-4 sm:pt-12 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
             Find Your Perfect Car in{' '}
-            <span className="text-emerald-400">60 Seconds</span>
+            <span className="text-blue-400">60 Seconds</span>
           </h1>
           <p className="mt-3 text-base sm:text-lg text-zinc-400 max-w-lg mx-auto">
             AI matches you with the best deals from top Gauteng dealerships
@@ -348,7 +348,7 @@ export default function GetQuotePage() {
                     <div className={cn(
                       'size-5 rounded-full border-2 transition-colors flex items-center justify-center shrink-0',
                       form.timeline === t.value
-                        ? 'border-emerald-500 bg-emerald-500'
+                        ? 'border-blue-500 bg-blue-500'
                         : 'border-zinc-600'
                     )}>
                       {form.timeline === t.value && (
@@ -397,7 +397,7 @@ export default function GetQuotePage() {
                     <select
                       value={form.tradeInBrand}
                       onChange={(e) => set('tradeInBrand', e.target.value)}
-                      className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                      className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                     >
                       <option value="">Select brand</option>
                       {BRANDS.filter((b) => b.value !== 'No Preference' && b.value !== 'Other').map((b) => (
@@ -413,7 +413,7 @@ export default function GetQuotePage() {
                       placeholder="e.g. Hilux, Polo, X5"
                       value={form.tradeInModel}
                       onChange={(e) => set('tradeInModel', e.target.value)}
-                      className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                      className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                     />
                   </div>
                   <div>
@@ -421,7 +421,7 @@ export default function GetQuotePage() {
                     <select
                       value={form.tradeInYear}
                       onChange={(e) => set('tradeInYear', e.target.value)}
-                      className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                      className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                     >
                       <option value="">Select year</option>
                       {TRADE_IN_YEARS.map((y) => (
@@ -432,7 +432,7 @@ export default function GetQuotePage() {
                   <button
                     type="button"
                     onClick={next}
-                    className="w-full mt-2 py-3 rounded-lg bg-emerald-500 text-black font-semibold text-sm hover:bg-emerald-400 active:bg-emerald-600 transition-colors"
+                    className="w-full mt-2 py-3 rounded-lg bg-blue-500 text-black font-semibold text-sm hover:bg-blue-400 active:bg-blue-600 transition-colors"
                   >
                     Continue
                   </button>
@@ -447,27 +447,27 @@ export default function GetQuotePage() {
               <div className="space-y-3">
                 <div>
                   <label className="block text-xs font-medium text-zinc-400 mb-1">
-                    Name <span className="text-emerald-400">*</span>
+                    Name <span className="text-blue-400">*</span>
                   </label>
                   <input
                     type="text"
                     placeholder="Your full name"
                     value={form.name}
                     onChange={(e) => set('name', e.target.value)}
-                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                     autoFocus
                   />
                 </div>
                 <div>
                   <label className="block text-xs font-medium text-zinc-400 mb-1">
-                    Phone (WhatsApp) <span className="text-emerald-400">*</span>
+                    Phone (WhatsApp) <span className="text-blue-400">*</span>
                   </label>
                   <input
                     type="tel"
                     placeholder="082 123 4567"
                     value={form.phone}
                     onChange={(e) => set('phone', e.target.value)}
-                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                   />
                   <p className="mt-1 text-xs text-zinc-600">
                     We'll send your matched deals to this number
@@ -482,7 +482,7 @@ export default function GetQuotePage() {
                     placeholder="you@example.com"
                     value={form.email}
                     onChange={(e) => set('email', e.target.value)}
-                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -494,7 +494,7 @@ export default function GetQuotePage() {
                     placeholder="e.g. Sandton, Centurion, Midrand"
                     value={form.area}
                     onChange={(e) => set('area', e.target.value)}
-                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                   />
                 </div>
                 <div>
@@ -504,7 +504,7 @@ export default function GetQuotePage() {
                   <select
                     value={form.language}
                     onChange={(e) => set('language', e.target.value)}
-                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 outline-none transition-colors"
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-800/60 px-3 py-2.5 text-sm text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
                   >
                     {LANGUAGES.map((l) => (
                       <option key={l.value} value={l.value}>{l.label}</option>
@@ -525,7 +525,7 @@ export default function GetQuotePage() {
                   className={cn(
                     'w-full mt-2 py-3.5 rounded-lg font-semibold text-sm transition-all duration-200',
                     canSubmit && !submitting
-                      ? 'bg-emerald-500 text-black hover:bg-emerald-400 active:bg-emerald-600 shadow-lg shadow-emerald-500/25'
+                      ? 'bg-blue-500 text-black hover:bg-blue-400 active:bg-blue-600 shadow-lg shadow-blue-500/25'
                       : 'bg-zinc-700 text-zinc-400 cursor-not-allowed'
                   )}
                 >
@@ -564,19 +564,19 @@ export default function GetQuotePage() {
       <div className="px-4 pb-6">
         <div className="max-w-xl mx-auto flex flex-wrap items-center justify-center gap-4 text-xs text-zinc-600">
           <span className="flex items-center gap-1">
-            <svg className="size-3.5 text-emerald-500/60" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="size-3.5 text-blue-500/60" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" />
             </svg>
             POPIA Compliant
           </span>
           <span className="flex items-center gap-1">
-            <svg className="size-3.5 text-emerald-500/60" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="size-3.5 text-blue-500/60" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
             No spam, ever
           </span>
           <span className="flex items-center gap-1">
-            <svg className="size-3.5 text-emerald-500/60" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="size-3.5 text-blue-500/60" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
             </svg>
             AI-powered matching
@@ -627,9 +627,9 @@ function SelectCard({
       onClick={onClick}
       className={cn(
         'rounded-xl border transition-all duration-150 text-left',
-        'hover:border-emerald-500/50 hover:bg-emerald-500/5 active:scale-[0.97]',
+        'hover:border-blue-500/50 hover:bg-blue-500/5 active:scale-[0.97]',
         selected
-          ? 'border-emerald-500 bg-emerald-500/10 ring-1 ring-emerald-500/30'
+          ? 'border-blue-500 bg-blue-500/10 ring-1 ring-blue-500/30'
           : 'border-zinc-700/60 bg-zinc-800/40',
         row
           ? 'flex items-center justify-between gap-3 px-4 py-3'

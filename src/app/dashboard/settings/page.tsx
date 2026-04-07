@@ -38,7 +38,7 @@ function SaveButton({ onClick, saving }: { onClick: () => void; saving: boolean 
     <Button
       onClick={onClick}
       disabled={saving}
-      className="bg-emerald-600 text-white hover:bg-emerald-700 disabled:opacity-50"
+      className="bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50"
       size="sm"
     >
       {saving ? (
@@ -62,8 +62,8 @@ function SectionHeader({
 }) {
   return (
     <div className="flex items-start gap-3">
-      <div className="rounded-lg bg-emerald-500/10 p-2">
-        <Icon className="h-4 w-4 text-emerald-400" />
+      <div className="rounded-lg bg-blue-500/10 p-2">
+        <Icon className="h-4 w-4 text-blue-400" />
       </div>
       <div>
         <h3 className="text-sm font-semibold text-white">{title}</h3>
@@ -380,7 +380,7 @@ export default function SettingsPage() {
             </div>
           </div>
           <div className="flex items-center gap-2 rounded-lg border border-zinc-800/50 bg-zinc-900/50 p-3">
-            <div className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <div className="h-2 w-2 rounded-full bg-blue-400 animate-pulse" />
             <span className="text-xs text-zinc-400">
               Last synced: 2 hours ago — 15 vehicles imported
             </span>
@@ -398,11 +398,11 @@ export default function SettingsPage() {
           />
         </CardHeader>
         <CardContent className="space-y-4">
-          <div className="flex items-center justify-between rounded-lg border border-emerald-500/20 bg-emerald-500/5 p-4">
+          <div className="flex items-center justify-between rounded-lg border border-blue-500/20 bg-blue-500/5 p-4">
             <div>
               <div className="flex items-center gap-2">
                 <h4 className="text-sm font-bold text-white">Growth Plan</h4>
-                <Badge className="border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
+                <Badge className="border-blue-500/30 bg-blue-500/10 text-blue-400">
                   Active
                 </Badge>
               </div>
@@ -416,7 +416,7 @@ export default function SettingsPage() {
             <Link href="/get-started">
               <Button
                 variant="outline"
-                className="border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10"
+                className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
               >
                 Upgrade
               </Button>
@@ -433,7 +433,7 @@ export default function SettingsPage() {
                 className={cn(
                   "rounded-lg border p-3",
                   plan.current
-                    ? "border-emerald-500/30 bg-emerald-500/5"
+                    ? "border-blue-500/30 bg-blue-500/5"
                     : "border-zinc-800/50 bg-zinc-900/30"
                 )}
               >
@@ -441,7 +441,7 @@ export default function SettingsPage() {
                 <p className="text-lg font-bold text-white">{plan.price}</p>
                 <p className="text-xs text-zinc-500">{plan.leads}</p>
                 {plan.current && (
-                  <Badge className="mt-2 border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
+                  <Badge className="mt-2 border-blue-500/30 bg-blue-500/10 text-blue-400">
                     Current
                   </Badge>
                 )}
@@ -498,7 +498,7 @@ export default function SettingsPage() {
                 className="border-zinc-800 text-zinc-400 hover:text-white"
               >
                 {copied ? (
-                  <Check className="h-4 w-4 text-emerald-400" />
+                  <Check className="h-4 w-4 text-blue-400" />
                 ) : (
                   <Copy className="h-4 w-4" />
                 )}
