@@ -45,7 +45,7 @@ export interface ModeConfig {
   topFirms: string[];    // real named targets for outbound
 }
 
-export const MODES: Record<VerticalMode, ModeConfig> = {
+export const MODES: Record<string, ModeConfig> = {
   auto: {
     id: "auto",
     name: "Auto & Dealerships",
