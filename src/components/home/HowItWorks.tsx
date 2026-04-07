@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Radar, Target, Car, MessageCircle } from "lucide-react";
+import { Radar, Target, Users, MessageCircle } from "lucide-react";
 
 /**
  * How It Works — 3 steps + the delivery channel.
@@ -17,28 +17,28 @@ const STEPS = [
     step: "01",
     title: "Signal Detected",
     description:
-      "We monitor 84+ buying signals across SA — lease expirations, new jobs, property purchases, insurance claims, social mentions, CIPC registrations.",
+      "We monitor 84+ intent signals across twelve verticals — Two-Pot withdrawals, Eskom tariff complaints, medical aid hikes, bond approvals, cart abandonments, lease expiries, CIPC registrations, and more.",
   },
   {
     icon: Target,
     step: "02",
     title: "AI Qualified",
     description:
-      "Every prospect scored 0-100 for intent, budget, timeline, brand affinity, and bank-grade affordability. Only the ready-to-buy reach you.",
+      "Every prospect scored 0–100 for intent, budget, timeline, and consent. Heat-mapped Green / Amber / Red against your specific vertical&apos;s conversion profile. Only ready-to-buy leads reach you.",
   },
   {
-    icon: Car,
+    icon: Users,
     step: "03",
-    title: "Inventory Matched",
+    title: "Panel Matched",
     description:
-      "Leads matched to specific vehicles in your stock by brand, model, price band, and buyer preferences. The right car for the right buyer.",
+      "Leads routed to the right member of your accredited panel — by sub-vertical, price band, geography, and buyer profile. The right lead to the right broker, installer, clinic, agent, or coach.",
   },
   {
     icon: MessageCircle,
     step: "04",
     title: "Delivered in 30s",
     description:
-      "Qualified leads land on your WhatsApp within 30 seconds — with full buyer context, suggested vehicles, and AI-written talking points.",
+      "Qualified leads land on your WhatsApp within 30 seconds — with full buyer context, vertical-specific qualification data, and AI-written talking points tailored to your mode.",
   },
 ];
 
@@ -62,14 +62,14 @@ export default function HomeHowItWorks() {
             How it works
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white max-w-3xl leading-[1.1]">
-            Most dealers wait.
+            Most businesses guess.
             <br />
-            <span className="text-blue-400">The best ones hunt.</span>
+            <span className="text-blue-400">The best ones know.</span>
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-xl">
-            The average SA dealership holds stock 47 days. 25% of walk-ins get rejected for
-            finance. The buyers who would have qualified are already browsing competitors
-            online. Visio Lead Gen finds them first.
+            R57bn has flowed out of Two-Pot. Discovery hiked twice in 18 months. Amazon SA
+            launched. Eskom tariffs climbed 12.7%. Every vertical has a story. Visio Lead Gen
+            reads the signals, qualifies the intent, and delivers the conversation.
           </p>
         </motion.div>
 
@@ -118,11 +118,12 @@ export default function HomeHowItWorks() {
           className="mt-10 border-l-[2px] border-l-blue-500/40 pl-5 max-w-2xl"
         >
           <p className="text-[13px] italic text-white/50 leading-relaxed">
-            &ldquo;Dealers using Visio Lead Gen turn stock 1.6× faster. A typical 40-car-per-month
-            dealer saves approximately R1.25M per year in floorplan interest.&rdquo;
+            &ldquo;Twelve verticals, one platform. Every Visio Lead Gen mode is backed by a full
+            Visio Research Labs paper with honest ramp assumptions and government-tier cross-
+            references. R580M combined Year-5 steady-state ARR across the stack.&rdquo;
           </p>
           <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-blue-400/50">
-            Visio Research Labs — Stock Velocity Analysis, 2026
+            Visio Research Labs — VRL-LEADGEN-001 to 012, 2026
           </p>
         </motion.div>
       </div>

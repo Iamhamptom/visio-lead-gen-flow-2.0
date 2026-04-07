@@ -20,33 +20,33 @@ import { ArrowRight } from "lucide-react";
 const OFFERINGS = [
   {
     eyebrow: "Qualified Leads",
-    title: "Buyer-intent leads, delivered to your sales floor.",
+    title: "Intent-scored leads, delivered to your panel.",
     description:
-      "Stop bidding on Google Ads for buyers who are not ready. Visio Lead Gen watches the signals that predict a car purchase — and routes the ready-to-buy prospects directly to your team on WhatsApp.",
-    href: "/pricing?category=leads",
-    ctaLabel: "See Lead Packs",
+      "Stop bidding on Google Ads against your direct competitors. Visio Lead Gen watches the signals that predict a purchase across twelve verticals — and routes the ready-to-buy prospects directly to your team on WhatsApp in under thirty seconds.",
+    href: "/pricing",
+    ctaLabel: "See the Pricing Sheet",
     image: "/generated/car-volume.png",
-    imageAlt: "Crossover SUV representing volume dealership leads",
+    imageAlt: "Lead flow visualisation representing warm-lead delivery",
   },
   {
-    eyebrow: "Sales Intelligence",
-    title: "World-class data on the SA auto market.",
+    eyebrow: "Market Intelligence",
+    title: "Bloomberg-grade data for twelve SA verticals.",
     description:
-      "Forward-looking buying intent, brand share shifts, fuel-price impact, Chinese OEM disruption, and the stock velocity math your F&I desk needs. Built for dealer principals, OEM marketing teams, and bank credit-ops.",
-    href: "/intelligence",
-    ctaLabel: "See Intelligence",
+      "Forward-looking intent across bond, insurance, solar, debt, medical, cosmetic, immigration, schools, commercial, residential, e-commerce, and coaching. Backed by twelve full Visio Research Labs papers with honest ramp assumptions.",
+    href: "/papers",
+    ctaLabel: "Read the Research",
     image: "/generated/dashboard.png",
-    imageAlt: "Cinematic dashboard with ambient blue lighting",
+    imageAlt: "Cinematic data dashboard with ambient blue lighting",
   },
   {
-    eyebrow: "The Full Suite",
-    title: "Six connected products. One platform.",
+    eyebrow: "The Twelve-Vertical Platform",
+    title: "One platform. Twelve modes. Pick yours.",
     description:
-      "Pre-approval, condition reports, WhatsApp BDC, thin-file affordability, buying intent index, and Carvana-grade trust and escrow. All connected. All priced for SA.",
-    href: "/#suite",
-    ctaLabel: "Explore the Suite",
+      "The mode selector reskins Visio Lead Gen around your industry: bond originators, insurance brokers, solar installers, debt counsellors, medical aid brokers, cosmetic clinics, immigration lawyers, schools, commercial property brokers, estate agents, e-commerce merchants, and coaches.",
+    href: "/modes",
+    ctaLabel: "Pick your Mode",
     image: "/generated/car-luxury.png",
-    imageAlt: "Luxury performance car representing the full suite",
+    imageAlt: "Twelve-vertical platform visualisation",
   },
 ];
 
@@ -73,8 +73,10 @@ export default function HomeCoreOfferings() {
             <span className="text-blue-400">One platform.</span>
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-xl">
-            The core of Visio Lead Gen is simple: we sell qualified car buyers to dealerships, and
-            world-class market intelligence to the OEMs and banks who fund them.
+            The core of Visio Lead Gen is simple: we sell qualified intent-scored leads to
+            businesses in twelve verticals, and Bloomberg-grade market intelligence to the
+            operators and investors who fund them. Every vertical is backed by a full Visio
+            Research Labs paper.
           </p>
         </motion.div>
 

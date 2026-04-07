@@ -24,13 +24,13 @@ const COLUMNS = [
     ],
   },
   {
-    title: "Solutions",
+    title: "Verticals",
     links: [
-      { label: "For Volume Dealers", href: "/get-started?segment=volume" },
-      { label: "For Premium Dealers", href: "/get-started?segment=premium" },
-      { label: "For Luxury Dealers", href: "/get-started?segment=luxury" },
-      { label: "For OEMs", href: "/intelligence" },
-      { label: "For Banks", href: "/intelligence" },
+      { label: "Bond & Home Loans", href: "/papers/visio-bond" },
+      { label: "Insurance Brokers", href: "/papers/visio-shield" },
+      { label: "Solar Installers", href: "/papers/visio-solar" },
+      { label: "Debt Review", href: "/papers/visio-debt" },
+      { label: "See all twelve →", href: "/modes" },
     ],
   },
   {
@@ -75,8 +75,8 @@ export default function HomeFooter() {
               </span>
             </Link>
             <p className="mt-5 text-[13px] leading-relaxed text-white/40 max-w-xs">
-              The AI platform South African car dealerships use to find qualified buyers,
-              close more sales, and stay ahead of the market.
+              The multi-vertical AI lead engine for South Africa. Twelve verticals, one
+              platform, backed by twelve Visio Research Labs papers.
             </p>
             <div className="mt-6">
               <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">

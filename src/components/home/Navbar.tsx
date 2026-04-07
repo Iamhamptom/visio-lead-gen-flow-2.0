@@ -15,11 +15,11 @@ import { VisioLogoMark } from "@/components/landing/VisioLogo";
  */
 
 const NAV_LINKS = [
-  { label: "Product", href: "/#product" },
+  { label: "Modes", href: "/modes" },
+  { label: "Papers", href: "/papers" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Intelligence", href: "/intelligence" },
   { label: "Research", href: "/research" },
-  { label: "Customers", href: "/customers" },
+  { label: "Intelligence", href: "/intelligence" },
 ];
 
 export default function HomeNavbar() {
@@ -75,10 +75,10 @@ export default function HomeNavbar() {
               Sign in
             </Link>
             <Link
-              href="/get-started"
+              href="/modes"
               className="border border-blue-500/40 bg-blue-500/10 px-5 py-2 font-mono text-[11px] uppercase tracking-[0.15em] text-blue-400 hover:bg-blue-500/20 transition-colors"
             >
-              Start Free Trial
+              Pick a Mode
             </Link>
           </div>
 
@@ -129,11 +129,11 @@ export default function HomeNavbar() {
                   Sign in
                 </Link>
                 <Link
-                  href="/get-started"
+                  href="/modes"
                   onClick={() => setMobileOpen(false)}
                   className="block font-mono text-xs uppercase tracking-[0.2em] text-blue-400 bg-blue-500/10 border border-blue-500/40 py-3 text-center"
                 >
-                  Start Free Trial
+                  Pick a Mode
                 </Link>
               </div>
             </div>
