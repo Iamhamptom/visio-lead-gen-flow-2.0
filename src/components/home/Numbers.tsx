@@ -12,24 +12,24 @@ import { motion } from "framer-motion";
 
 const NUMBERS = [
   {
-    value: "329+",
-    label: "SA dealerships identified",
-    detail: "In our lead database, 54% concentrated in Gauteng.",
+    value: "12",
+    label: "Verticals covered",
+    detail: "Bond, insurance, solar, debt, medical, cosmetic, immigration, schools, commercial, residential, e-commerce, coaching.",
   },
   {
     value: "84+",
-    label: "Buying signal types tracked",
-    detail: "Across lifecycle, financial, corporate, property, social, and macro.",
+    label: "Intent signal types tracked",
+    detail: "Across financial, household, regulatory, social, and event signals.",
   },
   {
     value: "<30s",
     label: "WhatsApp delivery time",
-    detail: "From signal detection to your sales team's phone.",
+    detail: "From signal detection to your panel's phone.",
   },
   {
-    value: "10",
-    label: "Published research papers",
-    detail: "Peer-grade, free under CC BY 4.0, at /research.",
+    value: "12",
+    label: "Visio Research Labs papers",
+    detail: "VRL-LEADGEN-001 through 012, one per vertical, sourced and honesty-flagged.",
   },
   {
     value: "POPIA",
@@ -37,9 +37,9 @@ const NUMBERS = [
     detail: "Information Officer registered. 90-day retention. Published methodology.",
   },
   {
-    value: "6",
-    label: "Connected sibling products",
-    detail: "Approve, Inspect, BDC, Intent, Open Finance, and Trust. All live.",
+    value: "8",
+    label: "VisioCorp ecosystem siblings",
+    detail: "Visio Auto, HealthOS, Patient Flow, Doctor OS, VisioCode, VisioPitch, VisioCalls, Workspace.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function HomeNumbers() {
           </h2>
           <p className="mt-6 text-[15px] text-white/50 max-w-xl mx-auto leading-relaxed">
             We do not publish fake testimonials or stock-photo customer faces. When real
-            dealerships give us permission to share their results, they will live at{" "}
+            panel customers give us permission to share their results, they will live at{" "}
             <a href="/customers" className="text-blue-400/80 hover:text-blue-400 underline underline-offset-4">
               /customers
             </a>

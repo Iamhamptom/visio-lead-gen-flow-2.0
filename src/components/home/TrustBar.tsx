@@ -9,7 +9,7 @@ import { Shield, Database, Globe2, Lock, Zap, Award } from "lucide-react";
  */
 
 const TRUST_POINTS = [
-  { icon: Database, label: "Built on NAAMSA-verified data" },
+  { icon: Database, label: "Built on Multi-Source Verified Data" },
   { icon: Shield, label: "POPIA Compliant" },
   { icon: Globe2, label: "Built in South Africa" },
   { icon: Lock, label: "Bank-Level Security" },

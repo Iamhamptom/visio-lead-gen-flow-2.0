@@ -33,28 +33,28 @@ export default function HomeFinalCTA() {
             <span className="text-blue-400">Pay when it works.</span>
           </h2>
           <p className="mt-8 text-[16px] text-white/50 max-w-xl mx-auto leading-relaxed">
-            Join the South African dealerships finding qualified buyers before they walk into
-            a competitor. Five leads free. No credit card. Cancel anytime.
+            Pick a vertical. Get warm, intent-scored leads delivered to your panel on
+            WhatsApp in under thirty seconds. Twelve modes. POPIA compliant. Cancel anytime.
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
-              href="/get-started"
+              href="/modes"
               className="inline-flex items-center gap-2.5 bg-blue-500 hover:bg-blue-400 px-8 py-4 font-mono text-[12px] uppercase tracking-[0.2em] text-[#03091a] font-medium transition-colors"
             >
-              Start Free Trial
+              Pick a Mode
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              href="/pricing?tier=enterprise"
+              href="/papers"
               className="inline-flex items-center gap-2.5 border border-white/[0.1] bg-white/[0.02] hover:bg-white/[0.06] px-8 py-4 font-mono text-[12px] uppercase tracking-[0.2em] text-white/80 hover:text-white transition-colors"
             >
-              Talk to Sales
+              Read the Research
             </Link>
           </div>
 
           <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">
-            5 qualified leads free · No credit card required · POPIA compliant · Cancel anytime
+            Twelve verticals · Backed by 12 VRL papers · POPIA compliant · Cancel anytime
           </p>
         </motion.div>
       </div>

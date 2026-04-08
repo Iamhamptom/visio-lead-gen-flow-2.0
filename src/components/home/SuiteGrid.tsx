@@ -4,14 +4,14 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { SUITE } from "@/lib/suite";
+import { MODE_LIST, type ModeConfig } from "@/lib/modes";
 
 /**
- * Suite Grid — 6 sibling products as clean cards.
+ * Suite Grid — the 12 Visio Lead Gen vertical modes as cards.
  *
- * Replaces the old VisioAutoSuite section (which had architecture diagrams
- * and internal jargon). This is customer-facing: name · one line · two links.
- * No vt_transactions. No paper IDs. No ARR targets.
+ * Replaces the old 6-Auto-product grid. Each card links to the underlying
+ * VRL paper. Pulls from src/lib/modes.ts so it stays in sync with the rest
+ * of the platform.
  */
 
 const cardVariants = {
@@ -19,50 +19,49 @@ const cardVariants = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] as const },
+    transition: { delay: i * 0.04, duration: 0.4, ease: [0.16, 1, 0.3, 1] as const },
   }),
 };
 
-// Customer-facing taglines (not the internal `tagline` which is more technical)
-const CUSTOMER_COPY: Record<string, { oneLiner: string; plainRole: string }> = {
-  approve: {
-    oneLiner: "Pre-approve buyers in 90 seconds",
-    plainRole:
-      "Compare four bank rates instantly. No credit pull. No rejected applications. Fewer wasted F&I hours.",
-  },
-  inspect: {
-    oneLiner: "AI condition reports from 12 phone photos",
-    plainRole:
-      "Build buyer trust on any used car. R49 per report or R299/mo unlimited. Confidence-gated grading.",
-  },
-  bdc: {
-    oneLiner: "WhatsApp-native lead routing and templates",
-    plainRole:
-      "30 templates in English, Afrikaans, and Zulu. Built for SA dealers at SA prices. 5× cheaper than US tools.",
-  },
-  intent: {
-    oneLiner: "Real-time buying intent data for OEMs and banks",
-    plainRole:
-      "The forward-looking layer Lightstone and TransUnion do not publish. Subscribe monthly. Free public Index.",
-  },
-  "open-finance": {
-    oneLiner: "Bank statement affordability for thin-file buyers",
-    plainRole:
-      "Approve the gig workers, freelancers, and self-employed buyers the bureaus cannot see. Audit-grade PDF for banks.",
-  },
-  trust: {
-    oneLiner: "Escrow, delivery, and 7-day returns",
-    plainRole:
-      "The unified transaction layer — buyer trust, dealer stock velocity, no inventory risk. Save R1.25M/year in floorplan interest.",
-  },
+// Lead Gen Flow 2.0 home shows the 12 Lead Gen verticals (auto is the sibling product)
+const LEADGEN_MODES = MODE_LIST.filter((m) => m.id !== "auto");
+
+const PAPER_SLUG: Record<string, string> = {
+  bond: "visio-bond",
+  insurance: "visio-shield",
+  solar: "visio-solar",
+  debt: "visio-debt",
+  medical: "visio-med",
+  cosmetic: "visio-aesthetic",
+  immigration: "visio-visa",
+  schools: "visio-schools",
+  realty: "visio-realty",
+  commercial: "visio-estate",
+  commerce: "visio-commerce",
+  coach: "visio-coach",
+};
+
+const PAPER_NUMBER: Record<string, string> = {
+  bond: "VRL-LEADGEN-001",
+  insurance: "VRL-LEADGEN-002",
+  solar: "VRL-LEADGEN-003",
+  debt: "VRL-LEADGEN-004",
+  medical: "VRL-LEADGEN-005",
+  cosmetic: "VRL-LEADGEN-006",
+  immigration: "VRL-LEADGEN-007",
+  schools: "VRL-LEADGEN-008",
+  commercial: "VRL-LEADGEN-009",
+  realty: "VRL-LEADGEN-010",
+  commerce: "VRL-LEADGEN-011",
+  coach: "VRL-LEADGEN-012",
 };
 
 export default function HomeSuiteGrid() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: 0.05 });
 
   return (
-    <section id="suite" className="relative py-32 bg-[#020c07]">
+    <section id="suite" className="relative py-32 bg-[#020a1a]">
       <div className="absolute inset-0 bg-grid opacity-20" />
 
       <div className="relative mx-auto max-w-6xl px-6">
@@ -74,75 +73,25 @@ export default function HomeSuiteGrid() {
           transition={{ duration: 0.7 }}
         >
           <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
-            The Suite
+            The Twelve Verticals
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white max-w-3xl leading-[1.1]">
-            Six connected products.
+            Twelve verticals.
             <br />
             <span className="text-blue-400">One platform.</span>
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-xl">
-            Every product solves one piece of the SA car-buying journey. Together they cover
-            the whole thing — from pre-approval to delivery to buyer trust.
+            Each vertical solves one piece of the South African lead-gen problem &mdash; from
+            bond originators to coaches. Together they cover almost every paying customer
+            journey in the SA economy. Backed by twelve full Visio Research Labs papers.
           </p>
         </motion.div>
 
-        {/* Grid */}
+        {/* Grid — 12 verticals */}
         <div ref={ref} className="mt-16 grid gap-px md:grid-cols-2 lg:grid-cols-3 bg-white/[0.04] border border-white/[0.06]">
-          {SUITE.map((product, i) => {
-            const copy = CUSTOMER_COPY[product.key];
-            return (
-              <motion.div
-                key={product.key}
-                custom={i}
-                variants={cardVariants}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                className="bg-[#020c07] p-7 hover:bg-white/[0.02] transition-colors group flex flex-col"
-              >
-                {/* Status */}
-                <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-500/40">
-                    {product.shortName}
-                  </span>
-                  <div className="flex items-center gap-1.5">
-                    <div className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
-                    <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-blue-400/70">
-                      Live
-                    </span>
-                  </div>
-                </div>
-
-                {/* Name */}
-                <h3 className="text-[17px] font-medium text-white/90">{product.name}</h3>
-                <p className="mt-2 text-[13px] text-blue-400/80">{copy.oneLiner}</p>
-
-                {/* Description */}
-                <p className="mt-4 text-[12px] leading-relaxed text-white/40 flex-1">
-                  {copy.plainRole}
-                </p>
-
-                {/* Actions */}
-                <div className="mt-6 flex items-center justify-between">
-                  <a
-                    href={product.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-blue-400/80 hover:text-blue-400 transition-colors"
-                  >
-                    Open Tool
-                    <ArrowUpRight className="h-3 w-3" />
-                  </a>
-                  <Link
-                    href={`/pricing?sku=${product.key}`}
-                    className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 hover:text-white/70 transition-colors"
-                  >
-                    Pricing →
-                  </Link>
-                </div>
-              </motion.div>
-            );
-          })}
+          {LEADGEN_MODES.map((mode, i) => (
+            <ModeCard key={mode.id} mode={mode} index={i} isInView={isInView} />
+          ))}
         </div>
 
         {/* Footer link */}
@@ -154,13 +103,74 @@ export default function HomeSuiteGrid() {
           className="mt-10 text-center"
         >
           <Link
-            href="/research"
+            href="/papers"
             className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-white/40 hover:text-blue-400 transition-colors"
           >
-            Read the full architecture in our research papers →
+            Read all twelve Visio Research Labs papers →
           </Link>
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function ModeCard({
+  mode,
+  index,
+  isInView,
+}: {
+  mode: ModeConfig;
+  index: number;
+  isInView: boolean;
+}) {
+  const slug = PAPER_SLUG[mode.id] ?? "";
+  const paperNumber = PAPER_NUMBER[mode.id] ?? "";
+
+  return (
+    <motion.div
+      custom={index}
+      variants={cardVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      className="bg-[#020a1a] p-7 hover:bg-white/[0.02] transition-colors group flex flex-col"
+    >
+      {/* Top row: paper number + emoji */}
+      <div className="flex items-center justify-between mb-4">
+        <span
+          className="font-mono text-[10px] uppercase tracking-[0.2em]"
+          style={{ color: mode.color }}
+        >
+          {paperNumber}
+        </span>
+        <span className="text-xl opacity-70 group-hover:opacity-100 transition-opacity">
+          {mode.emoji}
+        </span>
+      </div>
+
+      {/* Name + tagline */}
+      <h3 className="text-[16px] font-medium text-white/90">{mode.name}</h3>
+      <p className="mt-2 text-[12px] leading-relaxed text-white/50 flex-1">
+        {mode.tagline}
+      </p>
+
+      {/* Price strip */}
+      <div className="mt-5 flex items-center justify-between border-t border-white/[0.06] pt-3">
+        <div>
+          <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-white/30">
+            Per lead
+          </p>
+          <p className="font-mono text-[11px] text-white/70 mt-0.5">
+            R{mode.leadPrice.low}–R{mode.leadPrice.high.toLocaleString()}
+          </p>
+        </div>
+        <Link
+          href={`/papers/${slug}`}
+          className="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-blue-400/80 hover:text-blue-400 transition-colors"
+        >
+          Read Paper
+          <ArrowUpRight className="h-3 w-3" />
+        </Link>
+      </div>
+    </motion.div>
   );
 }

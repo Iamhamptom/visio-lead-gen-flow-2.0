@@ -13,28 +13,28 @@ import { FileText, ArrowUpRight } from "lucide-react";
 
 const FEATURED = [
   {
-    number: "VRL-AUTO-001",
-    category: "Market Intelligence",
-    title: "SA Automotive Intelligence Vol. 1, 2026",
+    number: "VRL-LEADGEN-001",
+    category: "Bond & Home Loans",
+    title: "A Neutral Cross-Bank Home-Loan Signal Layer",
     description:
-      "Q1 2026 sales records, brand share shifts, Chinese OEM disruption, Chery-Rosslyn acquisition, manufacturing crisis.",
-    href: "/papers/intelligence-vol-1",
+      "Two-Pot R57bn + SARB 150bps cut + first-time buyer share at a 10-year high. The fattest origination window since 2021. R72M Year-5 ARR target.",
+    href: "/papers/visio-bond",
   },
   {
-    number: "VRL-AUTO-002",
-    category: "Security & Privacy",
-    title: "How We Find Buyers — Safely",
+    number: "VRL-LEADGEN-004",
+    category: "Debt Review & Two-Pot",
+    title: "A Neutral Debt Review Signal Layer",
     description:
-      "Our complete methodology for ethical signal mining, POPIA compliance, and people-first data practices. Hand this to your legal team.",
-    href: "/papers/security",
+      "R57bn withdrawn from Two-Pot. 79% repeat-withdrawal intent. 40% of credit-active SA in default. The largest household stress event in SA history is now a distribution channel.",
+    href: "/papers/visio-debt",
   },
   {
-    number: "VRL-AUTO-010",
-    category: "The Thesis",
-    title: "The Visio Lead Gen Suite — Overview",
+    number: "VRL-LEADGEN-009",
+    category: "Commercial Property",
+    title: "A Bloomberg-Style Tenant + Investor Signal Layer",
     description:
-      "Six structural information asymmetries. Six products. One unified platform. The asset-light path to the Carvana experience for South Africa.",
-    href: "/papers/suite-overview",
+      "Office return + Ekurhuleni warehousing + REIT capital recycling. Low-volume, high-value intelligence layer rather than mass-market lead engine. R30M Year-5 ARR target.",
+    href: "/papers/visio-estate",
   },
 ];
 
@@ -60,9 +60,10 @@ export default function HomeResearchTeaser() {
             <span className="text-blue-400">Peer-grade.</span> Free for partners.
           </h2>
           <p className="mt-6 text-[15px] leading-relaxed text-white/50 max-w-2xl">
-            Our work is published under Creative Commons Attribution 4.0. 10 papers covering
-            SA automotive market structure, our signal-mining methodology, POPIA compliance,
-            African luxury mobility, and the Suite architecture.
+            Our work is published under Creative Commons Attribution 4.0. Twelve papers
+            covering bond origination, insurance, solar, debt review, medical aid, cosmetic,
+            immigration, schools, commercial property, residential, e-commerce, and coaches
+            &mdash; one per Visio Lead Gen vertical, all sourced, all honesty-flagged.
           </p>
         </motion.div>
 
@@ -121,10 +122,10 @@ export default function HomeResearchTeaser() {
           className="mt-10 text-center"
         >
           <Link
-            href="/research"
+            href="/papers"
             className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400/70 hover:text-blue-400 transition-colors border-b border-blue-500/20 pb-1"
           >
-            Read all 10 papers
+            Read all twelve papers
             <ArrowUpRight className="h-3 w-3" />
           </Link>
         </motion.div>

@@ -40,61 +40,61 @@ export default function HomeIntelligenceCTA() {
           {/* Left — copy */}
           <div>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70">
-              For OEMs and Banks
+              For Enterprises, Investors and Operators
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-extralight tracking-tight text-white leading-[1.1]">
-              Running an OEM marketing team
+              Running a multi-vertical
               <br />
-              or bank credit-ops?
+              business or investment fund?
               <br />
               <span className="text-blue-400">We have your data.</span>
             </h2>
             <p className="mt-6 text-[15px] leading-relaxed text-white/50">
-              Lightstone and TransUnion sell historical records. NAAMSA publishes monthly
-              averages. Nobody sells forward-looking buying intent — until now. Subscribe to
-              Visio Intelligence to see what is about to happen in the SA auto market, not just
-              what already did.
+              Bloomberg sells equities data. Lightstone sells residential. TransUnion sells
+              credit. Nobody sells forward-looking, cross-vertical, ground-truth buying intent
+              for South Africa &mdash; until now. Subscribe to Visio Intelligence to see what
+              is about to happen across twelve SA verticals, not just what already did.
             </p>
 
             <ul className="mt-8 space-y-3">
               <li className="flex items-start gap-2.5 text-[14px] text-white/60">
                 <span className="font-mono text-blue-400/70 shrink-0">→</span>
                 <span>
-                  <strong className="text-white/80">For OEMs:</strong> reallocate dealer co-op
-                  marketing toward higher-intent regions. Approximately 20× ROI on the
-                  Enterprise tier.
+                  <strong className="text-white/80">For corporates:</strong> reallocate
+                  marketing spend toward higher-intent regions and verticals. Cross-vertical
+                  signal arbitrage that no single-vertical player can see.
                 </span>
               </li>
               <li className="flex items-start gap-2.5 text-[14px] text-white/60">
                 <span className="font-mono text-blue-400/70 shrink-0">→</span>
                 <span>
-                  <strong className="text-white/80">For banks:</strong> bid on the postcodes
-                  seeing application-stage intent right now. Approximately 30-40% lower
-                  cost-per-qualified-lead.
+                  <strong className="text-white/80">For investors:</strong> twelve verticals,
+                  twelve VRL papers, twelve forward-looking signal feeds. Spot demand
+                  formation 30&ndash;90 days before it shows up in published indices.
                 </span>
               </li>
               <li className="flex items-start gap-2.5 text-[14px] text-white/60">
                 <span className="font-mono text-blue-400/70 shrink-0">→</span>
                 <span>
-                  <strong className="text-white/80">For everyone:</strong> published methodology,
-                  k-anonymity protected, POPIA compliant.
+                  <strong className="text-white/80">For everyone:</strong> published
+                  methodology, k-anonymity protected, POPIA compliant. Every figure flagged.
                 </span>
               </li>
             </ul>
 
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
-                href="/intelligence"
+                href="/papers"
                 className="inline-flex items-center gap-2 border border-blue-500/40 bg-blue-500/[0.08] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-blue-400 hover:bg-blue-500/[0.15] transition-colors"
               >
-                See Visio Intelligence
+                See the Twelve Papers
                 <ArrowRight className="h-3.5 w-3.5" />
               </Link>
               <Link
-                href="/papers/intelligence-vol-1"
+                href="/modes"
                 className="inline-flex items-center gap-2 border border-white/[0.1] bg-white/[0.02] px-6 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-white/70 hover:bg-white/[0.06] hover:text-white transition-colors"
               >
-                Read the Report
+                Pick a Mode
               </Link>
             </div>
           </div>
@@ -102,34 +102,35 @@ export default function HomeIntelligenceCTA() {
           {/* Right — key stats card */}
           <div className="border border-white/[0.08] bg-white/[0.02] p-8">
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-blue-400/60">
-              Q1 2026 — verified
+              The SA economy, right now
             </span>
             <h3 className="mt-2 text-[16px] font-medium text-white/85">
-              The SA auto market at a glance
+              Twelve verticals at a glance
             </h3>
 
             <div className="mt-6 space-y-5">
               <Stat
-                headline="58,060 units"
-                subline="New vehicle sales, March 2026 — best March since 2007"
+                headline="R57bn"
+                subline="Two-Pot Retirement withdrawals by June 2025 — fueling bond, debt, and home buyer leads"
               />
               <Stat
-                headline="+17.3%"
-                subline="Year-over-year growth in Q1 2026"
+                headline="9.3% + 7.9%"
+                subline="Discovery medical aid hikes 2025 + April 2026 — switching window for medical brokers"
               />
               <Stat
-                headline="17%+"
-                subline="Chinese OEM market share — up from under 5% in 2022"
+                headline="629 brokers"
+                subline="FSCA-registered short-term insurance brokers in Gauteng alone"
               />
               <Stat
-                headline="Chery"
-                subline="Acquired Nissan's 60-year-old Rosslyn plant (2026)"
+                headline="R580M"
+                subline="Combined Year-5 ARR thesis across all twelve VRL papers"
               />
             </div>
 
             <p className="mt-8 font-mono text-[10px] text-white/25 leading-relaxed">
-              Sources: NAAMSA monthly releases · TransUnion Q4 2025 Mobility Insights · trade
-              press reports. See full report at /papers/intelligence-vol-1.
+              Sources: Moonstone Information Refinery · SARS Two-Pot statistics · Rentech
+              Digital broker registry · Visio Research Labs Forward-Looking Assumptions
+              addendum.
             </p>
           </div>
         </motion.div>
