@@ -33,8 +33,9 @@ export default function HomeFinalCTA() {
             <span className="text-blue-400">Pay when it works.</span>
           </h2>
           <p className="mt-8 text-[16px] text-white/50 max-w-xl mx-auto leading-relaxed">
-            Pick a vertical. Get warm, intent-scored leads delivered to your panel on
-            WhatsApp in under thirty seconds. Twelve modes. POPIA compliant. Cancel anytime.
+            Pick a vertical. Get the most enriched, intent-scored leads in South Africa
+            &mdash; researched, qualified, consent-gated, and delivered with full provenance.
+            Twelve modes. POPIA compliant. Cancel anytime.
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

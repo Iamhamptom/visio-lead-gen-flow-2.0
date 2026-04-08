@@ -36,9 +36,9 @@ const STEPS = [
   {
     icon: MessageCircle,
     step: "04",
-    title: "Delivered in 30s",
+    title: "Enriched & Delivered",
     description:
-      "Qualified leads land on your WhatsApp within 30 seconds — with full buyer context, vertical-specific qualification data, and AI-written talking points tailored to your mode.",
+      "Enriched, qualified leads land on your panel with full buyer context, vertical-specific qualification data, source provenance, and AI-written talking points tailored to your mode. Quality over speed — every lead is researched.",
   },
 ];
 

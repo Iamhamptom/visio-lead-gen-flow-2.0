@@ -14,25 +14,25 @@ import { ArrowRight } from "lucide-react";
 const STATS = [
   { value: "12", label: "Verticals" },
   { value: "84+", label: "Intent Signals" },
-  { value: "<30s", label: "WhatsApp Delivery" },
+  { value: "Enriched", label: "Enterprise Grade" },
   { value: "POPIA", label: "Compliant" },
 ];
 
 // The twelve verticals — short labels for the hero pill row.
-// Each pill links to its own VRL paper.
+// Each pill links to its own VRL paper. No emojis — pure typography.
 const VERTICAL_PILLS = [
-  { label: "Bond", emoji: "🏠", href: "/papers/visio-bond", color: "#3b82f6" },
-  { label: "Insurance", emoji: "🛡️", href: "/papers/visio-shield", color: "#8b5cf6" },
-  { label: "Solar", emoji: "☀️", href: "/papers/visio-solar", color: "#eab308" },
-  { label: "Debt", emoji: "⚖️", href: "/papers/visio-debt", color: "#ef4444" },
-  { label: "Medical", emoji: "🏥", href: "/papers/visio-med", color: "#06b6d4" },
-  { label: "Aesthetic", emoji: "💎", href: "/papers/visio-aesthetic", color: "#ec4899" },
-  { label: "Visa", emoji: "🛂", href: "/papers/visio-visa", color: "#f97316" },
-  { label: "Schools", emoji: "🎓", href: "/papers/visio-schools", color: "#14b8a6" },
-  { label: "Commercial", emoji: "🏢", href: "/papers/visio-estate", color: "#64748b" },
-  { label: "Realty", emoji: "🏡", href: "/papers/visio-realty", color: "#10b981" },
-  { label: "Commerce", emoji: "🛒", href: "/papers/visio-commerce", color: "#f59e0b" },
-  { label: "Coach", emoji: "🎯", href: "/papers/visio-coach", color: "#a855f7" },
+  { label: "Bond", href: "/papers/visio-bond", color: "#3b82f6" },
+  { label: "Insurance", href: "/papers/visio-shield", color: "#8b5cf6" },
+  { label: "Solar", href: "/papers/visio-solar", color: "#eab308" },
+  { label: "Debt", href: "/papers/visio-debt", color: "#ef4444" },
+  { label: "Medical", href: "/papers/visio-med", color: "#06b6d4" },
+  { label: "Aesthetic", href: "/papers/visio-aesthetic", color: "#ec4899" },
+  { label: "Visa", href: "/papers/visio-visa", color: "#f97316" },
+  { label: "Schools", href: "/papers/visio-schools", color: "#14b8a6" },
+  { label: "Commercial", href: "/papers/visio-estate", color: "#64748b" },
+  { label: "Realty", href: "/papers/visio-realty", color: "#10b981" },
+  { label: "Commerce", href: "/papers/visio-commerce", color: "#f59e0b" },
+  { label: "Coach", href: "/papers/visio-coach", color: "#a855f7" },
 ];
 
 const fadeUp = {
@@ -95,14 +95,16 @@ export default function HomeHero() {
             <Link
               key={v.label}
               href={v.href}
-              className="group inline-flex items-center gap-1.5 border border-white/[0.08] bg-white/[0.02] px-3 py-1.5 transition-colors hover:bg-white/[0.06]"
+              className="group inline-flex items-center gap-2 border bg-white/[0.02] px-3.5 py-1.5 transition-colors hover:bg-white/[0.06]"
               style={{
                 borderColor: `${v.color}33`,
               }}
             >
-              <span className="text-[13px]" aria-hidden="true">
-                {v.emoji}
-              </span>
+              <span
+                className="h-1.5 w-1.5 rounded-full"
+                style={{ backgroundColor: v.color }}
+                aria-hidden="true"
+              />
               <span
                 className="font-mono text-[10px] uppercase tracking-[0.18em] transition-colors"
                 style={{ color: v.color }}

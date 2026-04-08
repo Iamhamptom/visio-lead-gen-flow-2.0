@@ -22,7 +22,7 @@ const OFFERINGS = [
     eyebrow: "Qualified Leads",
     title: "Intent-scored leads, delivered to your panel.",
     description:
-      "Stop bidding on Google Ads against your direct competitors. Visio Lead Gen watches the signals that predict a purchase across twelve verticals — and routes the ready-to-buy prospects directly to your team on WhatsApp in under thirty seconds.",
+      "Stop bidding on Google Ads against your direct competitors. Visio Lead Gen watches the signals that predict a purchase across twelve verticals, enriches every prospect with full provenance, and routes the qualified, consent-gated leads to your team on WhatsApp.",
     href: "/pricing",
     ctaLabel: "See the Pricing Sheet",
     image: "/generated/infographic-flow.png",

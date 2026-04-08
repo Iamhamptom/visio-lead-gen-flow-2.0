@@ -22,9 +22,9 @@ const NUMBERS = [
     detail: "Across financial, household, regulatory, social, and event signals.",
   },
   {
-    value: "<30s",
-    label: "WhatsApp delivery time",
-    detail: "From signal detection to your panel's phone.",
+    value: "Enriched",
+    label: "Enterprise-grade quality",
+    detail: "Every lead researched, sourced, qualified, and consent-gated. Quality over speed.",
   },
   {
     value: "12",
