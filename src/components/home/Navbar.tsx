@@ -49,7 +49,8 @@ export default function HomeNavbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <VisioLogoMark size={28} />
             <span className="text-sm font-light tracking-wide text-white/90">
-              Visio Lead Gen
+              Visio Lead Gen Flow{" "}
+              <span className="font-mono text-[10px] text-blue-400/70 tracking-[0.1em]">2.0</span>
             </span>
           </Link>
 

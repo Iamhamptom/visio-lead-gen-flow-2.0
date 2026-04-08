@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Visio Lead Gen — The Multi-Vertical AI Lead Engine for South Africa",
+  title: "Visio Lead Gen Flow 2.0 — Twelve Verticals, One AI Lead Engine",
   description:
-    "Warm, intent-scored leads across 10 verticals: bond, insurance, solar, medical aid, debt review, cosmetic, immigration, schools, commercial property, and auto. Signals → qualify → book → deliver. Patient Flow booking, WhatsApp auto-confirm, and Bloomberg-grade industry intel in one platform.",
+    "Visio Lead Gen Flow 2.0 — the multi-vertical AI lead engine for South Africa. Twelve verticals (bond, insurance, solar, debt, medical, cosmetic, immigration, schools, commercial, residential, e-commerce, coaches), one platform, twelve Visio Research Labs papers, and seamless integration with the VisioCorp ecosystem (Visio Auto, HealthOS, Patient Flow, Doctor OS, VisioCode, VisioPitch, VisioCalls, Workspace).",
 };
 
 export default function RootLayout({

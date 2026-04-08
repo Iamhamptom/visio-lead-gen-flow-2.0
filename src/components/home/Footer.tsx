@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { VisioLogoMark } from "@/components/landing/VisioLogo";
-import { SUITE } from "@/lib/suite";
+import { ECOSYSTEM } from "@/lib/ecosystem";
 
 /**
  * Clean world-class footer.
@@ -71,7 +71,8 @@ export default function HomeFooter() {
             <Link href="/" className="flex items-center gap-3">
               <VisioLogoMark size={32} />
               <span className="text-base font-light tracking-wide text-white/80">
-                Visio Lead Gen
+                Visio Lead Gen Flow{" "}
+                <span className="font-mono text-xs text-blue-400/70 tracking-[0.1em]">2.0</span>
               </span>
             </Link>
             <p className="mt-5 text-[13px] leading-relaxed text-white/40 max-w-xs">
@@ -84,13 +85,13 @@ export default function HomeFooter() {
               </span>
             </div>
 
-            {/* Sibling deploys */}
+            {/* The VisioCorp Ecosystem — sibling products */}
             <div className="mt-8">
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/30 mb-3">
-                The Suite
+                The VisioCorp Ecosystem
               </div>
               <ul className="space-y-2">
-                {SUITE.map((p) => (
+                {ECOSYSTEM.filter((p) => p.key !== "lead-gen").map((p) => (
                   <li key={p.key}>
                     <a
                       href={p.liveUrl}

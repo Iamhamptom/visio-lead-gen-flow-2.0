@@ -57,7 +57,7 @@ export default function HomeHero() {
         <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
           <span className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.3em] text-blue-400/70 border border-blue-500/25 bg-blue-500/[0.04] px-3 py-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse" />
-            Visio Lead Gen · Twelve Verticals · South Africa
+            Visio Lead Gen Flow 2.0 · Twelve Verticals · South Africa
           </span>
         </motion.div>
 
