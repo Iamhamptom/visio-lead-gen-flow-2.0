@@ -7,9 +7,8 @@ import { ArrowRight } from "lucide-react";
 /**
  * World-class hero.
  *
- * One headline. Two CTAs. Four verified stats. One product visual.
- * Not Jess. Not the architecture. Not the paper IDs.
- * Just: what do we do, for whom, and why it matters.
+ * One headline. Twelve named verticals as pills. Two CTAs.
+ * Four verified stats. No imagery. No "any vertical" hand-waving.
  */
 
 const STATS = [
@@ -17,6 +16,23 @@ const STATS = [
   { value: "84+", label: "Intent Signals" },
   { value: "<30s", label: "WhatsApp Delivery" },
   { value: "POPIA", label: "Compliant" },
+];
+
+// The twelve verticals — short labels for the hero pill row.
+// Each pill links to its own VRL paper.
+const VERTICAL_PILLS = [
+  { label: "Bond", emoji: "🏠", href: "/papers/visio-bond", color: "#3b82f6" },
+  { label: "Insurance", emoji: "🛡️", href: "/papers/visio-shield", color: "#8b5cf6" },
+  { label: "Solar", emoji: "☀️", href: "/papers/visio-solar", color: "#eab308" },
+  { label: "Debt", emoji: "⚖️", href: "/papers/visio-debt", color: "#ef4444" },
+  { label: "Medical", emoji: "🏥", href: "/papers/visio-med", color: "#06b6d4" },
+  { label: "Aesthetic", emoji: "💎", href: "/papers/visio-aesthetic", color: "#ec4899" },
+  { label: "Visa", emoji: "🛂", href: "/papers/visio-visa", color: "#f97316" },
+  { label: "Schools", emoji: "🎓", href: "/papers/visio-schools", color: "#14b8a6" },
+  { label: "Commercial", emoji: "🏢", href: "/papers/visio-estate", color: "#64748b" },
+  { label: "Realty", emoji: "🏡", href: "/papers/visio-realty", color: "#10b981" },
+  { label: "Commerce", emoji: "🛒", href: "/papers/visio-commerce", color: "#f59e0b" },
+  { label: "Coach", emoji: "🎯", href: "/papers/visio-coach", color: "#a855f7" },
 ];
 
 const fadeUp = {
@@ -62,23 +78,52 @@ export default function HomeHero() {
         >
           Warm leads.
           <br />
-          Any vertical.
+          Twelve verticals.
           <br />
           <span className="text-blue-400">Delivered.</span>
         </motion.h1>
 
+        {/* The twelve verticals — explicit pills, not "any vertical" hand-waving */}
+        <motion.div
+          custom={2}
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="mt-10 flex flex-wrap gap-2 max-w-3xl"
+        >
+          {VERTICAL_PILLS.map((v) => (
+            <Link
+              key={v.label}
+              href={v.href}
+              className="group inline-flex items-center gap-1.5 border border-white/[0.08] bg-white/[0.02] px-3 py-1.5 transition-colors hover:bg-white/[0.06]"
+              style={{
+                borderColor: `${v.color}33`,
+              }}
+            >
+              <span className="text-[13px]" aria-hidden="true">
+                {v.emoji}
+              </span>
+              <span
+                className="font-mono text-[10px] uppercase tracking-[0.18em] transition-colors"
+                style={{ color: v.color }}
+              >
+                {v.label}
+              </span>
+            </Link>
+          ))}
+        </motion.div>
+
         {/* Subheadline */}
         <motion.p
-          custom={2}
+          custom={3}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           className="mt-8 text-[17px] md:text-[18px] leading-relaxed text-white/55 max-w-2xl"
         >
-          The multi-vertical AI lead engine for South Africa. Pick a mode — bond, insurance,
-          solar, medical aid, debt review, cosmetic, immigration, schools, commercial,
-          residential, e-commerce, coaching — and Visio Lead Gen reskins around you. Signals
-          → qualify → book → deliver, backed by twelve full Visio Research Labs papers.
+          The multi-vertical AI lead engine for South Africa. Pick a mode and Visio Lead Gen
+          reskins around you &mdash; signals → qualify → book → deliver, backed by twelve full
+          Visio Research Labs papers.
         </motion.p>
 
         {/* CTAs */}
