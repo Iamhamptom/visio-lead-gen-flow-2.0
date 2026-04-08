@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -32,24 +31,16 @@ const fadeUp = {
 export default function HomeHero() {
   return (
     <section className="relative min-h-[92vh] overflow-hidden bg-[#03091a] flex items-center">
-      {/* Background car image — subtle, stays in its lane */}
+      {/* Background — pure gradient + grid, no imagery */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 ken-burns">
-          <Image
-            src="/generated/hero-car.png"
-            alt=""
-            fill
-            priority
-            className="object-cover object-right opacity-30 mix-blend-screen pointer-events-none"
-          />
-        </div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_left,rgba(3,9,26,0.7)_0%,transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_right,rgba(59,130,246,0.10)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_left,rgba(59,130,246,0.06)_0%,transparent_55%)]" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#03091a] via-transparent to-transparent" />
       </div>
 
       {/* Grid overlay */}
       <div className="absolute inset-0 bg-grid opacity-30 z-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.05)_0%,transparent_60%)] z-0" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.08)_0%,transparent_60%)] z-0" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-6xl px-6 pt-32 pb-20 w-full">

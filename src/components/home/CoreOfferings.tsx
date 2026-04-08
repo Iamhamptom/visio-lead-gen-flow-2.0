@@ -25,7 +25,7 @@ const OFFERINGS = [
       "Stop bidding on Google Ads against your direct competitors. Visio Lead Gen watches the signals that predict a purchase across twelve verticals — and routes the ready-to-buy prospects directly to your team on WhatsApp in under thirty seconds.",
     href: "/pricing",
     ctaLabel: "See the Pricing Sheet",
-    image: "/generated/car-volume.png",
+    image: "/generated/infographic-flow.png",
     imageAlt: "Lead flow visualisation representing warm-lead delivery",
   },
   {
@@ -45,8 +45,8 @@ const OFFERINGS = [
       "The mode selector reskins Visio Lead Gen around your industry: bond originators, insurance brokers, solar installers, debt counsellors, medical aid brokers, cosmetic clinics, immigration lawyers, schools, commercial property brokers, estate agents, e-commerce merchants, and coaches.",
     href: "/modes",
     ctaLabel: "Pick your Mode",
-    image: "/generated/car-luxury.png",
-    imageAlt: "Twelve-vertical platform visualisation",
+    image: "/generated/infographic-network.png",
+    imageAlt: "Twelve-vertical platform network visualisation",
   },
 ];
 
